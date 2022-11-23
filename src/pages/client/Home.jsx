@@ -3,7 +3,7 @@ import { WrapperContainer } from "../../App-styled"
 function Client() {
     return(
         <WrapperContainer>
-        client
+        clientt
         </WrapperContainer>
     )
 }
