@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useLocation } from "react-router-dom";
+import "./App-styled.js";
+import { DataAdmin } from "./routes/admin/data-router";
+import ClientRouterComponent from "./routes/client/index.jsx";
+import AdminRouterComponent from "./routes/admin/index.jsx";
 function App() {
+  const pathname = useLocation();
+  const filter = DataAdmin.filter((e) => e.path === pathname.pathname);
+  window.localStorage.setItem(
+    "pathname",
+    filter.map((elem) => elem.path)
+  );
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {pathname.pathname === "/admin" ? (
+        <>
+          <AdminRouterComponent />
+        </>
+      ) : <ClientRouterComponent/> &&
+        pathname.pathname === window.localStorage.getItem("pathname") ? 
+        <AdminRouterComponent />
+      : 
+        <ClientRouterComponent/>
+      }
+    </>
   );
 }
 
