@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import backgroundimg from "../../../assets/footer/frame.png"
+import blue from "../../../assets/footer/blue.png"
 
 export const Wrapper = styled.div`
 padding-top: 20px;
@@ -7,6 +8,13 @@ padding-top: 20px;
  background-repeat: no-repeat;
  background-size: cover;
  padding-bottom: 50px;
+ @media only screen and (max-width: 922px) {
+    background-color: #0F0F11;
+    background-image: url(${blue});
+    background-size: auto;
+    background-position-y: 95%;
+    background-position-x: 100%;
+}
 `
 
 export const WrapperContainer = styled.div`
@@ -57,11 +65,16 @@ export const Li = styled.div`
     width: 60px;
     display: flex;
     margin-left: auto;
+    @media only screen and (max-width: 940px) {
+    margin-left: 260px;
+    width: 60px;
+    margin-bottom: -20px;
+}
  }
 `
 
 export const Li1 = styled.div`
     color: #FFFFFF;
     padding-top: 10px;
-    letter-spacing: 10px;
+    letter-spacing: 20px;
 `
