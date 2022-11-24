@@ -1,10 +1,12 @@
-import { WrapperContainer } from "../../App-styled"
+import { GlobalStyle, WrapperContainer } from "../../App-styled"
 
 function Client() {
-    return(
-        <WrapperContainer>
-        client
-        </WrapperContainer>
+    return (
+        <GlobalStyle>
+            <WrapperContainer>
+                clientt
+            </WrapperContainer>
+        </GlobalStyle>
     )
 }
-export default Client
+export default Client;
