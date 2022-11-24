@@ -1,5 +1,6 @@
-
-import {Wrapper, WrapperContainer, Title, Heading,Ul, P} from "./styled-index"
+import img from "../../../assets/client/header/Logo.svg"
+import up from "../../../assets/footer/up.png"
+import {Wrapper, WrapperContainer, Title, Heading,Li, Li1} from "./styled-index"
 
 function Footer() {
         return(
@@ -7,8 +8,9 @@ function Footer() {
              <Wrapper>
                 <WrapperContainer>
                     <Title>
-                        <h2>Logo</h2>
+                       
                         <Heading>
+                        <img src={img} alt="logo" />
                             <ul>
                                 <li>
                                 <a href="#">Галерея</a>
@@ -65,19 +67,21 @@ function Footer() {
                             <li>
                                 <a href="#">revel@mail.ru</a>
                             </li>
-                            <li>
+                            <Li1>
                                 <i class='bx bxl-instagram-alt' ></i>
                                 <i class='bx bxl-telegram' ></i>
                                 <i class='bx bxl-facebook-circle'></i>
-                            </li>
+                            </Li1>
+                            <Li>
+                            <img src={up} alt="up" />
+                            </Li>
                             </ul>
+                            
                         </Heading>
 
-                        <Ul>
-                      
-                        </Ul>
+                     
                     </Title>
-                    <P></P>
+               
                 </WrapperContainer>
             </Wrapper>
             </>

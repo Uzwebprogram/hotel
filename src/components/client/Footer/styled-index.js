@@ -1,12 +1,15 @@
 import styled from "styled-components"
+import backgroundimg from "../../../assets/footer/frame.png"
 
 export const Wrapper = styled.div`
- background-color: #0F0F11;
-;
+padding-top: 20px;
+ background-image: url(${backgroundimg});
+ background-repeat: no-repeat;
+ background-size: cover;
+ padding-bottom: 50px;
 `
 
 export const WrapperContainer = styled.div`
-
 a{
     color: #FFFFFF;
     text-decoration: none;
@@ -20,22 +23,45 @@ a{
 ul{
     list-style: none;
 }
-
+li{
+    padding-top: 15px;
+    color: #FFFFFF;
+}
 `
 
 export const Title = styled.div`
- h2{
-    color: #FFFFFF;
- }
+
 `
 
 export const Heading = styled.div`
+img{
+ width: 200px;
+ margin-bottom: 30px;
+ @media only screen and (max-width: 622px) {
+    margin-right: 236px;
+
+}
+}
 display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+@media only screen and (max-width: 940px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 `
-export const Ul = styled.div`
 
+export const Li = styled.div`
+ img{
+    width: 60px;
+    display: flex;
+    margin-left: auto;
+ }
 `
 
-export const P = styled.div`
-
+export const Li1 = styled.div`
+    color: #FFFFFF;
+    padding-top: 10px;
+    letter-spacing: 10px;
 `
