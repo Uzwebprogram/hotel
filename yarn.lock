@@ -5327,7 +5327,7 @@
   dependencies:
     "@babel/runtime" "^7.19.4"
 
-"i18next@>= 19.0.0":
+"i18next@^22.0.6", "i18next@>= 19.0.0":
   "integrity" "sha512-RlreNGoPIdDP4QG+qSA9PxZKGwlzmcozbI9ObI6+OyUa/Rp0EjZZA9ubyBjw887zVNZsC+7FI3sXX8oiTzAfig=="
   "resolved" "https://registry.npmjs.org/i18next/-/i18next-22.0.6.tgz"
   "version" "22.0.6"
