@@ -23,6 +23,12 @@ ul{
             text-decoration: none;
             color: white;
         }
+        select {
+            color: white;
+            background-color: #0F0F11;
+            border: none;
+            width: 50px;
+        }
     }
     li:nth-child(6) {
         display: flex;

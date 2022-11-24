@@ -1,9 +1,20 @@
+import { useTranslation } from "react-i18next"
 import { WrapperContainer } from "../../../App-styled"
-import Logo from "../../../assets/client/header/Logo.png"
-import { Wrapper , Nav} from "./styled-index"
+import Logo from "../../../assets/client/header/Rever.svg"
+import { Wrapper, Nav } from "./styled-index"
 
 
 function Header() {
+    const { t, i18n } = useTranslation()
+    const HendelChange = (e) => {
+        e.preventDefault()
+        const LanVal = e.target.value;
+        window.localStorage.setItem("i18nextLng", LanVal)
+        window.location.reload()
+    }
+    const ValLang = () => {
+        return window.localStorage.getItem("i18nextLng")
+    }
     return (
         <Wrapper>
             <WrapperContainer>
@@ -11,27 +22,51 @@ function Header() {
                     <img src={Logo} alt="logo" />
                     <ul>
                         <li>
-                            <a href="#">Галерея</a>
+                            <a href="#">{t("Navbar.0")}</a>
                         </li>
                         <li>
-                            <a href="#">Об отеле</a>
+                            <a href="#">{t("Navbar.1")}</a>
                         </li>
                         <li>
-                            <a href="#">Номера</a>
+                            <a href="#">{t("Navbar.2")}</a>
                         </li>
                         <li>
-                            <a href="#">Отзывы</a>
+                            <a href="#">{t("Navbar.3")}</a>
                         </li>
                         <li>
-                            <a href="#">Контакты</a>
+                            <a href="#">{t("Navbar.4")}</a>
                         </li>
                         <li>
                             <a href="#">+998 99 999 99 99</a>
                             <a href="#">+998 99 999 99 99</a>
                         </li>
                         <li>
-                            <select>
-                                <option value="ru">uz</option>
+                            <select onChange={HendelChange}>
+                                {ValLang() === "uz" ? (
+                                    <>
+                                        <option value="uz">UZ</option>
+                                        <option value="ru">RU</option>
+                                        <option value="en">EN</option>
+                                    </>
+                                ) : ValLang() === "ru" ? (
+                                    <>
+                                        <option value="ru">RU</option>
+                                        <option value="uz">UZ</option>
+                                        <option value="en">EN</option>
+                                    </>
+                                ) : ValLang() === "en" ? (
+                                    <>
+                                        <option value="en">EN</option>
+                                        <option value="uz">UZ</option>
+                                        <option value="ru">RU</option>
+                                    </>
+                                ) : (
+                                    <>
+                                        <option value="uz">UZ</option>
+                                        <option value="ru">RU</option>
+                                        <option value="en">EN</option>
+                                    </>
+                                )}
                             </select>
                         </li>
                     </ul>
