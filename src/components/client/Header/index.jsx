@@ -1,10 +1,12 @@
+import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { WrapperContainer } from "../../../App-styled"
 import Logo from "../../../assets/client/header/Logo.svg"
 import { Wrapper, Nav } from "./styled-index"
-
+import Modal from "../modal"
 
 function Header() {
+    const [modal , setModal] = useState(false)
     const { t, i18n } = useTranslation()
     const HendelChange = (e) => {
         e.preventDefault()
@@ -14,6 +16,9 @@ function Header() {
     }
     const ValLang = () => {
         return window.localStorage.getItem("i18nextLng")
+    }
+    const HendelClick = () => {
+        setModal(true)
     }
     return (
         <Wrapper>
@@ -70,10 +75,13 @@ function Header() {
                             </select>
                         </li>
                     </ul>
-                    <button><i class='bx bx-menu'></i></button>
+                    <button onClick={HendelClick}><i class='bx bx-menu'></i></button>
                 </Nav>
+                {modal ? <>
+                   <Modal HendelChange={HendelChange} ValLang={ValLang} set={setModal} />
+                </> : null}
             </WrapperContainer>
         </Wrapper>
-    )
+    );
 }
 export default Header;

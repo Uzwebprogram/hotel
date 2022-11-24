@@ -4,7 +4,7 @@ function Client() {
     return (
         <GlobalStyle>
             <WrapperContainer>
-                clientt
+                client
             </WrapperContainer>
         </GlobalStyle>
     )

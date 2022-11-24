@@ -10,11 +10,13 @@ export const Nav = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
+padding: 0;
 ul{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
     width: 65%;
 
     li{
@@ -33,4 +35,23 @@ ul{
         flex-direction: column;
     }
 }
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+@media screen and (max-width: 900px){
+    ul {
+        display: none;
+    }
+    button{
+        display: block;
+    }
+
+}
 `
+
