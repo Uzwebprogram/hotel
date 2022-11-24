@@ -10,7 +10,6 @@ export const Nav = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
-
 ul{
     list-style: none;
     display: flex;
@@ -27,7 +26,6 @@ ul{
             color: white;
             background-color: #0F0F11;
             border: none;
-            width: 50px;
         }
     }
     li:nth-child(6) {
