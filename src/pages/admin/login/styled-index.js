@@ -20,7 +20,25 @@ form {
         margin: 5% 0 3%;
     }
     input {
-        
+        padding: 10px 30px 10px 20px;
+        background-color: white;
+        border-radius: 10px;
+        outline: none;
+        border: 1px solid black;
+    }
+    button {
+        margin-top: 5%;
+        padding: 10px 0;
+        border-radius: 10px;
+        border: 1px solid black;
+        cursor: pointer;
+        transition: .65s;
+
+        &:hover {
+            background-color: #0F0F11;
+            color: white;
+            border: 1px solid white;
+        }
     }
 }
 `

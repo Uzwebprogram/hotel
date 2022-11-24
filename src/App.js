@@ -12,6 +12,7 @@ function App() {
   );
   return (
     <>
+    <GlobalStyle/>
         {pathname.pathname === "/admin" ? (
           <>
             <AdminRouterComponent />
