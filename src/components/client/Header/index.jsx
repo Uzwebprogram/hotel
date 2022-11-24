@@ -1,9 +1,15 @@
+import { WrapperContainer } from "../../../App-styled"
+import Navbar from "../navbar"
+import { Wrapper } from "./styled-index"
+
 
 function Header() {
-    return(
-        <>
-        Header
-        </>
+    return (
+        <Wrapper>
+            <WrapperContainer>
+                <Navbar/>
+            </WrapperContainer>
+        </Wrapper>
     )
 }
-export default Header
+export default Header;

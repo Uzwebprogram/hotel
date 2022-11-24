@@ -1,17 +1,17 @@
 import { DataClient } from "./data-router"
-import {Routes ,Route} from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import Header from "../../components/client/Header"
 import Footer from "../../components/client/Footer"
 function ClientRouterComponent() {
-    return(
+    return (
         <>
-            <Header/>
+            <Header />
             <Routes>
-                {DataClient.map((elem , index) =>
-                    <Route key={index} path={elem.path}  element={elem.element} />
+                {DataClient.map((elem, index) =>
+                    <Route key={index} path={elem.path} element={elem.element} />
                 )}
             </Routes>
-            <Footer/>
+            <Footer />
         </>
     )
 }
