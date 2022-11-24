@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import "./App-styled.js";
+import { GlobalStyle } from "./App-styled.js";
 import { DataAdmin } from "./routes/admin/data-router";
 import ClientRouterComponent from "./routes/client/index.jsx";
 import AdminRouterComponent from "./routes/admin/index.jsx";
@@ -12,16 +12,17 @@ function App() {
   );
   return (
     <>
-      {pathname.pathname === "/admin" ? (
-        <>
+        {pathname.pathname === "/admin" ? (
+          <>
+            <AdminRouterComponent />
+          </>
+        ) : <ClientRouterComponent /> &&
+          pathname.pathname === window.localStorage.getItem("pathname") ?
           <AdminRouterComponent />
-        </>
-      ) : <ClientRouterComponent/> &&
-        pathname.pathname === window.localStorage.getItem("pathname") ? 
-        <AdminRouterComponent />
-      : 
-        <ClientRouterComponent/>
-      }
+          :
+          <ClientRouterComponent />
+        }
+   
     </>
   );
 }
