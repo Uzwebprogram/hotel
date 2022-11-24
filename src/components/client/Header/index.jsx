@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next"
 import { WrapperContainer } from "../../../App-styled"
-import Logo from "../../../assets/client/header/Rever.svg"
+import Logo from "../../../assets/client/header/Logo.svg"
 import { Wrapper, Nav } from "./styled-index"
 
 
@@ -70,6 +70,7 @@ function Header() {
                             </select>
                         </li>
                     </ul>
+                    <button><i class='bx bx-menu'></i></button>
                 </Nav>
             </WrapperContainer>
         </Wrapper>
