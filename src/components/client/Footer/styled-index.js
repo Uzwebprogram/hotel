@@ -3,7 +3,7 @@ import backgroundimg from "../../../assets/footer/frame.png"
 import blue from "../../../assets/footer/blue.png"
 
 export const Wrapper = styled.div`
-padding-top: 20px;
+padding-top: 50px;
  background-image: url(${backgroundimg});
  background-repeat: no-repeat;
  background-size: cover;
@@ -17,11 +17,11 @@ padding-top: 20px;
 }
 `
 
-export const WrapperContainer = styled.div`
+export const Container = styled.div`
 a{
     color: #FFFFFF;
     text-decoration: none;
-    font-family: 'Gilroy';
+
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -47,7 +47,6 @@ img{
  margin-bottom: 30px;
  @media only screen and (max-width: 622px) {
     margin-right: 236px;
-
 }
 }
 display: flex;

@@ -5,5 +5,27 @@
         "2": "Raqamlar",
         "3": "Sharhlar",
         "4": "Kontaktlar"
+    },
+    "Footer": {
+        "0" : "Galereya",
+        "1" : "Mehmonxona haqida",
+        "2": "Raqamlar",
+        "3" : "Sharhlar",
+        "4" : "Shartlar va shartlar",
+        "5" : "Kontaktlar",
+        "6" : "Bir kishilik xona",
+        "7" : "Bir xonali lyuks",
+        "8" : "Ikki xonali lyuks",
+        "9" : "Ikki xonali lyuks",
+        "10" : "Oila xonasi",
+        "11" : "Oilaviy lyuks",
+        "12" : "Toshkent, Chilonzor tumani, Bunyodkor ko‘chasi, 99-uy"
+    },
+    "Homehero" : {
+        "0" : "REVER HOTEL",
+        "1" : "Sizni sharqona mehmondo'stligi bilan mashhur va Toshkentning qoq markazida joylashgan 'Rever' mehmonxonasida kutib olishdan mamnunmiz!",
+        "2" : "Raqamlarni ko'rish",
+        "3": "pastga aylantiring",
+        "4" : "Toshkent, Chilonzor tumani, Bunyodkor ko‘chasi, 57-uy"
     }
 }

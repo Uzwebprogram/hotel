@@ -5,5 +5,27 @@
         "2": "Numbers",
         "3": "Reviews",
         "4" : "Contacts"
+    },
+    "Footer": {
+        "0" : "Gallery",
+        "1" : "About the hotel",
+        "2" : "Numbers",
+        "3" : "Reviews",
+        "4" : "Terms and Conditions",
+        "5" : "Contacts",
+        "6" : "Single room",
+        "7" : "One-room lux",
+        "8" : "Two-room lux",
+        "9" : "Two-room lux",
+        "10" : "Family room",
+        "11" : "Family Suite",
+        "12" : "Tashkent, Chilanzar district, Bunyodkor street, 99"
+    },
+    "Homehero" : {
+        "0" : "REVER HOTEL",
+        "1" : "We are glad to welcome you to the 'Rever' hotel, which is famous for its oriental hospitality and is located in the very center of Tashkent!",
+        "2" : "View numbers",
+        "3" : "Scroll down",
+        "4" : "Tashkent, Chilanzar district, Bunyodkor street, 57"
     }
 }
