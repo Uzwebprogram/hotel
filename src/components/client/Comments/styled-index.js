@@ -71,11 +71,12 @@ export const Name = styled.div`
     padding-top: 60px;
   }
 `;
-
+// e3drtfyguhij
 export const Carusel = styled.div`
   display: flex;
   display: none;
   overflow-x: scroll;
+
   scroll-behavior: smooth;
   margin: 0;
   padding: 0; 
