@@ -37,6 +37,11 @@ button{
   border: 1px solid white;
   color: white;
   border-radius: 2px;
+  transition: .65s;
+}
+button:hover{
+  background-color: white;
+  color: black;
 }
 
 `
