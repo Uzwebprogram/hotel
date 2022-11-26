@@ -29,7 +29,7 @@ function Login() {
         }
     }
     return (
-        <WrapperContainer>
+        <>
             <LoginDiv>
                 <ImgDiv>
                     <img src={Img1} alt="loginPhoto" />
@@ -48,7 +48,7 @@ function Login() {
                     </form>
                 </Div>
             </LoginDiv>
-        </WrapperContainer>
+        </>
     )
 }
 export default Login

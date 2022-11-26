@@ -1,10 +1,10 @@
-import { GlobalStyle, WrapperContainer} from "../../../App-styled"
-import {Wrapper,Bigdiv,First,Second,Small,Ul} from "./styled-index"
-import studio2 from "../../../assets/client/AboutHotel/studio2.png"
-import clean from "../../../assets/client/AboutHotel/clean.png"
-import bestprice from "../../../assets/client/AboutHotel/bestprice.png"
-import location from "../../../assets/client/AboutHotel/location.png"
-import { useTranslation } from "react-i18next"
+import { GlobalStyle, WrapperContainer } from "../../../App-styled";
+import { Wrapper, Bigdiv, First, Second, Small, Ul } from "./styled-index";
+import studio2 from "../../../assets/client/AboutHotel/studio2.png";
+import clean from "../../../assets/client/AboutHotel/clean.png";
+import bestprice from "../../../assets/client/AboutHotel/bestprice.png";
+import location from "../../../assets/client/AboutHotel/location.png";
+import { useTranslation } from "react-i18next";
 
 function AboutHotel(){
     const { t, i18n } = useTranslation()
@@ -47,4 +47,4 @@ function AboutHotel(){
         </>
     )
 }
-export default AboutHotel
+export default AboutHotel;

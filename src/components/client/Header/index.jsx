@@ -75,11 +75,11 @@ function Header() {
                             </select>
                         </li>
                     </ul>
-                    <button onClick={HendelClick}><i class='bx bx-menu'></i></button>
+                    <button onClick={HendelClick}><i className='bx bx-menu'></i></button>
                 </Nav>
                 {modal ? <>
                    <Modal HendelChange={HendelChange} ValLang={ValLang} set={setModal} />
-                </> : null}
+                </> : null  }
             </WrapperContainer>
         </Wrapper>
     );
