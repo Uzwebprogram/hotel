@@ -1,4 +1,5 @@
 import Logo from "../../../assets/client/header/Logo.png"
+import {Nav} from './styled-index'
 
 
 function Navbar() {
