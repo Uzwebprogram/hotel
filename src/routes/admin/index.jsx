@@ -1,6 +1,7 @@
 import { DataAdmin } from "./data-router"
 import {Routes ,Route} from "react-router-dom"
 function AdminRouterComponent() {
+
     return(
         <>
             <Routes>
