@@ -5,6 +5,9 @@ import Terms from "../../components/client/Terms/index";
 import ReservHome from "../../components/client/reserv";
 import Gallery from "../../components/client/Galery";
 import News from "../../components/client/news";
+import OurHotel from "../../components/client/OurHotel";
+import Comments from "../../components/client/Comments";
+import Contacts from "../../components/client/Contacts";
 
 function Client() {
   return (
@@ -17,6 +20,9 @@ function Client() {
         <AboutHotel />
         <Terms />
         <News/>
+        {/* <OurHotel/> */}
+        {/* <Comments/> */}
+        {/* <Contacts/> */}
       </WrapperContainer>
     </>
   );

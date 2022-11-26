@@ -41,6 +41,54 @@
     },
     "Galery" : {
         "0" : "Gallery"
+    },
+    "AboutHotel" : {   
+       "0" : "About hotel",
+       "1" : "We are glad to welcome you to the hotel 'Uzbekistan', which is famous for its oriental hospitality and is located in the very center of Tashkent! It offers a gym, sauna, and cozy air-conditioned rooms with flat-screen TVs for a comfortable stay.Hotel Uzbekistan offers classically furnished rooms and suites with a minibar. The interiors are decorated with dark wood furniture and elegant fabrics. European and local cuisine is served in the elegant grand piano restaurant. Cafe-bar 'Vienna' offers a wide selection of hot and cold drinks. There is also a snack bar on site. There are many attractions, shops and cafes very close to the hotel. Amir Temur metro station is a 5-minute walk. Staff at the 24-hour front desk can arrange a shuttle service to Tashkent Airport, 10 km away. Welcome to the hotel 'Uzbekistan'!", 
+       "2" : "Why us?",
+       "3" : "Cleanliness and safety",
+       "4" : "Affordable prices",
+       "5" : "Convenient location"
+    },
+    "Terms" : {
+        "0" : "Conditions of residence",
+        "1" : "Hotel policies are general and may vary depending on the type of accommodation chosen. Children of all ages are allowed. Children aged 12 and over are considered adults. Pets are allowed. Charges may apply.",
+        "2" : "Cancellation policy",
+        "3" : "Cancellation and prepayment policies depend on the selected rate plan. Please enter the dates of your stay and review the terms and conditions of your reservation. Basic rate plan: You can cancel your reservation free of charge up to 24 hours prior to arrival. Non-refundable rate plan: You pay prepayment in the amount of the full price of the stay on the day of booking. In case of cancellation, the prepayment is not refundable.",
+        "4" : "Check-in",
+        "5" : "Check-out",
+        "6" : "Terms and Conditions",
+        "7" : "Правила отмены бронирования и предоплаты зависят от выбранного тарифного плана.Пожалуйста, введите даты проживания и ознакомтесь с условиями бронирования.Базовый тарифный план:Вы можете бесплатно отменить бронирование в срок до 24 часов до заезда.Невозвратный тарифный план:Вы вносите предоплату в размере полной стоимости проживания в день бронирования.В случае отмены бронирования, предоплата не возвращается."
+    },
+    "OurHotel" : {
+        "0" : "Rooms in our hotel",
+        "1" : "Single room",
+        "2" : "Area: 30 sq.m",
+        "3" : "Number of guests: 2",
+        "4" : "Cost for 1 night: 240 000 sum",
+        "5" : "Bron",
+        "6" : "One-room lux",
+        "7" : "Area: 45 sq.m",
+        "8" : "Cost for 1 night: 430 000 sum",
+        "9" : "Two-room lux",
+        "10" : "Area: 53 sq.m",
+        "11" : "Number of guests: 4",
+        "12" : "Cost for 1 night: 480 000 sum",
+        "13" : "Two-room lux",
+        "14" : "Area: 65 sq.m",
+        "15" : "Cost for 1 night: 670 000 sum",
+        "16" : "Family room",
+        "17" : "Area: 86 sq.m",
+        "18" : "Number of guests: 5",
+        "19" : "Cost for 1 night: 890 000 sum",
+        "20" : "Family Lux",
+        "21" : "Area: 110 sq.m",
+        "22" : "Cost for 1 night: 1 240 000 sum"
+    },
+    "Comments" : {
+        "0" : "Visitor reviews",
+        "1" : "Madina Khakimova",
+        "2" : "Hotel policies are general and may vary depending on the type of accommodation selected. Hotel policies are general and may vary depending on the type of accommodation selected"
     }
  
 }
