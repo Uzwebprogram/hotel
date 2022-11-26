@@ -47,17 +47,31 @@ export const Nav = styled.div`
 
 export const Menu = styled.div`
   display: none;
-  .bx{
+  .bx {
     color: white;
   }
-  a{
+  a {
     color: white;
     text-decoration: none;
   }
-
   @media screen and (max-width: 950px) {
     display: block;
     display: flex;
     flex-direction: column;
-}
+  }
+`;
+
+export const Number = styled.div`
+  display: none;
+  @media screen and (max-width: 950px) {
+    display: block;
+    display: flex;
+    flex-direction: column;
+
+    a{
+        color: white;
+        text-decoration: none;
+        text-align: end;
+    }
+  }
 `;

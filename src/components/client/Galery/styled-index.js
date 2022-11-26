@@ -12,8 +12,7 @@ margin-top: 5%;
     display: none;
 }
 img{
-    width: 700px;
-    height: 500px;
+    width: 100%;
 }
 `
 

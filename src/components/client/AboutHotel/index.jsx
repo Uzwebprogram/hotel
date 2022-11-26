@@ -39,7 +39,7 @@ function AboutHotel() {
             </Second>
           </Bigdiv>
           <Small>
-            <p>Почему именно мы?</p>
+            <h2>Почему именно мы?</h2>
             <Ul>
               <ul>
                 <li>
