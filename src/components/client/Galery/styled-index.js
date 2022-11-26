@@ -13,6 +13,7 @@ margin-top: 5%;
 }
 img{
     width: 100%;
+    margin-right: 5%;
 }
 `
 

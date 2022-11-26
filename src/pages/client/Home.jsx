@@ -4,6 +4,7 @@ import AboutHotel from "../../components/client/AboutHotel/index";
 import Terms from "../../components/client/Terms/index";
 import ReservHome from "../../components/client/reserv";
 import Gallery from "../../components/client/Galery";
+import News from "../../components/client/news";
 
 function Client() {
   return (
@@ -11,10 +12,11 @@ function Client() {
       <GlobalStyle />
       <WrapperContainer>
         <Home />
-        <ReservHome/>
-        <Gallery/>
-         <AboutHotel/> 
-        <Terms /> 
+        <ReservHome />
+        <Gallery />
+        <AboutHotel />
+        <Terms />
+        <News/>
       </WrapperContainer>
     </>
   );
