@@ -75,6 +75,19 @@
         "0" : "Visitor reviews",
         "1" : "Madina Khakimova",
         "2" : "Hotel policies are general and may vary depending on the type of accommodation selected. Hotel policies are general and may vary depending on the type of accommodation selected"
+    },
+    "Reserv" : {
+        "0" : "Room booking",
+        "1" : "Check in",
+        "2" : "Departure",
+        "3" : "Guests",
+        "4" : "Select number",
+        "5" : "your phone number",
+        "6" : "Find number",
+        "7" : "Adults",
+        "8" : "Children"
+    },
+    "Galery" : {
+        "0" : "Gallery"
     }
- 
 }

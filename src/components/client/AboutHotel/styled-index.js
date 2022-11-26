@@ -1,63 +1,91 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
-padding-top: 10px;
-background-color: #0F0F11;
-color: white;
-padding-bottom: 20px;
-h3{
-    border-bottom: 1px solid #5A5A5A;
-    margin-left: -150px;
-    padding: 40px 150px;
-    width: 1210px;
-}
-
-`
+  padding-top: 10px;
+  background-color: #0f0f11;
+  color: white;
+  padding-bottom: 20px;
+  p{
+    margin: 0;
+    padding: 0;
+  }
+  h3 {
+    border-bottom: 1px solid #5a5a5a;
+    font-size: 35px;
+    padding-bottom: 3%;
+  }
+`;
 export const Bigdiv = styled.div`
-display: flex;
-padding-top: 10px;
-`
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+
+  @media screen and (max-width: 1105px) {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+`;
 
 export const First = styled.div`
-p{
-width: 95%;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 130%;
-}
-`
-export const Second = styled.div`
-margin-left: 20px;
-img{
-padding-top: 10px;
-}
-`
-export const Small = styled.div`
-p{
-    padding-top: 80px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 120%;
-}
-`
-export const Ul = styled.div`
-ul{
-    padding-top: 20px;
-    margin-left: -100px;
-    list-style: none;
-    display: flex;
-}
-li{
-   margin-left : 140px;
-}
-p{
-    padding-top: 30px;
-    margin-left: -50px;
+  p {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 120%;
-}
-`   
+    line-height: 25px;
+    @media screen and (max-width: 780px) {
+        font-size: 15px;
+    }
+  }
+`;
+export const Second = styled.div`
+  @media screen and (max-width: 1105px) {
+    img {
+      width: 100%;
+      margin-top: 5%;
+    }
+  }
+`;
+export const Small = styled.div`
+  h2 {
+    margin-top: 5%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+  }
+`;
+export const Ul = styled.div`
+  ul {
+    padding-top: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 50%;
+    @media screen and (max-width: 1105px) {
+        width: 70%;
+    }
+    @media screen and (max-width: 780px) {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+        li {
+            margin-top: 10%;
+        }
+    }
+    @media screen and (max-width: 350px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+  }
+  p {
+    padding-top: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+  }
+`;

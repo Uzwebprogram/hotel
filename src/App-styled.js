@@ -4,6 +4,7 @@ export const WrapperContainer = styled.div`
     max-width: 1210px;
     width: 100%;
     margin: 0 auto;
+    padding: 0px 10px;
 `
 
 export const GlobalStyle = createGlobalStyle`

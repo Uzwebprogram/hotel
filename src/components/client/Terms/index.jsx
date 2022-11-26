@@ -1,6 +1,15 @@
-import { GlobalStyle, WrapperContainer} from "../../../App-styled"
-import {Wrapper,Bigdiv, First,Second,Smaller,Smallest,Text} from "./styled-index"
-import { useTranslation } from "react-i18next"
+import { GlobalStyle, WrapperContainer } from "../../../App-styled";
+import {
+  Wrapper,
+  Bigdiv,
+  First,
+  Second,
+  Smaller,
+  Smallest,
+  Text,
+  DfDiv
+} from "./styled-index";
+import { useTranslation } from "react-i18next";
 
 function Terms() {
     const { t, i18n } = useTranslation()
@@ -38,4 +47,4 @@ function Terms() {
         </>
     )
 }
-export default Terms
+export default Terms;
