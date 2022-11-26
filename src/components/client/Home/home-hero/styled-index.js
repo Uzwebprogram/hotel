@@ -2,24 +2,35 @@ import styled from "styled-components";
 import bgcolors from "../../../../assets/client/home/bgcolors.png";
 export const Container = styled.div`
   display: flex;
-  /* align-items: center; */
   color: white;
-`;
-export const LeftDiv = styled.div`
   background-image: url(${bgcolors});
   background-position-y: bottom;
-  background-size: 100%; 
+  background-size: 100%;
   background-repeat: no-repeat;
-  border: 1px solid white;
-  height: 100%;
+  @media screen and (max-width: 823px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+export const LeftDiv = styled.div`
   h1 {
-    padding-top: 50px;
+    padding-top: 7%;
     font-style: normal;
     font-weight: 600;
     font-size: 55px;
+    @media screen and (max-width: 1088px) {
+      padding-top: 0%;
+    }
+    @media screen and (max-width: 935px) {
+      font-size: 30px;
+    }
   }
   p {
     width: 80%;
+    @media screen and (max-width: 823px) {
+      width: 100%;
+      font-size: 10px;
+    }
   }
   button {
     padding: 10px 30px;
@@ -34,23 +45,38 @@ export const LeftDiv = styled.div`
     background-color: white;
     color: black;
   }
-`
+`;
 export const RightDiv = styled.div`
   img {
     width: 100%;
+    @media screen and (max-width: 823px) {
+      margin-top: 5%;
+    }
   }
 `;
 export const Bigdiv = styled.div`
-border: 1px solid wheat;
-display: flex;
-align-items: center;
-justify-content: space-between;
-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100%; */
+  padding-top: 10%;
+  @media screen and (max-width: 823px) {
+    display: none;
+  }
 `;
 
 export const Smallestdiv = styled.div`
-width: 100%;
+  width: 100%;  
+  p {
+    padding-left: 5%;
+  }
+  @media screen and (max-width: 823px) {
+    display: none;
+  }
 `;
 export const Smalldiv = styled.div`
   width: 90%;
-`
+  @media screen and (max-width: 823px) {
+    display: none;
+  }
+`;
