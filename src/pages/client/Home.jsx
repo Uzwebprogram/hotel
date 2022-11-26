@@ -20,8 +20,8 @@ function Client() {
         <AboutHotel />
         <Terms />
         <News/>
-        {/* <OurHotel/> */}
-        {/* <Comments/> */}
+        <OurHotel/>
+        <Comments/>
         {/* <Contacts/> */}
       </WrapperContainer>
     </>

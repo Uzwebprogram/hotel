@@ -19,6 +19,7 @@ background-repeat: no-repeat;
 background-position-x: 1000px;
 background-position-y: 1250px;
  padding-top: 20px;
+ 
 ul{
     list-style: none;
 }
@@ -51,12 +52,17 @@ li{
 }
 `
 export const Ul = styled.ul`
-
-   /* width: 100%; */
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 20px;
+
+    @media screen and (max-width: 640px){
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center;
+    }
 
 `
