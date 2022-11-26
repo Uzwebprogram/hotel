@@ -42,6 +42,7 @@ button {
     color: white;
     font-size: 20px;
     display: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 900px){
