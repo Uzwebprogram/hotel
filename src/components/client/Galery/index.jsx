@@ -19,33 +19,33 @@ function Gallery() {
     <GalWrapper>
       <h2>{t("Galery.0")}</h2>
       <Caroulse ref={carousel}>
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
-        <img src="https://picsum.photos/300" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
+        <img src="https://picsum.photos/650" alt="" />
       </Caroulse>
       <Buttons>
         <button onClick={HendelRight}><i class='bx bx-left-arrow-alt' ></i></button>
