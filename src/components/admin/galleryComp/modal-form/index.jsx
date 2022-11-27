@@ -37,8 +37,13 @@ const ModalFormComponent = ({ open , handleClose}) => {
         }
         postImage()
 }
-const HandleSubmit = () =>{
-
+const HandleSubmit = async (e) =>{
+    e.preventDefault();
+    const body = {
+        image_galery : SelectedImages
+    }
+    const res = await axios.post("http://62.217.179.24:5000/galery"  , body)
+    console.log(res);
 }
   return (
     <Modal
