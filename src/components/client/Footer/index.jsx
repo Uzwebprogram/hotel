@@ -57,8 +57,6 @@ function Footer() {
                                     <a href="#">{t("Footer.11")}</a>
                                 </li>
                             </ul>
-
-                            
                            <ul>
                             <li>
                                <a href="#">{t("Footer.12")}</a>
@@ -72,6 +70,13 @@ function Footer() {
                             <li>
                                 <a href="#">revel@mail.ru</a>
                             </li>
+                            <li>
+                                <i class='bx bxl-instagram-alt' ></i>
+                                <i class='bx bxl-telegram' ></i>
+                                <i class='bx bxl-facebook-circle'></i>
+                            </li>
+                            </ul>
+                        <ul>
                             <Li1>
                                 <i class='bx bxl-instagram-alt' ></i>
                                 <i class='bx bxl-telegram' ></i>
@@ -83,8 +88,6 @@ function Footer() {
                             </ul>
                             
                         </Heading>
-
-                        
                     </Title>
                     </Container>
                 </WrapperContainer>

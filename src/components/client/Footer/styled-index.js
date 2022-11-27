@@ -31,16 +31,25 @@ a{
 ul{
     list-style: none;
 }
+`
+
+export const Title = styled.div`
+ h2{
+    color: #FFFFFF;
+ }
+`
+
+
+export const Ul = styled.div`
+
+`
+
+export const P = styled.div`
 li{
     padding-top: 15px;
     color: #FFFFFF;
 }
 `
-
-export const Title = styled.div`
-
-`
-
 export const Heading = styled.div`
 img{
  width: 200px;

@@ -11,9 +11,19 @@ text-align: start;
 width: 250px;
 padding-right: 90px;
 height: 100%;
+
+display: flex;
 ul {
     list-style: none;
+    width: 100%;
 }
+`
+export const DashboardWrapper = styled.div`
+ width: 100%;
+`
+export const Pages = styled.div`
+  width: 60%;
+  height: 100%;
 `
 
 export const Ul = styled.ul`

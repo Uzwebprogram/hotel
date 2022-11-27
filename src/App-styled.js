@@ -19,3 +19,7 @@ body{
     overflow-x: hidden;
 }
 `
+
+export const WrapperAdmin = styled.div`
+ display: flex;
+`

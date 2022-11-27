@@ -80,3 +80,5 @@ export const Smalldiv = styled.div`
     display: none;
   }
 `;
+
+export const Wrapper = styled.div``

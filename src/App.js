@@ -1,8 +1,9 @@
 import { useLocation } from "react-router-dom";
-import { GlobalStyle } from "./App-styled.js";
+import { GlobalStyle, WrapperAdmin } from "./App-styled.js";
 import { DataAdmin } from "./routes/admin/data-router";
 import ClientRouterComponent from "./routes/client/index.jsx";
 import AdminRouterComponent from "./routes/admin/index.jsx";
+import Sidebar from "./components/admin/Sidebar/index.jsx";
 function App() {
   const pathname = useLocation();
   const filter = DataAdmin.filter((e) => e.path === pathname.pathname);
@@ -12,18 +13,22 @@ function App() {
   );
   return (
     <>
-    <GlobalStyle/>
-        {pathname.pathname === "/admin" ? (
-          <>
-            <AdminRouterComponent />
-          </>
-        ) : <ClientRouterComponent /> &&
-          pathname.pathname === window.localStorage.getItem("pathname") ?
+      <GlobalStyle />
+      {pathname.pathname === "/admin" ? (
+        <>
           <AdminRouterComponent />
-          :
-          <ClientRouterComponent />
-        }
-   
+        </>
+      ) : <ClientRouterComponent /> &&
+        pathname.pathname === window.localStorage.getItem("pathname") ? (
+        <>
+          <WrapperAdmin>
+            <Sidebar />
+            <AdminRouterComponent />
+          </WrapperAdmin>
+        </>
+      ) : (
+        <ClientRouterComponent />
+      )}
     </>
   );
 }
