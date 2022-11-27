@@ -85,15 +85,14 @@ function Header() {
           <a href="#">+998 99 999 99 99</a>
           <a href="#">+998 99 999 99 99</a>
         </Number>
-        {modal ? (
           <>
             <Modal
+            modal={modal}
               HendelChange={HendelChange}
               ValLang={ValLang}
               set={setModal}
             />
           </>
-        ) : null}
       </WrapperContainer>
     </Wrapper>
   );

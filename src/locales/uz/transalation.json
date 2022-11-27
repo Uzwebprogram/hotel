@@ -28,6 +28,7 @@
         "3": "pastga aylantiring",
         "4" : "Toshkent, Chilonzor tumani, Bunyodkor ko‘chasi, 57-uy"
     },
+
     "Reserv" : {
         "0" : "Xonani band qilish",
         "1": "Ro'yxatdan o'tish",
@@ -90,5 +91,19 @@
         "0" : "Tashriflar sharhlari",
         "1" : "Madina Hakimova",
         "2" : "Mehmonxona qoidalari umumiydir va tanlangan turar joy turiga qarab farq qilishi mumkin. Mehmonxona qoidalari umumiydir va tanlangan turar joy turiga qarab farq qilishi mumkin"
+
+    },
+    "Contacts" : {
+        "0" : "Kontaktlar",
+        "1": "Ismingiz",
+        "2": "Email",
+        "3" : "Telefon raqamingiz",
+        "4": "Yuborish",
+        "5" : "Xodimlarimiz bir soat ichida siz bilan bog'lanadi!",
+        "6" : "Bizning manzilimiz",
+        "7" : "Toshkent sh., Chilonzor tumani, Bunyodkor ko‘chasi, 99-uy",
+        "8" : "Bizga yozing",
+        "9" : "Bizga qo'ng'iroq qiling",
+        "10" : "Biz ijtimoiy tarmoqlardamiz"
     }
 }

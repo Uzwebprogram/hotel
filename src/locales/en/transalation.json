@@ -28,6 +28,7 @@
         "3" : "Scroll down",
         "4" : "Tashkent, Chilanzar district, Bunyodkor street, 57"
     },
+
     "Reserv" : {
         "0" : "Room booking",
         "1" : "Check in",
@@ -89,6 +90,19 @@
         "0" : "Visitor reviews",
         "1" : "Madina Khakimova",
         "2" : "Hotel policies are general and may vary depending on the type of accommodation selected. Hotel policies are general and may vary depending on the type of accommodation selected"
+
+    },
+    "Contacts" : {
+        "0" : "Contacts",
+        "1" : "Your name",
+        "2" : "Email",
+        "3" : "Your phone number",
+        "4" : "Send",
+        "5" : "Our employees will contact you within an hour!",
+        "6" : "Our address",
+        "7" : "Tashkent, Chilanzar district, Bunyodkor street, 99",
+        "8" : "Write to us",
+        "9" : "Call us",
+        "10" : "We're on social media"
     }
- 
 }

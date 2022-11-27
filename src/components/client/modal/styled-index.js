@@ -3,11 +3,14 @@ import styled from "styled-components";
 export const Modals = styled.div`
   display: none;
   background-color: #0f0f11;
-  position: absolute;
+  position: fixed;
   height: 100%;
-  padding: 0 40px 0 0px;
+  padding: 0 20px 0 0px;
+  width: 80%;
   top: 0;
-  left: 0;
+  right:${(props) => (props.modal ? "800px" : "160px")};
+  transition: 0.8s;
+  overflow-y: scroll;
   p {
     text-align: end;
     color: white;
