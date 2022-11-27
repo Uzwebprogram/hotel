@@ -11,7 +11,7 @@ function ClientRouterComponent() {
                     <Route key={index} path={elem.path} element={elem.element} />
                 )}
             </Routes>
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
 }

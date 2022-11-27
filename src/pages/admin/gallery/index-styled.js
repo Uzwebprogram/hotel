@@ -9,13 +9,16 @@ export const WrapperTop = styled.div`
     h2{
         margin: 0;
         padding: 0;
+        color: white;
+        font-size: 320 px;
     }
     button{
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
         border: none;
         cursor: pointer;
         font-size: 24px;
         padding: 10px;
+        border-radius: 15px;
     }
 `

@@ -8,25 +8,25 @@ export const dataSidebar = [
     {
         id : 2,
         title : "Об отеле",
-        path : "/admin/partnersadmin",
+        path : "/admin/hotelabout",
         icon : "user"
     },
     {
         id : 3,
         title : "Номера",
-        path : "/admin/adminchoose",
+        path : "/admin/number",
         icon : "pie-chart-alt-2"
     },
     {
         id : 4,
         title : "Отзывы",
-        path : "/admin/stretch",
+        path : "/admin/reviews",
         icon : "money-withdraw"
     },
     {
         id : 5,
         title : "Контакты",
-        path : "/admin/adminInstall",
+        path : "/admin/contacts",
         icon : "bar-chart-alt-2"
     },
    

@@ -1,4 +1,4 @@
-import Client from "../../pages/client/Home.jsx";
+import Client from "../../pages/client/Home"
 
 export const DataClient = [
     {
