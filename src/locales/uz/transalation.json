@@ -27,5 +27,19 @@
         "2" : "Raqamlarni ko'rish",
         "3": "pastga aylantiring",
         "4" : "Toshkent, Chilonzor tumani, Bunyodkor ko‘chasi, 57-uy"
+    },
+    "Reserv" : {
+        "0" : "Xonani band qilish",
+        "1": "Ro'yxatdan o'tish",
+        "2": "Ketish",
+        "3" : "Mehmonlar",
+        "4" : "Raqamni tanlang",
+        "5" : "Telefon raqamingiz",
+        "6" : "Raqamni toping",
+        "7" : "Kattalar",
+        "8" : "Bolalar"     
+    },
+    "Galery" : {
+        "0" : "Galereya"
     }
 }

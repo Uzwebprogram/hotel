@@ -27,6 +27,20 @@
         "2" : "View numbers",
         "3" : "Scroll down",
         "4" : "Tashkent, Chilanzar district, Bunyodkor street, 57"
+    },
+    "Reserv" : {
+        "0" : "Room booking",
+        "1" : "Check in",
+        "2" : "Departure",
+        "3" : "Guests",
+        "4" : "Select number",
+        "5" : "your phone number",
+        "6" : "Find number",
+        "7" : "Adults",
+        "8" : "Children"
+    },
+    "Galery" : {
+        "0" : "Gallery"
     }
  
 }

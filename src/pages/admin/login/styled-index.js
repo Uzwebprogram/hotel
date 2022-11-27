@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const LoginDiv = styled.div`
 display: flex;
 align-items: center;
-width: 70%;
+width: 100%;
 margin: 0 auto;
 text-align: center;
 background-color: #0F0F11;
@@ -44,12 +44,13 @@ form {
 `
 
 export const ImgDiv = styled.div`
-width: 40%;
+width: 38%;
 img {
     width: 100%;
 }
 `
 
 export const Div = styled.div`
-width: 60%;
+width: 100%;
+height: 100%;
 `
