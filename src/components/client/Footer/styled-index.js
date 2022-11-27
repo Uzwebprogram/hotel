@@ -1,25 +1,25 @@
-import styled from "styled-components"
-import backgroundimg from "../../../assets/footer/frame.png"
-import blue from "../../../assets/footer/blue.png"
+import styled from "styled-components";
+import backgroundimg from "../../../assets/footer/frame.png";
+import blue from "../../../assets/footer/blue.png";
 
 export const Wrapper = styled.div`
-padding-top: 50px;
- background-image: url(${backgroundimg});
- background-repeat: no-repeat;
- background-size: cover;
- padding-bottom: 50px;
- @media only screen and (max-width: 922px) {
-    background-color: #0F0F11;
+  padding-top: 50px;
+  background-image: url(${backgroundimg});
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+  @media only screen and (max-width: 922px) {
+    background-color: #0f0f11;
     background-image: url(${blue});
     background-size: auto;
     background-position-y: 95%;
     background-position-x: 100%;
-}
-`
+  }
+`;
 
 export const Container = styled.div`
-a{
-    color: #FFFFFF;
+  a {
+    color: #ffffff;
     text-decoration: none;
 
     font-style: normal;
@@ -27,62 +27,87 @@ a{
     font-size: 16px;
     line-height: 120%;
     letter-spacing: 0.01em;
-}
-ul{
+  }
+  ul {
     list-style: none;
-}
-`
+  }
+`;
 
 export const Title = styled.div`
- h2{
-    color: #FFFFFF;
- }
-`
+  h2 {
+    color: #ffffff;
+  }
+`;
 
-
-export const Ul = styled.div`
-
-`
+export const Ul = styled.div``;
 
 export const P = styled.div`
-li{
+  li {
     padding-top: 15px;
-    color: #FFFFFF;
-}
-`
+    color: #ffffff;
+  }
+`;
+
+export const UPWrapper = styled.div`
+ 
+`;
+export const Up = styled.div`
+  width: 60px;
+  height: 60px;
+  border: 1px solid #bbbbbb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 140px;
+  a {
+    i {
+      font-size: 30px;
+    }
+  }
+`;
 export const Heading = styled.div`
-img{
- width: 200px;
- margin-bottom: 30px;
- @media only screen and (max-width: 622px) {
-    margin-right: 236px;
-}
-}
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-@media only screen and (max-width: 940px) {
+  position: relative;
+  img {
+    width: 200px;
+    margin-bottom: 30px;
+    @media only screen and (max-width: 622px) {
+      margin-right: 236px;
+    }
+  }
+  ul{
+    padding: 0 40px;
+     li{
+        margin: 10px 0;
+     }
+  }
+
+  
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  @media only screen and (max-width: 940px) {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-}
-`
+  }
+`;
 
 export const Li = styled.div`
- img{
+  img {
     width: 60px;
     display: flex;
     margin-left: auto;
     @media only screen and (max-width: 940px) {
-    margin-left: 260px;
-    width: 60px;
-    margin-bottom: -20px;
-}
- }
-`
+      margin-left: 260px;
+      width: 60px;
+      margin-bottom: -20px;
+    }
+  }
+`;
 
 export const Li1 = styled.div`
-    color: #FFFFFF;
-    padding-top: 10px;
-    letter-spacing: 20px;
-`
+  color: #ffffff;
+  padding-top: 10px;
+  letter-spacing: 20px;
+`;

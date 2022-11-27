@@ -16,6 +16,17 @@ img{
     margin-right: 5%;
 }
 `
+export const SliderItem = styled.div`
+ width: 550px;
+ height: 380px;
+
+ img{
+    width: 100%;
+    height: 100%;
+ }
+ 
+
+`
 
 export const GalWrapper = styled.div`
 margin-top: 5%;
