@@ -28,6 +28,21 @@
         "3": "pastga aylantiring",
         "4" : "Toshkent, Chilonzor tumani, Bunyodkor ko‘chasi, 57-uy"
     },
+
+    "Reserv" : {
+        "0" : "Xonani band qilish",
+        "1": "Ro'yxatdan o'tish",
+        "2": "Ketish",
+        "3" : "Mehmonlar",
+        "4" : "Raqamni tanlang",
+        "5" : "Telefon raqamingiz",
+        "6" : "Raqamni toping",
+        "7" : "Kattalar",
+        "8" : "Bolalar"     
+    },
+    "Galery" : {
+        "0" : "Galereya"
+    },
     "AboutHotel" : {
         "0" : "Mehmonxona haqida",
         "1" : "Sizni sharqona mehmondo'stligi bilan mashhur va Toshkentning qoq markazida joylashgan 'O'zbekiston' mehmonxonasida kutib olishdan mamnunmiz! U sport zali, sauna va qulay yashash uchun tekis ekranli televizorlar bilan jihozlangan shinam konditsionerli xonalarni taklif etadi.Hotel Uzbekistan klassik tarzda jihozlangan xonalar va minibar bilan jihozlangan suitlarni taklif etadi. Ichki makonlar quyuq yog'och mebellar va oqlangan matolar bilan bezatilgan. Oqlangan pianino restoranida Yevropa va mahalliy taomlar taqdim etiladi. 'Vena' kafe-bari issiq va sovuq ichimliklarning keng tanlovini taklif etadi. Saytda snack bar ham mavjud. Mehmonxona yaqinida ko'plab attraksionlar, do'konlar va kafelar mavjud. Amir Temur metro bekati piyoda 5 daqiqa. 24 soat xizmat ko'rsatadigan resepsiyon xodimlari 10 km uzoqlikdagi Toshkent aeroportiga transport xizmatini tashkil qilishlari mumkin. 'O'zbekiston' mehmonxonasiga xush kelibsiz!",
@@ -76,19 +91,6 @@
         "0" : "Tashriflar sharhlari",
         "1" : "Madina Hakimova",
         "2" : "Mehmonxona qoidalari umumiydir va tanlangan turar joy turiga qarab farq qilishi mumkin. Mehmonxona qoidalari umumiydir va tanlangan turar joy turiga qarab farq qilishi mumkin"
-    },
-    "Reserv" : {
-        "0" : "Xonani band qilish",
-        "1": "Ro'yxatdan o'tish",
-        "2": "Ketish",
-        "3" : "Mehmonlar",
-        "4" : "Raqamni tanlang",
-        "5" : "Telefon raqamingiz",
-        "6" : "Raqamni toping",
-        "7" : "Kattalar",
-        "8" : "Bolalar"     
-    },
-    "Galery" : {
-        "0" : "Galereya"
+
     }
 }
