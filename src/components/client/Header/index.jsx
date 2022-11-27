@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { WrapperContainer } from "../../../App-styled";
 import Logo from "../../../assets/client/header/Logo.svg";
-import { Wrapper, Nav, Menu } from "./styled-index";
+import { Wrapper, Nav, Menu , Number } from "./styled-index";
 import Modal from "../modal";
 
 function Header() {
@@ -79,19 +79,20 @@ function Header() {
             <button onClick={HendelClick}>
               <i class="bx bx-menu"></i>
             </button>
-            <a href="#">+998 99 999 99 99</a>
-            <a href="#">+998 99 999 99 99</a>
           </Menu>
         </Nav>
-        {modal ? (
+        <Number>
+          <a href="#">+998 99 999 99 99</a>
+          <a href="#">+998 99 999 99 99</a>
+        </Number>
           <>
             <Modal
+            modal={modal}
               HendelChange={HendelChange}
               ValLang={ValLang}
               set={setModal}
             />
           </>
-        ) : null}
       </WrapperContainer>
     </Wrapper>
   );

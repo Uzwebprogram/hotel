@@ -2,13 +2,13 @@ import { useTranslation } from "react-i18next";
 import { Modals } from "./styled-index"
 
 
-function Modal({HendelChange , ValLang , set}) {
+function Modal({HendelChange , ValLang , set , modal}) {
     const { t, i18n } = useTranslation()
     const HendelClose = () => {
         set(false)
     }
     return (
-        <Modals>
+        <Modals modal={modal === false}>
             <p onClick={HendelClose}>X</p>
             <ul>
                 <li>

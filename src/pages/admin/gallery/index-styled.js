@@ -22,3 +22,7 @@ export const WrapperTop = styled.div`
         border-radius: 15px;
     }
 `
+export const Gallerys = styled.div`
+    display: flex;
+    justify-content: space-between;
+`

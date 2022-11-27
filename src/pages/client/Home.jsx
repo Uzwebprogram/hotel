@@ -1,19 +1,27 @@
 import { GlobalStyle, WrapperContainer } from "../../App-styled";
-import HomeHero from "../../components/client/Home/home-hero/index";
-import Gallery from "../../components/client/Galery/index";
-import ReservHome from "../../components/client/reserv";
+import Home from "../../components/client/Home/home-hero/index";
 import AboutHotel from "../../components/client/AboutHotel";
-import Terms from "../../components/client/Terms";
+import Terms from "../../components/client/Terms/index";
+import Gallery from "../../components/client/Galery";
+import ReservHome from "../../components/client/reserv";
+import OurHotel from "../../components/client/OurHotel";
+import Comments from "../../components/client/Comments";
+import Contacts from "../../components/client/Contacts";
+import News from "../../components/client/news";
 function Client() {
   return (
     <>
       <GlobalStyle />
       <WrapperContainer>
-        <HomeHero />
+        <Home />
         <ReservHome />
         <Gallery />
         <AboutHotel />
         <Terms />
+        <OurHotel/>
+        <Comments/>
+        <News/>
+        <Contacts/>
       </WrapperContainer>
     </>
   );

@@ -28,6 +28,7 @@
         "3": "pastga aylantiring",
         "4" : "Toshkent, Chilonzor tumani, Bunyodkor ko‘chasi, 57-uy"
     },
+
     "Reserv" : {
         "0" : "Xonani band qilish",
         "1": "Ro'yxatdan o'tish",
@@ -41,5 +42,68 @@
     },
     "Galery" : {
         "0" : "Galereya"
+    },
+    "AboutHotel" : {
+        "0" : "Mehmonxona haqida",
+        "1" : "Sizni sharqona mehmondo'stligi bilan mashhur va Toshkentning qoq markazida joylashgan 'O'zbekiston' mehmonxonasida kutib olishdan mamnunmiz! U sport zali, sauna va qulay yashash uchun tekis ekranli televizorlar bilan jihozlangan shinam konditsionerli xonalarni taklif etadi.Hotel Uzbekistan klassik tarzda jihozlangan xonalar va minibar bilan jihozlangan suitlarni taklif etadi. Ichki makonlar quyuq yog'och mebellar va oqlangan matolar bilan bezatilgan. Oqlangan pianino restoranida Yevropa va mahalliy taomlar taqdim etiladi. 'Vena' kafe-bari issiq va sovuq ichimliklarning keng tanlovini taklif etadi. Saytda snack bar ham mavjud. Mehmonxona yaqinida ko'plab attraksionlar, do'konlar va kafelar mavjud. Amir Temur metro bekati piyoda 5 daqiqa. 24 soat xizmat ko'rsatadigan resepsiyon xodimlari 10 km uzoqlikdagi Toshkent aeroportiga transport xizmatini tashkil qilishlari mumkin. 'O'zbekiston' mehmonxonasiga xush kelibsiz!",
+        "2": "Nima uchun biz?",
+        "3" : "Tozalik va xavfsizlik",
+        "4" : "Hamyonbop narxlar",
+        "5" : "Qulay joylashuv"
+    },
+    "Terms" : {
+        "0" : "Yashash shartlari",
+        "1" : "Mehmonxona qoidalari umumiydir va ular tanlangan turar joy turiga qarab farq qilishi mumkin. Barcha yoshdagi bolalarga ruxsat beriladi. 12 va undan katta yoshdagi bolalar kattalar hisoblanadi. Uy hayvonlariga ruxsat beriladi. Toʻlov olinishi mumkin.",
+        "2" : "Bekor qilish siyosati",
+        "3" : "Bekor qilish va oldindan to'lov siyosati tanlangan tarif rejasiga bog'liq. Iltimos, turar joy sanalarini kiriting va bandlov shartlarini ko'rib chiqing. Asosiy tarif rejasi: bandlovni 24 soat oldin bepul bekor qilishingiz mumkin. Qaytarib bo'lmaydigan tarif rejasi: Siz bron qilingan kuni turar joyning to'liq narxi miqdorida oldindan to'lovni to'laysiz. Bekor qilingan taqdirda oldindan to'lov qaytarilmaydi.",
+        "4": "Ro'yxatdan o'tish",
+        "5" : "Chiqish",
+        "6" : "Shartlar va shartlar",
+        "7" : "Bekor qilish va oldindan to'lov siyosatlari siz tanlagan tarif rejasiga bog'liq. Iltimos, turar joyingizni kiriting va bron qilish shartlarini ko'rib chiqing. Asosiy tarif rejasi: Siz bronni kelishidan 24 soat oldin bepul bekor qilishingiz mumkin. Non -qaytariladigan tarif rejasi: Siz bron qilingan kuni turar joyning to'liq qiymati miqdorida oldindan to'lovni to'laysiz. Bekor qilingan taqdirda oldindan to'lov qaytarilmaydi."
+    },
+    "OurHotel" : {  
+        "0" : "Mehmonxonamizdagi xonalar",
+        "1": "Bir kishilik xona",
+        "2" : "maydoni: 30 kv.m",
+        "3" : "Mehmonlar soni: 2",
+        "4" : "1 kechaning narxi: 240 000 so'm",
+        "5" : "Band qilish",
+        "6" : "Bir xonali lyuks",
+        "7" : "Maydon: 45 kv.m",
+        "8" : "1 kechaning narxi: 430 000 so'm",
+        "9" : "Ikki xonali lyuks",
+        "10" : "maydoni: 53 kv.m",
+        "11" : "Mehmonlar soni: 4",
+        "12" : "1 kechaning narxi: 480 000 so'm",
+        "13" : "Ikki xonali lyuks",
+        "14" : "Maydon: 65 kv.m",
+        "15" : "1 kechaning narxi: 670 000 so'm",
+        "16" : "Oila xonasi",
+        "17" : "Maydon: 86 kv.m",
+        "18" : "Mehmonlar soni: 5",
+        "19" : "1 kechaning narxi: 890 000 so'm",
+        "20": "Oilaviy lyuks",
+        "21" : "Maydon: 110 kv.m",
+        "22" : "1 kechaning narxi: 1 240 000 so'm"
+
+    },
+    "Comments" : {
+        "0" : "Tashriflar sharhlari",
+        "1" : "Madina Hakimova",
+        "2" : "Mehmonxona qoidalari umumiydir va tanlangan turar joy turiga qarab farq qilishi mumkin. Mehmonxona qoidalari umumiydir va tanlangan turar joy turiga qarab farq qilishi mumkin"
+
+    },
+    "Contacts" : {
+        "0" : "Kontaktlar",
+        "1": "Ismingiz",
+        "2": "Email",
+        "3" : "Telefon raqamingiz",
+        "4": "Yuborish",
+        "5" : "Xodimlarimiz bir soat ichida siz bilan bog'lanadi!",
+        "6" : "Bizning manzilimiz",
+        "7" : "Toshkent sh., Chilonzor tumani, Bunyodkor ko‘chasi, 99-uy",
+        "8" : "Bizga yozing",
+        "9" : "Bizga qo'ng'iroq qiling",
+        "10" : "Biz ijtimoiy tarmoqlardamiz"
     }
 }

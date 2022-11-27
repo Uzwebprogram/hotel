@@ -30,6 +30,7 @@ export const LeftDiv = styled.div`
     @media screen and (max-width: 823px) {
       width: 100%;
       font-size: 10px;
+      width: 70%;
     }
   }
   button {
@@ -58,7 +59,6 @@ export const Bigdiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* width: 100%; */
   padding-top: 10%;
   @media screen and (max-width: 823px) {
     display: none;
