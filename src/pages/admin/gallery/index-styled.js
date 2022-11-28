@@ -25,4 +25,11 @@ export const WrapperTop = styled.div`
 export const Gallerys = styled.div`
     display: flex;
     justify-content: space-between;
+    padding: 20px;
+    padding-top: 50px;
+`
+export const WrapperCard = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `

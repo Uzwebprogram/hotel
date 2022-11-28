@@ -8,7 +8,7 @@ export const GaleryContext = createContext({
 export const GaleryProvider = ({children})=>{
     const [GaleryMap , setGaleryMap] = useState([])
     useEffect(() => {
-        fetch("https://api.mirpotolkov.uz/Galery")
+        fetch("http://62.217.179.24:5000/galery")
         .then(res => res.json())
         .then(result => setGaleryMap(result))
     }, [GaleryMap])
