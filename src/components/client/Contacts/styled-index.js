@@ -21,82 +21,119 @@ export const BigWrapper = styled.div`
 export const WrapperLeft = styled.div`
   background-color: #1b1b1c;
   border-radius: 10px;
-  width: 48%;
-  height: 670px;
+  padding: 40px;
+
+  @media only screen and (max-width: 732px) {
+   margin-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 425px) {
+    padding: 20px;
+    background: none;
+  }
 `;
 export const WrapperRight = styled.div`
-  width: 48%;
-
-  iframe{
+  iframe {
     height: 500px;
     width: 100%;
   }
 `;
-export const Div = styled.div`
-  input {
-    margin-left: 50px;
-    background-color: #1b1b1c;
-    padding: 15px 250px;
-    padding-left: 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-  }
-  h2 {
-    font-size: 20px;
+
+export const Form = styled.form``;
+
+export const InputGroup = styled.div`
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 0 30px 0;
+
+  label {
+    font-style: normal;
     font-weight: 400;
-    margin-left: 50px;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    margin-bottom: 15px;
   }
-  button {
-    margin-top: 30px;
-    margin-left: 50px;
-    padding: 10px 50px;
-    background: none;
-    border: 1px solid white;
-    color: white;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.65s;
+
+  input {
+    background: #2f2f2f;
+    border-radius: 7px;
+    color: #fff;
+    padding: 16px 20px;
+    outline: none;
+    border: 1px solid transparent;
+    width: 90%;
+
+    :focus {
+      background: #1b1b1c;
+      border: 1px solid #cccccc;
+    }
+
+    ::placeholder {
+      color: #fff;
+    }
   }
-  button:hover {
+`;
+
+export const Button = styled.button`
+  background: #1b1b1c;
+  border: 1px solid #cccccc;
+  border-radius: 7px;
+  padding: 16px 50px;
+  /* font-family: "Gilroy"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  transition: .5s;
+  :hover {
     background-color: white;
     color: black;
   }
-  h3 {
-    padding-top: 20px;
+`;
+
+export const ColDiv = styled.div`
+  padding: 0 !important;
+
+  h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+  }
+
+  a {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    margin-left: 50px;
+    line-height: 120%;
+    /* or 19px */
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+
+    i {
+      font-size: 25px;
+      margin: 0 7px 0 0;
+    }
   }
 `;
-export const H1 = styled.div`
-  padding-bottom: 30px;
-  font-size: 20px;
-  padding-top: 30px;
-  margin-left: 50px;
-`;
-export const Bigdiv = styled.div`
-  display: flex;
-`;
-export const Firstdiv = styled.div`
+
+export const HiddenText = styled.div`
   p {
-    margin-left: 50px;
-    width: 80%;
-  }
-  h3 {
-    font-weight: 500;
-    font-size: 20px;
-  }
-`;
-export const SecondDiv = styled.div`
-  margin-left: -5%;
-  h4 {
-    padding-top: 20px;
-    width: 100%;
-    font-weight: 500;
-    font-size: 20px;
-  }
-  i {
-    margin-left: 5%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+    letter-spacing: 0.01em;
+    color: #ffffff;
   }
 `;
