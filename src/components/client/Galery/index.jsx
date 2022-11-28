@@ -55,39 +55,6 @@ function Gallery() {
   return (
     <GalWrapper>
       <h2>{t("Galery.0")}</h2>
-      {/* <Caroulse ref={carousel}>
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-        <img src="https://picsum.photos/650" alt="" />
-      </Caroulse>
-      <Buttons>
-        <button onClick={HendelRight}><i class='bx bx-left-arrow-alt' ></i></button>
-        <button onClick={HendelLeft}><i className='bx bx-right-arrow-alt' ></i></button>
-      </Buttons> */}
       <Slider {...settings}>
         <SliderItem>
           <img src="https://picsum.photos/550/380" alt="" />

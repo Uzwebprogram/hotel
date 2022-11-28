@@ -1,11 +1,10 @@
 import Dashboard from "../../pages/admin/dashboard";
 import Login from "../../pages/admin/login";
 import Gallery from "../../pages/admin/gallery";
-import HatolAbout from "../../pages/admin/hotelabout";
 import Number from "../../pages/admin/number";
 import Review from "../../pages/admin/reviewPage";
 import Contacts from "../../pages/admin/contacts";
-
+import OurHotel from "../../pages/admin/our-hotel";
 
 export const DataAdmin = [
     {
@@ -26,7 +25,7 @@ export const DataAdmin = [
     {
         id : 4,
         path : "/admin/hotelabout",
-        element : <HatolAbout/>
+        element : <OurHotel/>
     },
     {
         id : 5,
