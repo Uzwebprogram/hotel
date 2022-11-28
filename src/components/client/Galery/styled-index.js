@@ -19,11 +19,14 @@ img{
 export const SliderItem = styled.div`
  width: 550px;
  height: 380px;
-
+ display: flex;
+ align-items: center;
+ justify-content: center;
  img{
     width: 95%;
     height: 100%;
     border-radius: 3px;
+    margin: 0 auto;
  }
  
 
@@ -31,6 +34,7 @@ export const SliderItem = styled.div`
 
 export const GalWrapper = styled.div`
 margin-top: 5%;
+padding: 0 10px;
 background-image: url(${Fram});
 background-repeat: no-repeat;
 background-size: 100%;
@@ -39,6 +43,10 @@ h2 {
     color: white;
     font-size: 50px;
     letter-spacing: 1px;
+
+    @media only screen and (max-width: 375px) {
+        font-size: 20px;
+    }
 }
 `
 

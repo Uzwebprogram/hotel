@@ -63,6 +63,7 @@ export const Menu = styled.div`
 
 export const Number = styled.div`
   display: none;
+  padding: 0 10px;
   @media screen and (max-width: 950px) {
     display: block;
     display: flex;

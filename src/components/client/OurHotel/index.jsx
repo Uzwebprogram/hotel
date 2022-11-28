@@ -7,7 +7,7 @@ function OurHotel(){
     const { t, i18n } = useTranslation()
     return(
         <>
-        <WrapperContainer>
+        {/* <WrapperContainer> */}
             <Wrapper>
                 <h1>{t("OurHotel.0")}</h1>
                 <Ul1>
@@ -64,7 +64,7 @@ function OurHotel(){
                     </Ul>
                 </Ul1>
             </Wrapper>
-        </WrapperContainer>
+        {/* </WrapperContainer> */}
         </>
     )
 }

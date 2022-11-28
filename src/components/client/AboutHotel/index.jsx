@@ -11,7 +11,7 @@ function AboutHotel() {
   return (
     <>
       <Wrapper>
-        <WrapperContainer>
+        {/* <WrapperContainer> */}
           <h3>{t("AboutHotel.0")}</h3>
           <Bigdiv>
             <First>
@@ -40,7 +40,7 @@ function AboutHotel() {
               </ul>
             </Ul>
           </Small>
-        </WrapperContainer>
+        {/* </WrapperContainer> */}
       </Wrapper>
     </>
   );

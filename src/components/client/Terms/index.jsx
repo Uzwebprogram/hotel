@@ -16,7 +16,7 @@ function Terms() {
   return (
     <>
       <Wrapper>
-        <WrapperContainer>
+        {/* <WrapperContainer> */}
           <h3>{t("Terms.0")}</h3>
           <Bigdiv>
             <First>
@@ -41,7 +41,7 @@ function Terms() {
               </Text>
             </Second>
           </Bigdiv>
-        </WrapperContainer>
+        {/* </WrapperContainer> */}
       </Wrapper>
     </>
   );

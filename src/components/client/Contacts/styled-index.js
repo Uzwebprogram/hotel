@@ -12,10 +12,23 @@ export const Wrapper = styled.div`
 `;
 export const BigWrapper = styled.div`
   color: white;
-  padding: 50px 0;
+  padding: 50px 20px;
+  /* @media screen and (max-width: 320px) and (max-width: 375px) {
+    padding: 0;
+  } */
   h1 {
     border-bottom: 1px solid #7c7c7c;
     padding-bottom: 20px;
+
+    @media screen and (max-width: 320px) and (max-width: 375px) {
+      font-size: 20px;
+      padding-left: 10px;
+    }
+  }
+`;
+export const Rows = styled.div`
+  @media screen and (max-width: 320px) and (max-width: 375px) {
+    padding: 0;
   }
 `;
 export const WrapperLeft = styled.div`
@@ -24,7 +37,7 @@ export const WrapperLeft = styled.div`
   padding: 40px;
 
   @media only screen and (max-width: 732px) {
-   margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   @media only screen and (max-width: 425px) {
@@ -90,7 +103,7 @@ export const Button = styled.button`
   line-height: 120%;
   letter-spacing: 0.01em;
   color: #ffffff;
-  transition: .5s;
+  transition: 0.5s;
   :hover {
     background-color: white;
     color: black;

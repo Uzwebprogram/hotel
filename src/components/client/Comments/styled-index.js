@@ -2,11 +2,15 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   color: white;
-  padding-top: 20px;
+  padding: 20px 10px 0 10px;
 
   h1 {
     border-bottom: 1px solid #7c7c7c;
     padding-bottom: 5%;
+    margin-bottom: 85px;
+    @media screen and (max-width: 375px) {
+      font-size: 20px;
+    }
   }
 `;
 export const Ul = styled.ul`
@@ -21,7 +25,7 @@ export const Ul = styled.ul`
     padding: 20px;
     width: 330px;
   }
-  @media screen and (max-width: 780px){
+  @media screen and (max-width: 780px) {
     display: none;
   }
 `;
@@ -79,8 +83,8 @@ export const Carusel = styled.div`
 
   scroll-behavior: smooth;
   margin: 0;
-  padding: 0; 
-  @media screen and (max-width: 780px){
+  padding: 0;
+  @media screen and (max-width: 780px) {
     display: block;
   }
 
@@ -97,27 +101,27 @@ export const Carusel = styled.div`
 `;
 
 export const Buttons = styled.div`
-display: none;
-padding: 3% 0%;
-text-align: end;
-button {
-    border: 1px solid #9F9B9B;
+  display: none;
+  padding: 3% 0%;
+  text-align: end;
+  button {
+    border: 1px solid #9f9b9b;
     background-color: transparent;
-    color: #9F9B9B;
+    color: #9f9b9b;
     border-radius: 50%;
     padding: 14px 14px 10px 12px;
     font-size: 30px;
     cursor: pointer;
-    transition: .65s;
+    transition: 0.65s;
 
     &:hover {
-        border: 1px solid white;
-        color: white;
+      border: 1px solid white;
+      color: white;
     }
-}
-button:nth-child(1) {
+  }
+  button:nth-child(1) {
     margin-right: 2%;
-}
+  }
 `;
 export const User = styled.div`
   width: 100%;
@@ -138,3 +142,43 @@ export const Infor = styled.div`
   justify-content: space-between;
   color: white;
 `;
+
+export const ULWrapper = styled.div`
+  list-style: none;
+  margin: 0 !important;
+  @media only screen and (max-width: 375px) {
+   display: none !important;
+  }
+  @media only screen and (max-width: 320px) {
+   display: none !important;
+  }
+`;
+export const LIItem = styled.li`
+  margin: 15px 0;
+
+ 
+  /* div {
+    padding: 5px 10px;
+
+    background: #1b1b1c;
+    border-radius: 3px;
+  } */
+`;
+
+export const Item = styled.div`
+  padding: 10px 20px;
+
+  background: #1b1b1c;
+  border-radius: 3px;
+`;
+
+export const HiddenDiv = styled.div`
+  margin-top: 50px !important;
+`;
+
+// export const HiddenDivs = styled.div`
+//  display: none;
+//  @media only screen and (max-width: 375px) {
+//    display: block !important;
+//   }
+// `

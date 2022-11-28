@@ -2,13 +2,16 @@ import styled from "styled-components"
 import Fram from "../../../assets/client/home/Frame1.png"
 
 export const Wrapper = styled.div`
-padding-top: 10px;
+padding: 10px 10px 0 10px;
 background-color: #0F0F11;
 color: white;
 h3{
     border-bottom: 1px solid #5A5A5A;
     padding-bottom: 3%;
     font-size: 35px;
+    @media screen and (max-width: 375px) {
+      font-size: 20px;
+    }
 }
 `
 export const Bigdiv = styled.div`
