@@ -10,6 +10,9 @@ export const Wrapper = styled.div`
   color: white;
   border-radius: 5px;
   margin-top: 5%;
+  @media screen and (max-width: 320px) and (max-width: 375px){
+    padding: 30px 20px;
+  }
   @media screen and (max-width: 885px) {
     display: flex;
     flex-direction: column;
@@ -22,6 +25,9 @@ export const Wrapper = styled.div`
       width: 100%;
       text-align: center;
     }
+    @media screen and (max-width: 375px) {
+      font-size: 20px;
+    }
   }
   p {
     margin: 0;
@@ -32,6 +38,10 @@ export const CardWrap = styled.div`
   width: 62%;
   @media screen and (max-width: 885px) {
     width: 100%; 
+  }
+  @media screen and (max-width: 320px) and (max-width: 375px){
+    padding: 0 20px !important
+    ;
   }
 `;
 
@@ -56,6 +66,9 @@ export const Card = styled.div`
   @media screen and (max-width: 656px){
     margin-top: 3%;
     width: 70%;
+  }
+  @media screen and (max-width: 320px) and (max-width: 375px){
+    width: 100%;
   }
   input {
     margin-top: 15%;
@@ -102,6 +115,10 @@ export const DivCard = styled.div`
     justify-content: center;
     align-items: center;
   }
+  @media screen and (max-width: 320px) and (max-width: 375px){
+    width: 100%;
+  }
+  
 `;
 
 export const CaRd = styled.div`
@@ -110,12 +127,17 @@ export const CaRd = styled.div`
   width: 25%;
   border-radius: 5px;
   padding: 3%;
+  @media screen and (max-width: 320px) and (max-width: 375px){
+    width: 100% !important;
+  }
 
   div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    @media screen and (max-width: 320px) and (max-width: 375px){
+    width: 100%;
+  }
     .bx {
       font-size: 25px;
     }
@@ -142,6 +164,9 @@ export const CaRD = styled.div`
   margin-left: 3%;
   padding: 3%;
   border-radius: 5px;
+  @media screen and (max-width: 320px) and (max-width: 375px){
+    width: 100% !important;
+  }
   @media screen and (max-width: 656px){
     margin-top: 3%;
     width: 70%;
@@ -170,6 +195,9 @@ export const Button = styled.button`
   cursor: pointer;
   border-radius: 5px;
   transition: 0.65s;
+  @media screen and (max-width: 320px) and (max-width: 375px){
+    width: 100% !important;
+  }
 
   &:hover {
     background-color: white;

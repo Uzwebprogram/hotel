@@ -1,8 +1,9 @@
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Caroulse, GalWrapper, SliderItem, Buttons } from "./styled-index";
 import Slider from "react-slick";
-import './slider.css'
+import "./slider.css";
+import { GaleryContext } from "../../../context/galery/index";
 
 const settings = {
   // dots: true,
@@ -42,6 +43,8 @@ const settings = {
 function Gallery() {
   const carousel = useRef();
   const { t, i18n } = useTranslation();
+  const { GaleryMap } = useContext(GaleryContext);
+  console.log(GaleryMap);
 
   const HendelLeft = (e) => {
     e.preventDefault();
@@ -56,7 +59,12 @@ function Gallery() {
     <GalWrapper>
       <h2>{t("Galery.0")}</h2>
       <Slider {...settings}>
-        <SliderItem>
+        {GaleryMap.map((elem) => (
+          <SliderItem key={elem.id}>
+            <img src={elem.image_galery} alt="image" />
+          </SliderItem>
+        ))}
+        {/* <SliderItem>
           <img src="https://picsum.photos/550/380" alt="" />
         </SliderItem>
         <SliderItem>
@@ -76,10 +84,7 @@ function Gallery() {
         </SliderItem>
         <SliderItem>
           <img src="https://picsum.photos/550/380" alt="" />
-        </SliderItem>
-        <SliderItem>
-          <img src="https://picsum.photos/550/380" alt="" />
-        </SliderItem>
+        </SliderItem> */}
       </Slider>
     </GalWrapper>
   );

@@ -13,8 +13,11 @@ export const Container = styled.div`
   }
 `;
 export const LeftDiv = styled.div`
+  padding-left: 10px;
+  padding-right: 10px;
   h1 {
     padding-top: 7%;
+
     font-style: normal;
     font-weight: 600;
     font-size: 55px;
@@ -29,7 +32,7 @@ export const LeftDiv = styled.div`
     width: 80%;
     @media screen and (max-width: 823px) {
       width: 100%;
-      font-size: 10px;
+      font-size: 15px;
       width: 70%;
     }
   }
@@ -66,7 +69,7 @@ export const Bigdiv = styled.div`
 `;
 
 export const Smallestdiv = styled.div`
-  width: 100%;  
+  width: 100%;
   p {
     padding-left: 5%;
   }
@@ -81,4 +84,4 @@ export const Smalldiv = styled.div`
   }
 `;
 
-export const Wrapper = styled.div``
+export const Wrapper = styled.div``;

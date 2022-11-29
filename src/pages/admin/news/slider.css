@@ -48,22 +48,3 @@
     content: "\f061";
     font-weight: 300;
  }
-
- @media only screen and (max-width: 731px) {
-   .slick-next, .slick-prev{
-      top: -12%;
-   }
-   .slick-prev{
-      left: 80% !important;
-   }
-   .slick-next{
-      right: 20px !important;
-   }
- }
-
- .slick-slider{
-   height: 450px !important;
- }
- .slick-list{
-   height: 100% !important;
- }

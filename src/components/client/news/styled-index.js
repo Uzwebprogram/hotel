@@ -1,6 +1,11 @@
 import styled from "styled-components";
-import Img from "../../../assets/client/home/Frame1684.png"
+import Img from "../../../assets/client/home/Frame1684.png";
 
+export const Wrapper = styled.div`
+  @media screen and (max-width: 375px) {
+    padding: 0 10px;
+  }
+`;
 export const CarouselDiv = styled.div`
   color: white;
   background-image: url(${Img});
@@ -9,14 +14,43 @@ export const CarouselDiv = styled.div`
 `;
 
 export const SliderItem = styled.div`
- width: 550px;
- height: 380px;
+  width: 550px;
+  height: 380px;
 
- img{
-    width: 100%;
+  div {
+    button {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      letter-spacing: 0.01em;
+      color: #ffffff;
+      /* background: #1b1b1c;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      outline: none;
+      padding: 16px 30px; */
+      padding: 10px 30px;
+      background: none;
+      border: 1px solid white;
+      color: white;
+      border-radius: 2px;
+      cursor: pointer;
+      -webkit-transition: 0.65s;
+      transition: 0.65s;
+
+      :hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+
+  img {
+    width: 95%;
     height: 100%;
- }
-`
+  }
+`;
 
 export const Carousel = styled.div`
   display: flex;
@@ -25,7 +59,7 @@ export const Carousel = styled.div`
   width: 100%;
   overflow-x: scroll;
   scroll-behavior: smooth;
-  &::-webkit-scrollbar{
+  &::-webkit-scrollbar {
     display: none;
   }
   button {
@@ -79,4 +113,7 @@ export const H2 = styled.div`
   color: white;
   margin-top: 10%;
   margin-bottom: 5%;
+  @media screen and (max-width: 375px) {
+    font-size: 20px;
+  }
 `;

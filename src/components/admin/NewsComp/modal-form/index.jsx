@@ -17,7 +17,7 @@ const style = {
   boxShadow: 24,
   p: 4,
 };
-const HotelModalFormComponent = ({ open , handleClose}) => {
+const NewsModalFormComponent = ({ open , handleClose}) => {
     const [loading , setLoading] = useState(false)
     const title = useRef();
     const area_rooms = useRef();
@@ -83,4 +83,4 @@ const HandleSubmit = async (e) =>{
   )
 }
 
-export default HotelModalFormComponent
+export default NewsModalFormComponent

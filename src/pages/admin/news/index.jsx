@@ -3,8 +3,10 @@ import { Wrapper , WrapperTop , Gallerys , WrapperCard } from './index-styled'
 import HotelModalFormComponent from '../../../components/admin/OurHotelComp/modal-form/index';
 import HotelDeletPutComponent from '../../../components/admin/OurHotelComp/PutDeletComponent/index';
 import { HotelOurContext } from '../../../context/our-hotel';
+import NewsModalFormComponent from '../../../components/admin/NewsComp/modal-form';
+import NewsDeletPutComponent from '../../../components/admin/NewsComp/PutDeletComponent';
 
-const OurHotel = () => {
+const News = () => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -15,7 +17,7 @@ const OurHotel = () => {
             <h2>Номера в нашем отеле</h2>
             <button onClick={handleOpen}> добавить</button>
         </WrapperTop>
-        <HotelModalFormComponent open={open} handleClose={handleClose}/>
+        <NewsModalFormComponent open={open} handleClose={handleClose}/>
         
         <Gallerys>
                 {HotelOurMap.map((elem , index) =>
@@ -27,7 +29,7 @@ const OurHotel = () => {
                           <p>Количество гостей: {elem.number_guests}</p>
                           <p>Стоимость за 1 ночь: {elem.cost_night}</p>
                         </li>
-                    <HotelDeletPutComponent DeleteId={elem.rooms_id} PutBlog={elem.rooms_id} Element={elem}/>
+                    <NewsDeletPutComponent DeleteId={elem.rooms_id} PutBlog={elem.rooms_id} Element={elem}/>
                     </WrapperCard>
                 )}
         </Gallerys>
@@ -35,4 +37,4 @@ const OurHotel = () => {
    )
 }
 
-export default OurHotel
+export default News

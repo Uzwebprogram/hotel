@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Dashboar = styled.div`
 background-color: #1B1B1C;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-position: absolute;
+position: fixed;
 top: 0;
 left: 0;
 padding: 0;

@@ -20,7 +20,7 @@ export const dataSidebar = [
     {
         id : 4,
         title : "Новости",
-        path : "/admin/reviews",
+        path : "/admin/news ",
         icon : "money-withdraw"
     },
     {
