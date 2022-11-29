@@ -8,7 +8,7 @@ export const Modals = styled.div`
   padding: 0 20px 0 0px;
   width: 80%;
   top: 0;
-  right:${(props) => (props.modal ? "800px" : "160px")};
+  left:${(props) => (props.modal ? "-800px" : "0px")};
   transition: 0.8s;
   overflow-y: scroll;
   p {

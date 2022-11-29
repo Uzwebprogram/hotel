@@ -3,6 +3,7 @@ import { Wrapper , WrapperTop , Gallerys , WrapperCard } from './index-styled'
 import ModalFormComponent from '../../../components/admin/galleryComp/modal-form';
 import { GaleryContext } from '../../../context/galery';
 import DeletPutComponent from '../../../components/admin/galleryComp/PutDeletComponent';
+
 const Gallery = () => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -15,6 +16,7 @@ const Gallery = () => {
             <button onClick={handleOpen}>Галерея добавить</button>
         </WrapperTop>
         <ModalFormComponent open={open} handleClose={handleClose}/>
+        
         <Gallerys>
                 {GaleryMap.map((elem , index) =>
                     <WrapperCard>

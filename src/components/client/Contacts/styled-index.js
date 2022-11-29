@@ -51,7 +51,19 @@ export const WrapperRight = styled.div`
     width: 100%;
   }
 `;
-
+export const Div = styled.div`
+  input {
+    margin-left: 50px;
+    background-color: #1b1b1c;
+    padding: 15px 250px;
+    padding-left: 10%;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  `
 export const Form = styled.form``;
 
 export const InputGroup = styled.div`

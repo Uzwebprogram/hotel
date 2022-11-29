@@ -33,4 +33,29 @@ export const WrapperCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
+    li {
+    padding-bottom: 50px;
+    list-style-type: none;
+    img {
+      width: 300px;
+      height: 380px;
+    }
+    p {
+      padding-bottom: 20px;
+    }
+    button {
+      padding: 10px 30px;
+      background: none;
+      border: 1px solid white;
+      color: white;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: 0.65s;
+    }
+    button:hover {
+      background-color: white;
+      color: black;
+    }
+  }
 `

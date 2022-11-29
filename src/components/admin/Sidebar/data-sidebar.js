@@ -7,25 +7,25 @@ export const dataSidebar = [
     },
     {
         id : 2,
-        title : "Об отеле",
+        title : "Номера в нашем отеле",
         path : "/admin/hotelabout",
         icon : "user"
     },
     {
         id : 3,
-        title : "Номера",
+        title : "Отзывы посетителей",
         path : "/admin/number",
         icon : "pie-chart-alt-2"
     },
     {
         id : 4,
-        title : "Отзывы",
-        path : "/admin/reviews",
+        title : "Новости",
+        path : "/admin/news ",
         icon : "money-withdraw"
     },
     {
         id : 5,
-        title : "Контакты",
+        title : "Бронирование номеров",
         path : "/admin/contacts",
         icon : "bar-chart-alt-2"
     },

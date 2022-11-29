@@ -26,7 +26,6 @@ export const Ul1 = styled.div`
   background-position-x: 1000px;
   background-position-y: 1250px;
   padding-top: 20px;
-
   ul {
     list-style: none;
     padding: 0 10px;
