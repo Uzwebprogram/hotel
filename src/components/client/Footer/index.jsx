@@ -69,9 +69,15 @@ function Footer() {
                     <a href="#">revel@mail.ru</a>
                   </li>
                   <li>
-                    <i class="bx bxl-instagram-alt"></i>
-                    <i class="bx bxl-telegram"></i>
-                    <i class="bx bxl-facebook-circle"></i>
+                  <a href="#">
+                      <i class="bx bxl-instagram"></i>
+                    </a>
+                    <a href="#">
+                      <i class="bx bxl-telegram"></i>
+                    </a>
+                    <a href="#">
+                      <i class="bx bxl-facebook-square"></i>
+                    </a>
                   </li>
                 </ul>
                 <UPWrapper>

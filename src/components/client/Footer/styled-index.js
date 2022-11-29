@@ -82,6 +82,11 @@ export const Heading = styled.div`
     li {
       margin: 10px 0;
     }
+    i {
+      font-size: 25px;
+      margin: 0 7px 0 0;
+    }
+
   }
 
   display: flex;
@@ -105,6 +110,7 @@ export const Li = styled.div`
       margin-bottom: -20px;
     }
   }
+ 
 `;
 
 export const Li1 = styled.div`
