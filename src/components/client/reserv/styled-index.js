@@ -195,9 +195,7 @@ export const Button = styled.button`
   cursor: pointer;
   border-radius: 5px;
   transition: 0.65s;
-  @media screen and (max-width: 320px) and (max-width: 375px){
-    width: 100% !important;
-  }
+  
 
   &:hover {
     background-color: white;
@@ -206,6 +204,18 @@ export const Button = styled.button`
   @media screen and (max-width: 885px) {
     margin-top: 5%; 
     width: 30%;
+  }
+
+  @media screen and (max-width: 320px) and (max-width: 375px){
+    width: 100% !important;
+  }
+  @media screen and (max-width: 502px){
+    width: 77% !important;
+    margin: 10px auto;
+  }
+  @media screen and (max-width: 425px){
+    width: 77% !important;
+    margin: 10px auto;
   }
 `;
 
