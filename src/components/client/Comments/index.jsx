@@ -12,9 +12,10 @@ import {
   ULWrapper,
   LIItem,
   Item,
-  HiddenDiv
+  HiddenDiv,
+  None
 } from "./styled-index";
-import '../Galery/slider.css'
+import "../Galery/slider.css";
 import Slider from "react-slick";
 import { SliderItem } from "../news/styled-index";
 import maksim from "../../../assets/client/comments/maksim.png";
@@ -43,7 +44,7 @@ const settings = {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
-        slidesToScroll:2,
+        slidesToScroll: 2,
         initialSlide: 2,
       },
     },
@@ -74,153 +75,155 @@ function Comments() {
   return (
     <>
       {/* <WrapperContainer> */}
-        <Wrapper>
-          <h1>{t("Comments.0")}</h1>
+      <Wrapper>
+        <h1>{t("Comments.0")}</h1>
 
-          {/* <Hidden sm> */}
-            <Row component={ULWrapper}>
-              {commentArr.map(() => (
-                <Col component={LIItem} lg={4} md={6} sx={6} sm={12}>
-                  <Item>
-                    <About>
-                      <Name>
-                        <img src={maksim} alt="" />
-                        <h3>{t("Comments.1")}</h3>
-                        <p>26.09.2022</p>
-                      </Name>
-                    </About>
-                    <Star>
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
-                    </Star>
-                    <p>{t("Comments.2")}</p>
-                  </Item>
-                </Col>
-              ))}
-            </Row>
-          {/* </Hidden> */}
-          <Hidden component={HiddenDiv} xxxl xl lg md>
-            <Slider {...settings}>
-              <SliderItem>
-                <Item>
-                  <About>
-                    <Name>
-                      <img src={maksim} alt="" />
-                      <h3>{t("Comments.1")}</h3>
-                      <p>26.09.2022</p>
-                    </Name>
-                  </About>
-                  <Star>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                  </Star>
-                  <p>{t("Comments.2")}</p>
-                </Item>
-              </SliderItem>
-              <SliderItem>
-                <Item>
-                  <About>
-                    <Name>
-                      <img src={maksim} alt="" />
-                      <h3>{t("Comments.1")}</h3>
-                      <p>26.09.2022</p>
-                    </Name>
-                  </About>
-                  <Star>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                  </Star>
-                  <p>{t("Comments.2")}</p>
-                </Item>
-              </SliderItem>
-              <SliderItem>
-                <Item>
-                  <About>
-                    <Name>
-                      <img src={maksim} alt="" />
-                      <h3>{t("Comments.1")}</h3>
-                      <p>26.09.2022</p>
-                    </Name>
-                  </About>
-                  <Star>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                  </Star>
-                  <p>{t("Comments.2")}</p>
-                </Item>
-              </SliderItem>
-              <SliderItem>
-                <Item>
-                  <About>
-                    <Name>
-                      <img src={maksim} alt="" />
-                      <h3>{t("Comments.1")}</h3>
-                      <p>26.09.2022</p>
-                    </Name>
-                  </About>
-                  <Star>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                  </Star>
-                  <p>{t("Comments.2")}</p>
-                </Item>
-              </SliderItem>
-              <SliderItem>
-                <Item>
-                  <About>
-                    <Name>
-                      <img src={maksim} alt="" />
-                      <h3>{t("Comments.1")}</h3>
-                      <p>26.09.2022</p>
-                    </Name>
-                  </About>
-                  <Star>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                  </Star>
-                  <p>{t("Comments.2")}</p>
-                </Item>
-              </SliderItem>
-              <SliderItem>
-                <Item>
-                  <About>
-                    <Name>
-                      <img src={maksim} alt="" />
-                      <h3>{t("Comments.1")}</h3>
-                      <p>26.09.2022</p>
-                    </Name>
-                  </About>
-                  <Star>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                  </Star>
-                  <p>{t("Comments.2")}</p>
-                </Item>
-              </SliderItem>
-            </Slider>
-          </Hidden>
-        </Wrapper>
+        {/* <Hidden sm> */}
+        <Row component={ULWrapper}>
+          {commentArr.map(() => (
+            <Col component={LIItem} lg={4} md={6} sx={6} sm={12}>
+              <Item>
+                <About>
+                  <Name>
+                    <img src={maksim} alt="" />
+                    <h3>{t("Comments.1")}</h3>
+                    <p>26.09.2022</p>
+                  </Name>
+                </About>
+                <Star>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </Star>
+                <p>{t("Comments.2")}</p>
+              </Item>
+            </Col>
+          ))}
+        </Row>
+        {/* </Hidden> */}
+        {/* <Hidden component={HiddenDiv} xxxl xl lg md sx> */}
+        <None>
+          <Slider {...settings}>
+            <SliderItem>
+              <Item>
+                <About>
+                  <Name>
+                    <img src={maksim} alt="" />
+                    <h3>{t("Comments.1")}</h3>
+                    <p>26.09.2022</p>
+                  </Name>
+                </About>
+                <Star>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </Star>
+                <p>{t("Comments.2")}</p>
+              </Item>
+            </SliderItem>
+            <SliderItem>
+              <Item>
+                <About>
+                  <Name>
+                    <img src={maksim} alt="" />
+                    <h3>{t("Comments.1")}</h3>
+                    <p>26.09.2022</p>
+                  </Name>
+                </About>
+                <Star>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </Star>
+                <p>{t("Comments.2")}</p>
+              </Item>
+            </SliderItem>
+            <SliderItem>
+              <Item>
+                <About>
+                  <Name>
+                    <img src={maksim} alt="" />
+                    <h3>{t("Comments.1")}</h3>
+                    <p>26.09.2022</p>
+                  </Name>
+                </About>
+                <Star>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </Star>
+                <p>{t("Comments.2")}</p>
+              </Item>
+            </SliderItem>
+            <SliderItem>
+              <Item>
+                <About>
+                  <Name>
+                    <img src={maksim} alt="" />
+                    <h3>{t("Comments.1")}</h3>
+                    <p>26.09.2022</p>
+                  </Name>
+                </About>
+                <Star>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </Star>
+                <p>{t("Comments.2")}</p>
+              </Item>
+            </SliderItem>
+            <SliderItem>
+              <Item>
+                <About>
+                  <Name>
+                    <img src={maksim} alt="" />
+                    <h3>{t("Comments.1")}</h3>
+                    <p>26.09.2022</p>
+                  </Name>
+                </About>
+                <Star>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </Star>
+                <p>{t("Comments.2")}</p>
+              </Item>
+            </SliderItem>
+            <SliderItem>
+              <Item>
+                <About>
+                  <Name>
+                    <img src={maksim} alt="" />
+                    <h3>{t("Comments.1")}</h3>
+                    <p>26.09.2022</p>
+                  </Name>
+                </About>
+                <Star>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </Star>
+                <p>{t("Comments.2")}</p>
+              </Item>
+            </SliderItem>
+          </Slider>
+        </None>
+        {/* </Hidden> */}
+      </Wrapper>
       {/* </WrapperContainer> */}
     </>
   );

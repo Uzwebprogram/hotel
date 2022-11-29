@@ -146,7 +146,7 @@ export const Infor = styled.div`
 export const ULWrapper = styled.div`
   list-style: none;
   margin: 0 !important;
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 425px) {
    display: none !important;
   }
   @media only screen and (max-width: 320px) {
@@ -174,7 +174,19 @@ export const Item = styled.div`
 
 export const HiddenDiv = styled.div`
   margin-top: 50px !important;
+
+  @media only screen and (max-width: 767px) {
+   display: none !important;
+  }
 `;
+
+export const None = styled.div`
+  display: none;
+
+  @media only screen and (max-width: 425px) {
+   display: block !important;
+  }
+`
 
 // export const HiddenDivs = styled.div`
 //  display: none;

@@ -49,7 +49,9 @@ export const P = styled.div`
 `;
 
 export const UPWrapper = styled.div`
- 
+  @media only screen and (max-width: 502px) {
+   padding-left: 40px;
+  }
 `;
 export const Up = styled.div`
   width: 60px;
@@ -75,14 +77,13 @@ export const Heading = styled.div`
       margin-right: 236px;
     }
   }
-  ul{
+  ul {
     padding: 0 40px;
-     li{
-        margin: 10px 0;
-     }
+    li {
+      margin: 10px 0;
+    }
   }
 
-  
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;

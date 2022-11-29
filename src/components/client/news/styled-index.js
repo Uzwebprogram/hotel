@@ -5,6 +5,9 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 375px) {
     padding: 0 10px;
   }
+  @media screen and (max-width: 768px) {
+    padding: 0 10px;
+  }
 `;
 export const CarouselDiv = styled.div`
   color: white;
@@ -49,6 +52,7 @@ export const SliderItem = styled.div`
   img {
     width: 95%;
     height: 100%;
+    margin: 0 auto;
   }
 `;
 

@@ -64,27 +64,6 @@ function Gallery() {
             <img src={elem.image_galery} alt="image" />
           </SliderItem>
         ))}
-        {/* <SliderItem>
-          <img src="https://picsum.photos/550/380" alt="" />
-        </SliderItem>
-        <SliderItem>
-          <img src="https://picsum.photos/550/380" alt="" />
-        </SliderItem>
-        <SliderItem>
-          <img src="https://picsum.photos/550/380" alt="" />
-        </SliderItem>
-        <SliderItem>
-          <img src="https://picsum.photos/550/380" alt="" />
-        </SliderItem>
-        <SliderItem>
-          <img src="https://picsum.photos/550/380" alt="" />
-        </SliderItem>
-        <SliderItem>
-          <img src="https://picsum.photos/550/380" alt="" />
-        </SliderItem>
-        <SliderItem>
-          <img src="https://picsum.photos/550/380" alt="" />
-        </SliderItem> */}
       </Slider>
     </GalWrapper>
   );

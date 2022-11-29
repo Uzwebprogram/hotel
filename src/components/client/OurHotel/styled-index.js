@@ -5,6 +5,10 @@ import redcolor from "../../../assets/client/OurHotel/redcolor.png";
 export const Wrapper = styled.div`
   h1 {
     padding-top: 60px;
+    @media screen and (max-width: 425px) {
+      /* font-size: 20px; */
+      padding-left: 10px;
+    }
     @media screen and (max-width: 375px) {
       font-size: 20px;
       padding-left: 10px;

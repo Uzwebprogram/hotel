@@ -43,6 +43,9 @@ h2 {
     color: white;
     font-size: 50px;
     letter-spacing: 1px;
+    @media only screen and (max-width: 425px) {
+        font-size: 35px;
+    }
 
     @media only screen and (max-width: 375px) {
         font-size: 20px;
