@@ -56,7 +56,7 @@ function Gallery() {
   };
 
   return (
-    <GalWrapper>
+    <GalWrapper id="Galery">
       <h2>{t("Galery.0")}</h2>
       <Slider {...settings}>
         {GaleryMap.map((elem) => (
