@@ -63,28 +63,11 @@
     },
     "OurHotel" : {
         "0" : "Rooms in our hotel",
-        "1" : "Single room",
-        "2" : "Area: 30 sq.m",
-        "3" : "Number of guests: 2",
-        "4" : "Cost for 1 night: 240 000 sum",
-        "5" : "Bron",
-        "6" : "One-room lux",
-        "7" : "Area: 45 sq.m",
-        "8" : "Cost for 1 night: 430 000 sum",
-        "9" : "Two-room lux",
-        "10" : "Area: 53 sq.m",
-        "11" : "Number of guests: 4",
-        "12" : "Cost for 1 night: 480 000 sum",
-        "13" : "Two-room lux",
-        "14" : "Area: 65 sq.m",
-        "15" : "Cost for 1 night: 670 000 sum",
-        "16" : "Family room",
-        "17" : "Area: 86 sq.m",
-        "18" : "Number of guests: 5",
-        "19" : "Cost for 1 night: 890 000 sum",
-        "20" : "Family Lux",
-        "21" : "Area: 110 sq.m",
-        "22" : "Cost for 1 night: 1 240 000 sum"
+        "1" : "Area: ",
+        "2" : "Number of guests:",
+        "3" : "Cost for 1 night: ",
+        "4" : "Bron"
+
     },
     "Comments" : {
         "0" : "Visitor reviews",

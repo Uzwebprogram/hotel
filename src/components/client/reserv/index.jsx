@@ -60,17 +60,17 @@ function ReservHome() {
               <Countdiv>
                 <p>{t("Reserv.7")}</p>
                 <div>
-                  <button onClick={Icrement}>+</button>
-                  <p>{count}</p>
                   <button onClick={Dicrement}>-</button>
+                  <p>{count}</p>
+                  <button onClick={Icrement}>+</button>
                 </div>
               </Countdiv>
               <Countdiv>
                 <p>{t("Reserv.8")}</p>
                 <div>
-                  <button onClick={Icrement2}>+</button>
-                  <p>{countBaby}</p>
                   <button onClick={Dicrement2}>-</button>
+                  <p>{countBaby}</p>
+                  <button onClick={Icrement2}>+</button>
                 </div>
               </Countdiv>
             </Count>

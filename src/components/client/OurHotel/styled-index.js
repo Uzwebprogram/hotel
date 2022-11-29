@@ -67,4 +67,9 @@ export const Ul = styled.ul`
     justify-content: center !important;
     align-items: center;
   }
+
+  img {
+    width: 350px !important;
+    height: 500px !important;
+  }
 `;

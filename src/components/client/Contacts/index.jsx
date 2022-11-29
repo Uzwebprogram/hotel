@@ -24,7 +24,7 @@ function Contacts() {
   return (
     <>
       {/* <WrapperContainer> */}
-      <BigWrapper>
+      <BigWrapper id="contacts">
         <h1>{t("Contacts.0")}</h1>
         <Row component={Rows}>
           <Col lg={6} md={6} sm={12}>

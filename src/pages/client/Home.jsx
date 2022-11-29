@@ -12,8 +12,8 @@ function Client() {
   return (
     <>
       <GlobalStyle />
+      <Home />
       <WrapperContainer>
-        <Home />
         <ReservHome />
         <Gallery />
         <AboutHotel />

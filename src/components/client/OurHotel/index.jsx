@@ -2,69 +2,32 @@ import { WrapperContainer} from "../../../App-styled"
 import {Wrapper,Ul1,Ul} from "./styled-index"
 import img1 from "../../../assets/client/OurHotel/img1.png"
 import { useTranslation } from "react-i18next"
+import { useContext } from "react"
+import { HotelOurContext } from "../../../context/our-hotel"
 
 function OurHotel(){
     const { t, i18n } = useTranslation()
+    const {HotelOurMap} = useContext(HotelOurContext)
+
     return(
         <>
-        {/* <WrapperContainer> */}
-            <Wrapper>
+            <Wrapper id="numbers">
                 <h1>{t("OurHotel.0")}</h1>
                 <Ul1>
                     <Ul>
-                        <li>
-                          <img src={img1} alt="room" />
-                          <h3>{t("OurHotel.1")}</h3>
-                          <p>{t("OurHotel.2")}</p>
-                          <p>{t("OurHotel.3")}</p>
-                          <p>{t("OurHotel.4")}</p>
-                          <button>{t("OurHotel.5")}</button>
+                        {HotelOurMap.map((elem , index) => 
+                        <li key={index}>
+                          <img src={elem.image_room} alt="" />
+                          <h3>{elem.title_room}</h3>
+                          <p>{t("OurHotel.1")} {elem.area_room} kv.m</p>
+                          <p>{t("OurHotel.2")}   {elem.number_guests}</p>
+                          <p>{t("OurHotel.3")} {elem.cost_night} so'm</p>
+                          <button>{t("OurHotel.4")}</button>
                         </li>
-                        <li>
-                          <img src={img1} alt="room" />
-                          <h3>{t("OurHotel.6")}</h3>
-                          <p>{t("OurHotel.7")}</p>
-                          <p>{t("OurHotel.3")}</p>
-                          <p>{t("OurHotel.8")}</p>
-                          <button>{t("OurHotel.5")}</button>
-                        </li>
-                        <li>
-                          <img src={img1} alt="room" />
-                          <h3>{t("OurHotel.9")}</h3>
-                          <p>{t("OurHotel.10")}</p>
-                          <p>{t("OurHotel.11")}</p>
-                          <p>{t("OurHotel.12")}</p>
-                          <button>{t("OurHotel.5")}</button>
-                        </li>
-                        <li>
-                          <img src={img1} alt="room" />
-                          <h3>{t("OurHotel.13")}</h3>
-                          <p>{t("OurHotel.14")}</p>
-                          <p>{t("OurHotel.11")}</p>
-                          <p>{t("OurHotel.15")}</p>
-                          <button>{t("OurHotel.5")}</button>
-                        </li>
-                        <li>
-                          <img src={img1} alt="room" />
-                          <h3>{t("OurHotel.16")}</h3>
-                          <p>{t("OurHotel.17")}</p>
-                          <p>{t("OurHotel.18")}</p>
-                          <p>{t("OurHotel.19")}</p>
-                          <button>{t("OurHotel.5")}</button>
-                        </li>
-                        <li>
-                          <img src={img1} alt="room" />
-                          <h3>{t("OurHotel.20")}</h3>
-                          <p>{t("OurHotel.21")}</p>
-                          <p>{t("OurHotel.18")}</p>
-                          <p>{t("OurHotel.22")}</p>
-                          <button>{t("OurHotel.5")}</button>
-                        </li>
-                        
+                        )}
                     </Ul>
                 </Ul1>
             </Wrapper>
-        {/* </WrapperContainer> */}
         </>
     )
 }

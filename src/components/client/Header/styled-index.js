@@ -8,6 +8,10 @@ export const Nav = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0;
+  img {
+    width: 130px;
+    height: 70px;
+  }
   ul {
     @media screen and (max-width: 950px) {
       display: none;
@@ -49,6 +53,7 @@ export const Menu = styled.div`
   display: none;
   .bx {
     color: white;
+    font-size: 35px;
   }
   a {
     color: white;

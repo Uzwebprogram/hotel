@@ -9,8 +9,8 @@ const settings = {
   // dots: true,
   infinite: false,
   speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToShow: 2,
+  slidesToScroll: 2,
   initialSlide: 0,
   responsive: [
     {
@@ -44,7 +44,6 @@ function Gallery() {
   const carousel = useRef();
   const { t, i18n } = useTranslation();
   const { GaleryMap } = useContext(GaleryContext);
-  console.log(GaleryMap);
 
   const HendelLeft = (e) => {
     e.preventDefault();
