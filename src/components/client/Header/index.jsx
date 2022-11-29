@@ -27,7 +27,7 @@ function Header() {
           <img src={Logo} alt="logo" />
           <ul>
             <li>
-              <a href="#">{t("Navbar.0")}</a>
+              <a href="#Galery">{t("Navbar.0")}</a>
             </li>
             <li>
               <a href="#">{t("Navbar.1")}</a>
