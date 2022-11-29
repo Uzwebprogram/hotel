@@ -14,7 +14,7 @@ const News = () => {
   return (
     <Wrapper>
         <WrapperTop>
-            <h2>Номера в нашем отеле</h2>
+            <h2>Отзывы посетителей</h2>
             <button onClick={handleOpen}> добавить</button>
         </WrapperTop>
         <NewsModalFormComponent open={open} handleClose={handleClose}/>
