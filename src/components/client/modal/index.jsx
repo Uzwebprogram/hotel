@@ -12,19 +12,23 @@ function Modal({HendelChange , ValLang , set , modal}) {
             <p onClick={HendelClose}>X</p>
             <ul>
                 <li>
-                    <a href="#Galery" onClick={HendelClose}>{t("Navbar.0")}</a>
+                    <a href="#">{t("Navbar.0")}</a>
                 </li>
                 <li>
-                    <a href="#About" onClick={HendelClose}>{t("Navbar.1")}</a>
+                    <a href="#">{t("Navbar.1")}</a>
                 </li>
                 <li>
-                    <a href="#numbers" onClick={HendelClose}>{t("Navbar.2")}</a>
+                    <a href="#">{t("Navbar.2")}</a>
                 </li>
                 <li>
-                    <a href="#comments" onClick={HendelClose}>{t("Navbar.3")}</a>
+                    <a href="#">{t("Navbar.3")}</a>
                 </li>
                 <li>
-                    <a href="#contacts" onClick={HendelClose}>{t("Navbar.4")}</a>
+                    <a href="#">{t("Navbar.4")}</a>
+                </li>
+                <li>
+                    <a href="#">+998 99 999 99 99</a>
+                    <a href="#">+998 99 999 99 99</a>
                 </li>
                 <li>
                     <select onChange={HendelChange}>

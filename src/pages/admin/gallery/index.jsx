@@ -19,7 +19,7 @@ const Gallery = () => {
         
         <Gallerys>
                 {GaleryMap.map((elem , index) =>
-                    <WrapperCard>
+                    <WrapperCard>   
                     <img src={elem.image_galery} alt="images galery" width={450} height={300} />
                     <DeletPutComponent DeleteId={elem.galery_id} PutBlog={elem.galery_id} Element={elem}/>
                     </WrapperCard>

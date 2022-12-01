@@ -1,5 +1,7 @@
-import { useState } from "react";
+import axios from "axios";
+import { useContext, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { HotelOurContext } from "../../../context/our-hotel";
 import {
   Wrapper,
   Card,
@@ -16,22 +18,55 @@ import {
 } from "./styled-index";
 
 function ReservHome() {
-    const [count , setCount] = useState(0)
-    const [countBaby , setCountBaby] = useState(0)
-    const {t , i18n} = useTranslation()
+  const [count, setCount] = useState(0)
+  const [countBaby, setCountBaby] = useState(0)
+  const [modal, setModal] = useState(false)
+  const checkin = useRef()
+  const checkout = useRef()
+  const number = useRef()
+  const { t, i18n } = useTranslation()
 
-    const Icrement = () => {
-        setCount(count => count += 1)
+  const HendelChange = (e) => {
+    const selectVal = e.target.value
+    window.localStorage.setItem("roomVal", selectVal)
+  }
+
+
+  const { HotelOurMap } = useContext(HotelOurContext)
+  const Icrement = () => {
+    setCount(count => count += 1)
+  }
+  const Dicrement = () => {
+    setCount(count => count -= 1)
+  }
+  const Icrement2 = () => {
+    setCountBaby(count => count += 1)
+  }
+  const Dicrement2 = () => {
+    setCountBaby(count => count -= 1)
+  }
+
+  const HendelCheck = async (e) => {
+    e.preventDefault()
+    try {
+      const body = {
+        check_in: checkin.current.value,
+        departure: checkout.current.value,
+        kids: countBaby,
+        adults: count,
+        phone_number: number.current.value,
+        room: window.localStorage.getItem("roomVal")
+      }
+      const response = await axios.post("http://62.217.179.24:5000/contacts", body)
+      if (response.data) {
+        setModal(true)
+
+        setTimeout(setCount(false) , 2000)
+      }
+    } catch (error) {
+      console.log(error);
     }
-    const Dicrement = () => {
-        setCount(count => count -= 1)
-    }
-    const Icrement2 = () => {
-        setCountBaby(count => count += 1)
-    }
-    const Dicrement2 = () => {
-        setCountBaby(count => count -= 1)
-    }
+  }
   return (
     <Wrapper>
       <h2>{t("Reserv.0")}</h2>
@@ -42,14 +77,14 @@ function ReservHome() {
               <p>{t("Reserv.1")}</p>
               <i className="bx bxs-calendar-edit"></i>
             </TimeDiv>
-            <input type="date" placeholder="dd/mm/yy" />
+            <input type="date" placeholder="dd/mm/yy" ref={checkin} />
           </Card>
           <Card>
             <TimeDiv>
               <p>{t("Reserv.2")}</p>
               <i className="bx bxs-calendar-edit"></i>
             </TimeDiv>
-            <input type="date" placeholder="dd/mm/yy" />
+            <input type="date" placeholder="dd/mm/yy" ref={checkout} />
           </Card>
           <Card>
             <CardDiV>
@@ -82,19 +117,21 @@ function ReservHome() {
               <p>{t("Reserv.4")}</p>
               <i class="bx bxs-hotel"></i>
             </div>
-            <select>
-              <option>select</option>
+            <select onChange={HendelChange}>
+              {/* {HotelOurMap.map((elem, index) =>
+                <option key={index} value={elem.title_room}>{elem.title_room}</option>
+              )} */}
+              <option>Lux</option>
             </select>
           </CaRd>
           <CaRD>
             <p>{t("Reserv.5")}</p>
-            <input type="tel" placeholder="+998 (__) ___ __ __" />
+            <input type="tel" placeholder="+998 (__) ___ __ __" ref={number} />
           </CaRD>
         </DivCard>
       </CardWrap>
-      <Button>{t("Reserv.6")}</Button>
+      <Button onClick={HendelCheck}>{t("Reserv.6")}</Button>
     </Wrapper>
   );
 }
-
 export default ReservHome;

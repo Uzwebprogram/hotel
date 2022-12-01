@@ -63,10 +63,11 @@
     },
     "OurHotel" : {  
         "0" : "Mehmonxonamizdagi xonalar",
-        "1" : "maydoni: ",
+        "1" : "Maydoni: ",
         "2" : "Mehmonlar soni: ",
         "3" : "1 kechaning narxi: ",
-        "4" : "Band qilish"
+        "4" : "Band qilish",
+        "5" : "Oilaviy to'plam"
 
     },
     "Comments" : {

@@ -66,7 +66,8 @@
         "1" : "Area: ",
         "2" : "Number of guests:",
         "3" : "Cost for 1 night: ",
-        "4" : "Bron"
+        "4" : "Bron",
+        "5" : "Family Suite"
 
     },
     "Comments" : {
