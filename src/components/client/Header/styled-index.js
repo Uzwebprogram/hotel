@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   background: #0f0f11;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 `;
 export const Nav = styled.div`
   display: flex;

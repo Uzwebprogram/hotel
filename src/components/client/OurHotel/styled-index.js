@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     }
     @media screen and (max-width: 375px) {
       font-size: 20px;
-      padding-left: 10px;
+      /* padding-left: 10px; */
     }
   }
   color: white;

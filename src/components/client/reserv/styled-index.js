@@ -75,15 +75,11 @@ export const Card = styled.div`
     background-color: #1b1b1c;
     border: 1px solid #1b1b1c;
     padding: 7px 0px 7px 5px ;
-    color: gray;
+    color-scheme: dark;
     border-radius: 5px;
     color: white;
     outline: none;
     width: 100%;
-  }
-  input::-webkit-calendar-picker-indicator {
-    color: white !important;
-    display: none;
   }
 `;
 

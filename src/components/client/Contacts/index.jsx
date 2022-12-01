@@ -41,7 +41,7 @@ function Contacts() {
                 </InputGroup>
                 <InputGroup>
                   <label htmlFor="phone">{t("Contacts.3")}</label>
-                  <input type="tel" id="phone" required />
+                  <input type="number" id="phone" required />
                 </InputGroup>
                 <Button type="sumbit">{t("Contacts.4")}</Button>
               </Form>

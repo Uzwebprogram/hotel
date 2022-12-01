@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Imgnew from "../../../assets/client/home/new.png";
 import { CarouselDiv, Buttons, Wrapper, SliderItem, Carousel, H2 } from "./styled-index";
 import Slider from "react-slick";
+import { useTranslation } from "react-i18next";
 
 const settings = {
   // dots: true,
@@ -40,6 +41,7 @@ const settings = {
 
 function News() {
   const caro = useRef();
+  const { t, i18n } = useTranslation()
 
   const HendelLeft = (e) => {
     e.preventDefault();
@@ -53,103 +55,95 @@ function News() {
   return (
     <>
       <Wrapper>
-        <H2>Новости</H2>
+        <H2>{t("News.0")}</H2>
         <CarouselDiv>
           <Slider {...settings}>
             <SliderItem>
               <div>
                 <img src={Imgnew} alt="photo" />
-                <h3>В Ташкенте открылся роскошный отель</h3>
+                <h3>{t("News.1")}</h3>
                 <p>
-                  Правила проживания в отеле являются общими и могут меняться в
-                  зависимости от выбранного типа размещения... Подробнее
+                  {t("News.2")}
                 </p>
 
-                <button>Читать подробнее</button>
+                <button>{t("News.3")}</button>
               </div>
             </SliderItem>
             <SliderItem>
               <div>
                 <img src={Imgnew} alt="photo" />
-                <h3>В Ташкенте открылся роскошный отель</h3>
+                <h3>{t("News.1")}</h3>
                 <p>
-                  Правила проживания в отеле являются общими и могут меняться в
-                  зависимости от выбранного типа размещения... Подробнее
+                  {t("News.2")}
                 </p>
 
-                <button>Читать подробнее</button>
+                <button>{t("News.3")}</button>
               </div>
             </SliderItem>
             <SliderItem>
               <div>
                 <img src={Imgnew} alt="photo" />
-                <h3>В Ташкенте открылся роскошный отель</h3>
+                <h3>{t("News.1")}</h3>
                 <p>
-                  Правила проживания в отеле являются общими и могут меняться в
-                  зависимости от выбранного типа размещения... Подробнее
+                  {t("News.2")}
                 </p>
 
-                <button>Читать подробнее</button>
+                <button>{t("News.3")}</button>
               </div>
             </SliderItem>
             <SliderItem>
               <div>
                 <img src={Imgnew} alt="photo" />
-                <h3>В Ташкенте открылся роскошный отель</h3>
+                <h3>{t("News.1")}</h3>
                 <p>
-                  Правила проживания в отеле являются общими и могут меняться в
-                  зависимости от выбранного типа размещения... Подробнее
+                  {t("News.2")}
                 </p>
 
-                <button>Читать подробнее</button>
+                <button>{t("News.3")}</button>
               </div>
             </SliderItem>
             <SliderItem>
               <div>
                 <img src={Imgnew} alt="photo" />
-                <h3>В Ташкенте открылся роскошный отель</h3>
+                <h3>{t("News.1")}</h3>
                 <p>
-                  Правила проживания в отеле являются общими и могут меняться в
-                  зависимости от выбранного типа размещения... Подробнее
+                  {t("News.2")}
                 </p>
 
-                <button>Читать подробнее</button>
+                <button>{t("News.3")}</button>
               </div>
             </SliderItem>
             <SliderItem>
               <div>
                 <img src={Imgnew} alt="photo" />
-                <h3>В Ташкенте открылся роскошный отель</h3>
+                <h3>{t("News.1")}</h3>
                 <p>
-                  Правила проживания в отеле являются общими и могут меняться в
-                  зависимости от выбранного типа размещения... Подробнее
+                  {t("News.2")}
                 </p>
 
-                <button>Читать подробнее</button>
+                <button>{t("News.3")}</button>
               </div>
             </SliderItem>
             <SliderItem>
               <div>
                 <img src={Imgnew} alt="photo" />
-                <h3>В Ташкенте открылся роскошный отель</h3>
+                <h3>{t("News.1")}</h3>
                 <p>
-                  Правила проживания в отеле являются общими и могут меняться в
-                  зависимости от выбранного типа размещения... Подробнее
+                  {t("News.2")}
                 </p>
 
-                <button>Читать подробнее</button>
+                <button>{t("News.3")}</button>
               </div>
             </SliderItem>
             <SliderItem>
               <div>
                 <img src={Imgnew} alt="photo" />
-                <h3>В Ташкенте открылся роскошный отель</h3>
+                <h3>{t("News.1")}</h3>
                 <p>
-                  Правила проживания в отеле являются общими и могут меняться в
-                  зависимости от выбранного типа размещения... Подробнее
+                  {t("News.2")}
                 </p>
 
-                <button>Читать подробнее</button>
+                <button>{t("News.3")}</button>
               </div>
             </SliderItem>
           </Slider>
