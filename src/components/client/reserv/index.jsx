@@ -1,3 +1,4 @@
+import * as React from 'react';
 import axios from "axios";
 import { useContext, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -8,30 +9,31 @@ import {
   CardDiv,
   CardWrap,
   CaRd,
-  Button,
+  Butto,
   Count,
   Countdiv,
   DivCard,
   CardDiV,
   CaRD,
-  TimeDiv
+  TimeDiv,
+  Succsess
 } from "./styled-index";
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
 
 function ReservHome() {
   const [count, setCount] = useState(0)
   const [countBaby, setCountBaby] = useState(0)
-  const [modal, setModal] = useState(false)
   const checkin = useRef()
   const checkout = useRef()
   const number = useRef()
   const { t, i18n } = useTranslation()
-
   const HendelChange = (e) => {
     const selectVal = e.target.value
     window.localStorage.setItem("roomVal", selectVal)
   }
-
-
   const { HotelOurMap } = useContext(HotelOurContext)
   const Icrement = () => {
     setCount(count => count += 1)
@@ -45,7 +47,6 @@ function ReservHome() {
   const Dicrement2 = () => {
     setCountBaby(count => count -= 1)
   }
-
   const HendelCheck = async (e) => {
     e.preventDefault()
     try {
@@ -59,14 +60,27 @@ function ReservHome() {
       }
       const response = await axios.post("http://62.217.179.24:5000/contacts", body)
       if (response.data) {
-        setModal(true)
-
-        setTimeout(setCount(false) , 2000)
+        setOpen(true)
       }
     } catch (error) {
       console.log(error);
     }
   }
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+  };
   return (
     <Wrapper>
       <h2>{t("Reserv.0")}</h2>
@@ -130,7 +144,26 @@ function ReservHome() {
           </CaRD>
         </DivCard>
       </CardWrap>
-      <Button onClick={HendelCheck}>{t("Reserv.6")}</Button>
+      <Butto onClick={HendelCheck}>{t("Reserv.6")}</Butto>
+      <div>
+        {/* <Button onClick={handleOpen}>Open modal</Button> */}
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style}>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              <Succsess>
+                <i class='bx bx-check-circle' ></i>
+                <h3>{t("Reserv.9")}</h3>
+                <button onClick={handleClose}>Ok</button>
+              </Succsess>
+            </Typography>
+          </Box>
+        </Modal>
+      </div>
     </Wrapper>
   );
 }

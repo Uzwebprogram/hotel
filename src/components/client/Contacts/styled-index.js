@@ -91,6 +91,7 @@ export const InputGroup = styled.div`
     outline: none;
     border: 1px solid transparent;
     width: 90%;
+    font-size: 17px;
 
     :focus {
       background: #1b1b1c;

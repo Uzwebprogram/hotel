@@ -11,17 +11,23 @@ export const Container = styled.div`
   background-position-y: bottom;
   background-size: 100%;
   background-repeat: no-repeat;
-  padding-top: 6%;
+  padding-top: 10%;
+  @media screen and (max-width: 874px){
+    padding-top: 20%;
+  }
   @media screen and (max-width: 823px) {
     display: flex;
     flex-direction: column;
-    padding-top: 15%;
+    padding-top: 25%;
   }
   @media screen  and (max-width: 578px){
-    padding-top: 20%;
+    padding-top: 25%;
   }
   @media screen  and (max-width: 431px){
     padding-top: 30%;
+  }
+  @media screen  and (max-width: 378px){
+    padding-top: 40%;
   }
 `;
 export const LeftDiv = styled.div`
