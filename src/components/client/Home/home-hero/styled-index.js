@@ -36,7 +36,9 @@ export const LeftDiv = styled.div`
   width: 45%;
 
   @media screen and (max-width: 825px){
-    width: 100% ;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
   h1 {
     padding-top: 7%;

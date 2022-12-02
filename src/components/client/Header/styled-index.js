@@ -94,7 +94,7 @@ export const Number = styled.div`
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 98.5%;
+    width: 98%;
     a{
         color: white;
         text-decoration: none;

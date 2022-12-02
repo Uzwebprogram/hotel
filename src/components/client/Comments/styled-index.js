@@ -50,18 +50,31 @@ export const Star = styled.div`
 `;
 export const Name = styled.div`
   display: flex;
+  align-items: center;
   border-radius: 3px;
   img {
     margin-top: 10px;
     border-radius: 50px;
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
   }
   h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     margin-left: 20px;
+
+    @media screen and (max-width:389px){
+      font-size: 15px;
+    }
+    @media screen and (max-width:364px){
+     margin-left: 10px;
+    }
+    @media screen and (max-width:354px){
+     margin-left: 7px;
+     font-size: 12px;
+    }
+
   }
   p {
     margin-left: 40px;
