@@ -6,9 +6,9 @@ function ModalPut({handleClose , open , PutBlog , Title , Element}) {
     const [selectedImages , setSelectedImages] = useState()
     const [loading , setLoading] = useState(false)
     const title = useRef();
-    const area_rooms = useRef();
-    const number_guests = useRef();
-    const cost_night = useRef();
+    const name_uz = useRef();
+    const name_ru = useRef();
+    const name_en = useRef();
     const HandleChange = (e) =>{
         const formData = new FormData()
         formData.append("file" , e.target.files[0])
@@ -28,17 +28,17 @@ function ModalPut({handleClose , open , PutBlog , Title , Element}) {
     const HandleSubmit = async (e , id ) =>{
         e.preventDefault()
         try {
-           await fetch(`http://62.217.179.24:5000/rooms/${id}`, {
+           await fetch(`https://api.reverhotel.uz/reviews/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    image_room : selectedImages,
-                    title_room : title.current.value,
-                    area_room : area_rooms.current.value,
-                    number_guests :number_guests.current.value,
-                    cost_night : cost_night.current.value
+                    avatar_image : selectedImages,
+                    r_name : title.current.value,
+                    description_uz: name_uz.current.value,
+                    description_ru : name_ru.current.value,
+                    description_en : name_en.current.value
                 })
             })
             .then(res => res.text())
@@ -73,10 +73,10 @@ function ModalPut({handleClose , open , PutBlog , Title , Element}) {
                 {loading ? (<>
                     <span className="loading">loading...</span>
                 </>):null}
-                <input ref={title} type="text" placeholder={Element.title_room} />
-                <input ref={area_rooms} type="text" placeholder={Element.area_room} />
-                <input ref={number_guests} type="text" placeholder={Element.number_guests} />
-                <input ref={cost_night} type="text" placeholder={Element.cost_night} />
+                <input ref={title} type="text" placeholder={Element.r_name} />
+                <input ref={name_uz} type="text" placeholder={Element.description_uz} />
+                <input ref={name_ru} type="text" placeholder={Element.description_ru} />
+                <input ref={name_en} type="text" placeholder={Element.description_en} />
                 <button type="submit">Сохранять</button>
             </Form>
         </ModalCommon>

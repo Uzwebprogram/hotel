@@ -20,7 +20,6 @@ const style = {
 const RevaisComp = ({ open, handleClose }) => {
     const [loading, setLoading] = useState(false)
     const title = useRef();
-    const area_rooms = useRef();
     const description_uz = useRef();
     const description_ru = useRef();
     const description_en = useRef();
@@ -49,8 +48,7 @@ const RevaisComp = ({ open, handleClose }) => {
             description_en: description_en.current.value,
             description_ru : description_ru.current.value,
             description_uz : description_uz.current.value,
-            current_timestamp : area_rooms.current.value,
-            title_title : title.current.value
+            r_name : title.current.value
         }
         const res = await axios.post("https://api.reverhotel.uz/reviews", body)
         if (res) {
@@ -75,7 +73,6 @@ const RevaisComp = ({ open, handleClose }) => {
                         <span className="loading">loading...</span>
                     </>) : null}
                     <input ref={title} type="text" placeholder='Имя' />
-                    <input ref={area_rooms} type="date" placeholder='дата' />
                     <input ref={description_uz} type="text" placeholder='Отзыв посетителя uz' />
                     <input ref={description_ru} type="text" placeholder='Отзыв посетителя ru' />
                     <input ref={description_en} type="text" placeholder='Отзыв посетителя en' />

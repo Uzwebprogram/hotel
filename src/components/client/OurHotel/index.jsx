@@ -20,8 +20,8 @@ function OurHotel() {
                 <h3>{elem.title_room}</h3>
                 <p>{t("OurHotel.1")} {elem.area_room} kv.m</p>
                 <p>{t("OurHotel.2")} {elem.number_guests}</p>
-                <p>{t("OurHotel.3")} {elem.cost_night} so'm</p>
-                <button>{t("OurHotel.4")}</button>
+                <p>{t("OurHotel.3")} {elem.cost_night} {t("OurHotel.6")}</p>
+                <a href="#reserv"><button>{t("OurHotel.4")}</button></a>
               </li>
             )}
           </Ul>

@@ -53,7 +53,6 @@ export const Name = styled.div`
   align-items: center;
   border-radius: 3px;
   img {
-    margin-top: 10px;
     border-radius: 50px;
     width: 40px !important;
     height: 40px !important;
@@ -76,19 +75,10 @@ export const Name = styled.div`
     }
 
   }
-  p {
-    margin-left: 40px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.01em;
-    color: #aaaaaa;
-  }
   i {
     padding-top: 60px;
   }
 `;
-// e3drtfyguhij
 export const Carusel = styled.div`
   display: flex;
   display: none;

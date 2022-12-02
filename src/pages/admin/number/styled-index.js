@@ -34,6 +34,7 @@ export const WrapperCard = styled.div`
     flex-direction: column;
     align-items: center;
     color: white;
+    width: 33%;
     li {
     padding-bottom: 50px;
     list-style-type: none;

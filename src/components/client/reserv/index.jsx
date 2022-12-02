@@ -82,7 +82,7 @@ function ReservHome() {
     p: 4,
   };
   return (
-    <Wrapper>
+    <Wrapper id='reserv'>
       <h2>{t("Reserv.0")}</h2>
       <CardWrap>
         <CardDiv>
