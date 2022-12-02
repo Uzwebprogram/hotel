@@ -58,7 +58,7 @@ function ReservHome() {
         phone_number: number.current.value,
         room: window.localStorage.getItem("roomVal")
       }
-      const response = await axios.post("http://62.217.179.24:5000/contacts", body)
+      const response = await axios.post("https://api.reverhotel.uz/contacts", body)
       if (response.data) {
         setOpen(true)
       }
@@ -132,15 +132,14 @@ function ReservHome() {
               <i class="bx bxs-hotel"></i>
             </div>
             <select onChange={HendelChange}>
-              {/* {HotelOurMap.map((elem, index) =>
+              {HotelOurMap.map((elem, index) =>
                 <option key={index} value={elem.title_room}>{elem.title_room}</option>
-              )} */}
-              <option>Lux</option>
+              )}
             </select>
           </CaRd>
           <CaRD>
             <p>{t("Reserv.5")}</p>
-            <input type="tel" placeholder="+998 (__) ___ __ __" ref={number} />
+            <input type="number" placeholder="+998 (__) ___ __ __" ref={number} />
           </CaRD>
         </DivCard>
       </CardWrap>

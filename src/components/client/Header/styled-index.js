@@ -95,6 +95,7 @@ export const Number = styled.div`
     justify-content: flex-end;
     align-items: flex-end;
     width: 98%;
+    padding-top: 15%;
     a{
         color: white;
         text-decoration: none;
@@ -115,5 +116,14 @@ export const Number = styled.div`
         }
       }
     }
+  }
+  @media screen and (max-width: 667px){
+    padding-top: 20%;
+  }
+  @media screen and (max-width: 475px){
+    padding-top: 25%;
+  }
+  @media screen and (max-width: 362px){
+    padding-top: 30%;
   }
 `
