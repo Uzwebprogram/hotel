@@ -22,7 +22,9 @@ const News = () => {
                 {NewsMap.map((elem, index) =>
                     <WrapperCard key={index}>
                         <li>
-                            <img src={elem.image_news} width={300} height={380} alt="room" />
+                            <div>
+                                <img src={elem.image_news} width={300} height={380} alt="room" />
+                            </div>
                             <h3>{elem.news_title_uz}</h3>
                             <p>{elem.news_description_uz}</p>
                         </li>
