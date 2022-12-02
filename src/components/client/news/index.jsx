@@ -1,8 +1,9 @@
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import Imgnew from "../../../assets/client/home/new.png";
 import { CarouselDiv, Buttons, Wrapper, SliderItem, Carousel, H2 } from "./styled-index";
 import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
+import { NewsContext } from "../../../context/news";
 
 const settings = {
   // dots: true,
@@ -42,15 +43,11 @@ const settings = {
 function News() {
   const caro = useRef();
   const { t, i18n } = useTranslation()
+  const { NewsMap } = useContext(NewsContext)
 
-  const HendelLeft = (e) => {
-    e.preventDefault();
-    caro.current.scrollLeft += caro.current.offsetWidth;
-  };
-  const HendelRight = (e) => {
-    e.preventDefault();
-    caro.current.scrollLeft -= caro.current.offsetWidth;
-  };
+  const ValLang = () => {
+    return window.localStorage.getItem("i18nextLng")
+  }
 
   return (
     <>
@@ -58,94 +55,16 @@ function News() {
         <H2>{t("News.0")}</H2>
         <CarouselDiv>
           <Slider {...settings}>
-            <SliderItem>
-              <div>
-                <img src={Imgnew} alt="photo" />
-                <h3>{t("News.1")}</h3>
-                <p>
-                  {t("News.2")}
-                </p>
-
-                <button>{t("News.3")}</button>
-              </div>
-            </SliderItem>
-            <SliderItem>
-              <div>
-                <img src={Imgnew} alt="photo" />
-                <h3>{t("News.1")}</h3>
-                <p>
-                  {t("News.2")}
-                </p>
-
-                <button>{t("News.3")}</button>
-              </div>
-            </SliderItem>
-            <SliderItem>
-              <div>
-                <img src={Imgnew} alt="photo" />
-                <h3>{t("News.1")}</h3>
-                <p>
-                  {t("News.2")}
-                </p>
-
-                <button>{t("News.3")}</button>
-              </div>
-            </SliderItem>
-            <SliderItem>
-              <div>
-                <img src={Imgnew} alt="photo" />
-                <h3>{t("News.1")}</h3>
-                <p>
-                  {t("News.2")}
-                </p>
-
-                <button>{t("News.3")}</button>
-              </div>
-            </SliderItem>
-            <SliderItem>
-              <div>
-                <img src={Imgnew} alt="photo" />
-                <h3>{t("News.1")}</h3>
-                <p>
-                  {t("News.2")}
-                </p>
-
-                <button>{t("News.3")}</button>
-              </div>
-            </SliderItem>
-            <SliderItem>
-              <div>
-                <img src={Imgnew} alt="photo" />
-                <h3>{t("News.1")}</h3>
-                <p>
-                  {t("News.2")}
-                </p>
-
-                <button>{t("News.3")}</button>
-              </div>
-            </SliderItem>
-            <SliderItem>
-              <div>
-                <img src={Imgnew} alt="photo" />
-                <h3>{t("News.1")}</h3>
-                <p>
-                  {t("News.2")}
-                </p>
-
-                <button>{t("News.3")}</button>
-              </div>
-            </SliderItem>
-            <SliderItem>
-              <div>
-                <img src={Imgnew} alt="photo" />
-                <h3>{t("News.1")}</h3>
-                <p>
-                  {t("News.2")}
-                </p>
-
-                <button>{t("News.3")}</button>
-              </div>
-            </SliderItem>
+            {NewsMap.map((elem, index) =>
+              <SliderItem key={index}>
+                <div>
+                  <img src={elem.image_news} alt="photo" />
+                  {ValLang() === "uz" ? (<><h3>{elem.news_title_uz}</h3></>) : ValLang() === "ru" ? (<><h3>{elem.news_title_ru}</h3></>) : ValLang() === "en" ? (<><h3>{elem.news_title_en}</h3></>) : null}
+                  {ValLang() === "uz" ? (<><p>{elem.news_description_uz}</p></>) : ValLang() === "ru" ? (<><p>{elem.news_description_ru}</p></>) : ValLang() === "en" ? (<><p>{elem.news_description_en}</p></>) : null}
+                  <button>{t("News.3")}</button>
+                </div>
+              </SliderItem>
+            )}
           </Slider>
         </CarouselDiv>
       </Wrapper>

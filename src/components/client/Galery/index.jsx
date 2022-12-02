@@ -62,24 +62,11 @@ function Gallery() {
     <GalWrapper id="Galery">
       <h2>{t("Galery.0")}</h2>
       <Slider {...settings}>
-        <SliderItem>
-          <img src={Img2} alt="image" />
+        {GaleryMap.map((elem ,index) => 
+        <SliderItem key={index}>
+          <img src={elem.image_galery} alt="image" />
         </SliderItem>
-        <SliderItem>
-          <img src={Img1} alt="" />
-        </SliderItem>
-        <SliderItem>
-          <img src={Img3} alt="" />
-        </SliderItem>
-        <SliderItem>
-          <img src={Img1} alt="" />
-        </SliderItem>
-        <SliderItem>
-          <img src={Img2} alt="" />
-        </SliderItem>
-        <SliderItem>
-          <img src={Img3} alt="" />
-        </SliderItem>
+        )}
       </Slider>
     </GalWrapper>
   );

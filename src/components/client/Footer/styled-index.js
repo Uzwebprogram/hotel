@@ -86,7 +86,27 @@ export const Heading = styled.div`
       font-size: 25px;
       margin: 0 7px 0 0;
     }
-
+    button {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white ;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px  5px 0px white;
+      -webkit-animation: mymove 3s infinite;
+    animation: mymove 3s infinite;
+      @keyframes mymove {
+        50%{
+        box-shadow: 0px 0px 25px 0px white;
+        }
+        50%{
+        box-shadow: 0px 0px 25px 0px white;
+        }
+      }
+    }
   }
 
   display: flex;

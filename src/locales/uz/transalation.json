@@ -19,7 +19,8 @@
         "9": "Ikki xonali lyuks",
         "10": "Oila xonasi",
         "11": "Oilaviy lyuks",
-        "12": "Toshkent, Chilonzor tumani, Bunyodkor ko‘chasi, 99-uy"
+        "12": "Toshkent, Chilonzor tumani, Bunyodkor ko‘chasi, 99-uy",
+        "13" : "Qo'ng'iroq qiling"
     },
     "Homehero": {
         "0": "REVER HOTEL",
@@ -77,7 +78,7 @@
     "Contacts": {
         "0": "Kontaktlar",
         "1": "Ismingiz",
-        "2": "Email",
+        "2": "Ismingiz",
         "3": "Telefon raqamingiz",
         "4": "Yuborish",
         "5": "Xodimlarimiz bir soat ichida siz bilan bog'lanadi!",

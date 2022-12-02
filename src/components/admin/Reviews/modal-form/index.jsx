@@ -17,15 +17,13 @@ const style = {
     boxShadow: 24,
     p: 4,
 };
-const NewsModalFormComponent = ({ open, handleClose }) => {
+const RevaisComp = ({ open, handleClose }) => {
     const [loading, setLoading] = useState(false)
-    const title_uz = useRef();
-    const title_ru = useRef();
-    const title_en = useRef();
-    const descrip_ru = useRef();
-    const descrip_en = useRef();
-    const descrip_uz = useRef();
-
+    const title = useRef();
+    const area_rooms = useRef();
+    const description_uz = useRef();
+    const description_ru = useRef();
+    const description_en = useRef();
     const [SelectedImages, setSelectedImages] = useState();
     const HandleChange = (e) => {
         const formData = new FormData()
@@ -47,15 +45,14 @@ const NewsModalFormComponent = ({ open, handleClose }) => {
     const HandleSubmit = async (e) => {
         e.preventDefault();
         const body = {
-            image_news: SelectedImages,
-            news_title_uz: title_uz.current.value,
-            news_title_ru: title_ru.current.value,
-            news_title_en: title_en.current.value,
-            news_description_uz: descrip_uz.current.value,
-            news_description_ru: descrip_ru.current.value,
-            news_description_en: descrip_en.current.value
+            avatar_image: SelectedImages,
+            description_en: description_en.current.value,
+            description_ru : description_ru.current.value,
+            description_uz : description_uz.current.value,
+            current_timestamp : area_rooms.current.value,
+            title_title : title.current.value
         }
-        const res = await axios.post("https://api.reverhotel.uz/news", body)
+        const res = await axios.post("https://api.reverhotel.uz/reviews", body)
         if (res) {
             handleClose()
         }
@@ -77,12 +74,11 @@ const NewsModalFormComponent = ({ open, handleClose }) => {
                     {loading ? (<>
                         <span className="loading">loading...</span>
                     </>) : null}
-                    <input ref={title_uz} type="text" placeholder='новости_uz' />
-                    <input ref={title_ru} type="text" placeholder='новости_ru' />
-                    <input ref={title_en} type="text" placeholder='новости_en' />
-                    <input ref={descrip_uz} type="text" placeholder='описание_uz' />
-                    <input ref={descrip_ru} type="text" placeholder='описание_ru' />
-                    <input ref={descrip_en} type="text" placeholder='описание_en' />
+                    <input ref={title} type="text" placeholder='Имя' />
+                    <input ref={area_rooms} type="date" placeholder='дата' />
+                    <input ref={description_uz} type="text" placeholder='Отзыв посетителя uz' />
+                    <input ref={description_ru} type="text" placeholder='Отзыв посетителя ru' />
+                    <input ref={description_en} type="text" placeholder='Отзыв посетителя en' />
                     <button type="submit">Сохранять</button>
                 </Form>
             </Box>
@@ -90,4 +86,4 @@ const NewsModalFormComponent = ({ open, handleClose }) => {
     )
 }
 
-export default NewsModalFormComponent
+export default RevaisComp

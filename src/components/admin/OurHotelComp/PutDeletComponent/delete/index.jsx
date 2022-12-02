@@ -4,7 +4,7 @@ import {ModalTop} from '../put/styled-index'
 function ModalDelete({ open, HandleClose, DeleteId }) {
   const DeleteBlog = (DeleteId) => {
     console.log(DeleteId);
-    const response = fetch(`http://62.217.179.24:5000/rooms/${DeleteId}`, {
+    const response = fetch(`https://api.reverhotel.uz/rooms/${DeleteId}`, {
       method: "DELETE",
     }).catch((DeleteId) => console.error(DeleteId));
     console.log(response);

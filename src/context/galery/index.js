@@ -8,7 +8,7 @@ export const GaleryContext = createContext({
 export const GaleryProvider = ({children})=>{
     const [GaleryMap , setGaleryMap] = useState([])
     useEffect(() => {
-        fetch("http://62.217.179.24:5000/galery")
+        fetch("https://api.reverhotel.uz/galery")
         .then(res => res.json())
         .then(result => setGaleryMap(result))
     }, [GaleryMap])

@@ -87,7 +87,7 @@ function Comments() {
                   <Name>
                     <img src={maksim} alt="" />
                     <h3>{t("Comments.1")}</h3>
-                    <p>26.09.2022</p>
+                    <p>26.09.202</p>
                   </Name>
                 </About>
                 <Star>
@@ -165,13 +165,6 @@ function Comments() {
             </SliderItem>
             <SliderItem>
               <Item>
-                <About>
-                  <Name>
-                    <img src={maksim} alt="" />
-                    <h3>{t("Comments.1")}</h3>
-                    <p>26.09.2022</p>
-                  </Name>
-                </About>
                 <Star>
                   <i class="bx bxs-star"></i>
                   <i class="bx bxs-star"></i>
@@ -207,7 +200,7 @@ function Comments() {
                   <Name>
                     <img src={maksim} alt="" />
                     <h3>{t("Comments.1")}</h3>
-                    <p>26.09.2022</p>
+                    <p>26.09.202</p>
                   </Name>
                 </About>
                 <Star>

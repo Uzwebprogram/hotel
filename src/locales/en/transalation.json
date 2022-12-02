@@ -19,7 +19,8 @@
         "9": "Two-room lux",
         "10": "Family room",
         "11": "Family Suite",
-        "12": "Tashkent, Chilanzar district, Bunyodkor street, 99"
+        "12": "Tashkent, Chilanzar district, Bunyodkor street, 99",
+        "13" : "Call"
     },
     "Homehero": {
         "0": "REVER HOTEL",
@@ -77,7 +78,7 @@
     "Contacts": {
         "0": "Contacts",
         "1": "Your name",
-        "2": "Email",
+        "2": "Your Name",
         "3": "Your phone number",
         "4": "Send",
         "5": "Our employees will contact you within an hour!",
