@@ -33,7 +33,7 @@ function Contacts() {
                 <InputGroup>
                   <label htmlFor="email">{t("Contacts.1")}</label>
                   <input
-                    type="email"
+                    type="text"
                     id="email"
                     placeholder={t("Contacts.2")}
                     required

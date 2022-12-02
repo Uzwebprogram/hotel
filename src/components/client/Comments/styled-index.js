@@ -61,7 +61,7 @@ export const Name = styled.div`
   h3 {
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     margin-left: 20px;
 
     @media screen and (max-width:389px){
