@@ -39,7 +39,7 @@ export const About = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 `;
 export const Star = styled.div`
@@ -158,14 +158,6 @@ export const ULWrapper = styled.div`
 `;
 export const LIItem = styled.li`
   margin: 15px 0;
-
- 
-  /* div {
-    padding: 5px 10px;
-
-    background: #1b1b1c;
-    border-radius: 3px;
-  } */
 `;
 
 export const Item = styled.div`

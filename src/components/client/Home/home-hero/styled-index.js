@@ -16,6 +16,8 @@ export const Container = styled.div`
   @media screen and (max-width: 823px) {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 `;
 export const LeftDiv = styled.div`
@@ -24,9 +26,13 @@ export const LeftDiv = styled.div`
   width: 45%;
 
   @media screen and (max-width: 825px){
-    width: 100%;
     padding-left: 0;
     padding-right: 0;
+    width: 90%;
+    margin-left: 3%;
+  }
+  @media screen and (max-width: 655px){
+    margin-left: 5%;
   }
   h1 {
     padding-top: 7%;

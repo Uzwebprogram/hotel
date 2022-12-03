@@ -104,7 +104,7 @@ export const InputGroup = styled.div`
   }
 `;
 
-export const Button = styled.button`
+export const Butto = styled.button`
   background: #1b1b1c;
   border: 1px solid #cccccc;
   border-radius: 7px;

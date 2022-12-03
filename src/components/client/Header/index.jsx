@@ -43,8 +43,8 @@ function Header() {
                 <a href="#contacts">{t("Navbar.4")}</a>
               </li>
               <li>
-                <a href="tel:+998 99 999 99 99">+998 99 999 99 99</a>
-                <a href="tel:+998 99 999 99 99">+998 99 999 99 99</a>
+                <a href="tel:+998 95 169 69 69">+998 95 169 69 69</a>
+                <a href="tel:+998 99 069 79 80">+998 99 069 79 80</a>
               </li>
               <li>
                 <select onChange={HendelChange}>
@@ -93,8 +93,8 @@ function Header() {
         </WrapperContainer>
       </Wrapper>
       <Number>
-        <a href="tel:+998 99 999 99 99">+998 99 999 99 99</a>
-        <a href="tel:+998 99 999 99 99">+998 99 999 99 99</a>
+        <a href="tel:+998 95 169 69 69">+998 95 169 69 69</a>
+        <a href="tel:+998 99 069 79 80">+998 99 069 79 80</a>
       </Number>
     </>
   );

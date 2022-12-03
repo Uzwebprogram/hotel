@@ -60,10 +60,10 @@ function Footer() {
                     <a href="#">{t("Footer.12")}</a>
                   </li>
                   <li>
-                    <a href="tel:+998 93 453 45 55"><button>{t("Footer.13")}</button></a>
+                    <a href="tel:+998 95 169 69 69"><button>{t("Footer.13")}</button></a>
                   </li>
                   <li>
-                    <a href="#">revel@mail.ru</a>
+                    <a href="mailto:Reverhoteluz@gmail.com">Reverhoteluz@gmail.com</a>
                   </li>
                   <li>
                     <a href="#">

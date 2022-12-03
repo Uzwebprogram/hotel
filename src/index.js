@@ -8,6 +8,8 @@ import { HotelOurProvider } from './context/our-hotel';
 import { ReservProvider } from './context/reserv';
 import { ReviewsProvider } from './context/revais';
 import { NewsProvider } from './context/news';
+import { ContactProvider } from './context/contact';
+import { AddadminProvider } from './context/addadmin';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -17,7 +19,11 @@ root.render(
           <ReservProvider>
             <ReviewsProvider>
               <NewsProvider>
-                <App />
+                <ContactProvider>
+                  <AddadminProvider>
+                    <App />
+                  </AddadminProvider>
+                </ContactProvider>
               </NewsProvider>
             </ReviewsProvider>
           </ReservProvider>
