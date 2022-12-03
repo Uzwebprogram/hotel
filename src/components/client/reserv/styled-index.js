@@ -82,6 +82,10 @@ export const Card = styled.div`
     font-size: 15px;
     width: 100%;
   }
+
+  input:nth-child(2):focus input:nth-child(3){
+  display: none;
+  } 
 `;
 
 export const Count = styled.div`

@@ -23,6 +23,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
+
 function ReservHome() {
   const [count, setCount] = useState(0)
   const [countBaby, setCountBaby] = useState(0)
@@ -91,14 +92,14 @@ function ReservHome() {
               <p>{t("Reserv.1")}</p>
               <i className="bx bxs-calendar-edit"></i>
             </TimeDiv>
-            <input type="date" placeholder="dd/mm/yy" ref={checkin} />
+            <input type="date"  ref={checkin} />
           </Card>
           <Card>
             <TimeDiv>
               <p>{t("Reserv.2")}</p>
               <i className="bx bxs-calendar-edit"></i>
             </TimeDiv>
-            <input type="date" placeholder="dd/mm/yy" ref={checkout} />
+            <input type="date"  ref={checkout} />
           </Card>
           <Card>
             <CardDiV>
@@ -145,7 +146,7 @@ function ReservHome() {
       </CardWrap>
       <Butto onClick={HendelCheck}>{t("Reserv.6")}</Butto>
       <div>
-        {/* <Button onClick={handleOpen}>Open modal</Button> */}
+       
         <Modal
           open={open}
           onClose={handleClose}
