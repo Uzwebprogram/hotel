@@ -70,6 +70,7 @@ function ReservHome() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [input , setInput] = useState(false)
 
   const style = {
     position: 'absolute',
@@ -92,14 +93,14 @@ function ReservHome() {
               <p>{t("Reserv.1")}</p>
               <i className="bx bxs-calendar-edit"></i>
             </TimeDiv>
-            <input type="date"  ref={checkin} />
+            {input ? <><input type="date"  ref={checkin} /></> : <input type="text" onFocus={() => setInput(true)} placeholder={t("Reserv.10")} />}
           </Card>
           <Card>
             <TimeDiv>
               <p>{t("Reserv.2")}</p>
               <i className="bx bxs-calendar-edit"></i>
             </TimeDiv>
-            <input type="date"  ref={checkout} />
+            {input ? <><input type="date"  ref={checkout} /></> : <input type="text" onFocus={() => setInput(true)} placeholder={t("Reserv.10")} />}
           </Card>
           <Card>
             <CardDiV>
@@ -109,7 +110,7 @@ function ReservHome() {
             <Count>
               <Countdiv>
                 <p>{t("Reserv.7")}</p>
-                <div>
+                <div>   
                   <button onClick={Dicrement}>-</button>
                   <p>{count}</p>
                   <button onClick={Icrement}>+</button>

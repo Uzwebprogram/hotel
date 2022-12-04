@@ -39,7 +39,8 @@
         "6": "Find number",
         "7": "Adults",
         "8": "Children",
-        "9" : "Your application is accepted"
+        "9" : "Your application is accepted",
+        "10" : "dd/mm/yyyy"
     },
     "Galery": {
         "0": "Gallery"

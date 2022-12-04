@@ -51,10 +51,10 @@ function Gallery() {
     <GalWrapper id="Galery">
       <h2>{t("Galery.0")}</h2>
       <Slider {...settings}>
-        {GaleryMap.map((elem ,index) => 
-        <SliderItem key={index}>
-          <img src={elem.image_galery} alt="image" />
-        </SliderItem>
+        {GaleryMap.map((elem, index) =>
+          <SliderItem key={elem.galery_id}>
+            <img src={elem.image_galery} alt="image" />
+          </SliderItem>
         )}
       </Slider>
     </GalWrapper>
