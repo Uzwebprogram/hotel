@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const LoginDiv = styled.div`
 display: flex;
 align-items: center;
-width: 100%;
+justify-content: center;
 margin: 0 auto;
 text-align: center;
 background-color: #0F0F11;
@@ -12,8 +12,10 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 form {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    padding-left: 24%;
+    align-self: center;
+    justify-content: center;
+    width: 30%;
+    padding-left: 37%;
     text-align: start;
 
     label{
@@ -44,9 +46,13 @@ form {
 `
 
 export const ImgDiv = styled.div`
-width: 38%;
+/* width: 38%; */
 img {
-    width: 100%;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 `
 

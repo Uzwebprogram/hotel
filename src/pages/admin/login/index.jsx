@@ -1,4 +1,4 @@
-import { WrapperContainer } from "../../../App-styled"
+
 import { LoginDiv , ImgDiv , Div} from "./styled-index"
 import Img1 from "../../../assets/client/login/1.png"
 import axios from "axios"
@@ -35,8 +35,8 @@ function Login() {
                     <img src={Img1} alt="loginPhoto" />
                 </ImgDiv>
                 <Div>
-                    <h2>Connectez -vous</h2>
-                    <p>Connectez-vous pour accéder à votre espace</p>
+                    <h2>Rever Hotel</h2>
+                    <p>Добро пожаловать на внутреннюю платфому reverhotel.uz ! Доступ есть только у администраторов</p>
                     <form>
                         <label>Email</label>
                         <input ref={email} type="email" placeholder="email..." />
