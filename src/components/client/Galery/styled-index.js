@@ -29,6 +29,11 @@ export const SliderItem = styled.div`
     padding-right: 50px;
     border-radius: 3px;
     margin: 0 auto;
+
+
+    @media screen and (max-width: 395px){
+        width: 300px;
+    }
  }
  
 

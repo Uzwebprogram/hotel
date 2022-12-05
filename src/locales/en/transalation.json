@@ -19,7 +19,8 @@
         "9": "Two-room lux",
         "10": "Family room",
         "11": "Family Suite",
-        "12": "Tashkent, Chilanzar district, Bunyodkor street, 99"
+        "12": "Address: 160 bogishamol kuchasi",
+        "13" : "Call"
     },
     "Homehero": {
         "0": "REVER HOTEL",
@@ -37,7 +38,9 @@
         "5": "your phone number",
         "6": "Find number",
         "7": "Adults",
-        "8": "Children"
+        "8": "Children",
+        "9" : "Your application is accepted",
+        "10" : "dd/mm/yyyy"
     },
     "Galery": {
         "0": "Gallery"
@@ -66,7 +69,8 @@
         "2": "Number of guests:",
         "3": "Cost for 1 night: ",
         "4": "Bron",
-        "5": "Family Suite"
+        "5": "Family Suite",
+        "6": "so'm"
     },
     "Comments": {
         "0": "Visitor reviews",
@@ -76,7 +80,7 @@
     "Contacts": {
         "0": "Contacts",
         "1": "Your name",
-        "2": "Email",
+        "2": "Your Name",
         "3": "Your phone number",
         "4": "Send",
         "5": "Our employees will contact you within an hour!",

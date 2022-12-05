@@ -39,7 +39,7 @@ export const About = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 `;
 export const Star = styled.div`
@@ -50,32 +50,35 @@ export const Star = styled.div`
 `;
 export const Name = styled.div`
   display: flex;
+  align-items: center;
   border-radius: 3px;
   img {
-    margin-top: 10px;
     border-radius: 50px;
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
   }
   h3 {
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     margin-left: 20px;
-  }
-  p {
-    margin-left: 40px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.01em;
-    color: #aaaaaa;
+
+    @media screen and (max-width:389px){
+      font-size: 15px;
+    }
+    @media screen and (max-width:364px){
+     margin-left: 10px;
+    }
+    @media screen and (max-width:354px){
+     margin-left: 7px;
+     font-size: 12px;
+    }
+
   }
   i {
     padding-top: 60px;
   }
 `;
-// e3drtfyguhij
 export const Carusel = styled.div`
   display: flex;
   display: none;
@@ -155,14 +158,6 @@ export const ULWrapper = styled.div`
 `;
 export const LIItem = styled.li`
   margin: 15px 0;
-
- 
-  /* div {
-    padding: 5px 10px;
-
-    background: #1b1b1c;
-    border-radius: 3px;
-  } */
 `;
 
 export const Item = styled.div`

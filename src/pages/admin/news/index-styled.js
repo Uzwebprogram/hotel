@@ -34,15 +34,20 @@ export const WrapperCard = styled.div`
     flex-direction: column;
     align-items: center;
     color: white;
+    width: 33%;
     li {
     padding-bottom: 50px;
     list-style-type: none;
+    div{
+    text-align: center  ;
+    }
     img {
       width: 300px;
       height: 380px;
     }
     p {
       padding-bottom: 20px;
+
     }
     button {
       padding: 10px 30px;

@@ -8,7 +8,7 @@ export const ReservContext = createContext({
 export const ReservProvider = ({children})=>{
     const [ReservMap , setReservMap] = useState([])
     useEffect(() => {
-        fetch("http://62.217.179.24:5000/contacts")
+        fetch("https://api.reverhotel.uz/contacts")
         .then(res => res.json())
         .then(result => setReservMap(result))
     }, [ReservMap])

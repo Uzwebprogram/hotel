@@ -5,6 +5,8 @@ import Number from "../../pages/admin/number";
 import Contacts from "../../pages/admin/contacts";
 import OurHotel from "../../pages/admin/our-hotel";
 import News from "../../pages/admin/news";
+import Conatact from "../../pages/admin/contact";
+import AddAdmin from "../../pages/admin/addAdmin";
 export const DataAdmin = [
     {
         id : 1,
@@ -40,5 +42,15 @@ export const DataAdmin = [
         id : 7,
         path : "/admin/contacts",
         element : <Contacts/>
-    }
+    },
+    {
+        id : 8,
+        path : "/admin/contact",
+        element : <Conatact />
+    },
+    {
+        id : 9,
+        path : "/admin/addadmin",
+        element : <AddAdmin />
+    },
 ]

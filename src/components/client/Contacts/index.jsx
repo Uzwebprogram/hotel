@@ -1,4 +1,8 @@
-import { WrapperContainer } from "../../../App-styled";
+
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+import Button from '@mui/material/Button';
 import { Container, Row, Col, Hidden } from "react-grid-system";
 import {
   Wrapper,
@@ -12,15 +16,53 @@ import {
   BigWrapper,
   Form,
   InputGroup,
-  Button,
+  Butto,
   ColDiv,
   HiddenText,
   Rows,
 } from "./styled-index";
 import { useTranslation } from "react-i18next";
+import { useRef } from "react";
+import axios from "axios";
+import { Succsess } from '../reserv/styled-index';
 
 function Contacts() {
   const { t, i18n } = useTranslation();
+  const name = useRef()
+  const number = useRef()
+  const [open, setOpen] = React.useState(false);
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    pt: 2,
+    px: 4,
+    pb: 3,
+  };
+
+  const HendelContact = async (e) => {
+    e.preventDefault()
+    try {
+      const body = {
+        email: name.current.value,
+        phone_number: number.current.value
+      }
+      const respose = await axios.post("https://api.reverhotel.uz/form", body)
+      if (respose) {
+        setOpen(true)
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
   return (
     <>
       {/* <WrapperContainer> */}
@@ -33,7 +75,8 @@ function Contacts() {
                 <InputGroup>
                   <label htmlFor="email">{t("Contacts.1")}</label>
                   <input
-                    type="email"
+                    ref={name}
+                    type="text"
                     id="email"
                     placeholder={t("Contacts.2")}
                     required
@@ -41,9 +84,9 @@ function Contacts() {
                 </InputGroup>
                 <InputGroup>
                   <label htmlFor="phone">{t("Contacts.3")}</label>
-                  <input type="number" id="phone" required />
+                  <input ref={number} type="number" id="phone" placeholder="+998 (__) ___ __ __" required />
                 </InputGroup>
-                <Button type="sumbit">{t("Contacts.4")}</Button>
+                <Butto onClick={HendelContact} type="sumbit">{t("Contacts.4")}</Butto>
               </Form>
               <Row style={{ padding: "10px 15px", margin: "0" }}>
                 <Hidden component={HiddenText} xs sm>
@@ -68,9 +111,9 @@ function Contacts() {
                   sm={6}
                 >
                   <h3>{t("Contacts.9")}</h3>
-                  <a href="tel:+99893453455">+99893453455</a>
+                  <a href="tel:+998951696969">+998 95 169 69 69</a>
                   <br />
-                  <a href="tel:+99898345345">+99898345345</a>
+                  <a href="tel:+998990697980">+998 99 069 79 80</a>
                 </Col>
                 <Col
                   style={{ padding: "0" }}
@@ -81,7 +124,7 @@ function Contacts() {
                   sm={6}
                 >
                   <h3>{t("Contacts.8")}</h3>
-                  <a href="mailto:revel@mail.ru">revel@mail.ru</a>
+                  <a href="mailto:Reverhoteluz@gmail.com">Reverhoteluz@gmail.com</a>
                 </Col>
                 <Col style={{ padding: "0" }} component={ColDiv} lg={6} md={6}>
                   <Hidden xs sm>
@@ -114,6 +157,21 @@ function Contacts() {
             </WrapperRight>
           </Col>
         </Row>
+        <Modal
+          hideBackdrop
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="child-modal-title"
+          aria-describedby="child-modal-description"
+        >
+          <Box sx={{ ...style, width: 200 }}>
+            <Succsess>
+              <i class='bx bx-check-circle' ></i>
+              <h3>Text...</h3>
+              <button onClick={handleClose}>Ok</button>
+            </Succsess>
+          </Box>
+        </Modal>
       </BigWrapper>
       {/* </WrapperContainer> */}
     </>

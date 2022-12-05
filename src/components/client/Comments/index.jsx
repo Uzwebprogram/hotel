@@ -20,8 +20,9 @@ import Slider from "react-slick";
 import { SliderItem } from "../news/styled-index";
 import maksim from "../../../assets/client/comments/maksim.png";
 import { useTranslation } from "react-i18next";
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import { Row, Col, Hidden } from "react-grid-system";
+import { ReviewsContext } from "../../../context/revais";
 
 const settings = {
   // dots: true,
@@ -60,18 +61,12 @@ const settings = {
 
 function Comments() {
   const { t, i18n } = useTranslation();
-
   const carousel = useRef();
-  const commentArr = [1, 2, 3, 4, 5, 6];
+  const { ReviewsMap } = useContext(ReviewsContext)
+  const ValLang = () => {
+    return window.localStorage.getItem("i18nextLng")
+  }
 
-  const HendelLeft = (e) => {
-    e.preventDefault();
-    carousel.current.scrollLeft += carousel.current.offsetWidth;
-  };
-  const HendelRight = (e) => {
-    e.preventDefault();
-    carousel.current.scrollLeft -= carousel.current.offsetWidth;
-  };
   return (
     <>
       {/* <WrapperContainer> */}
@@ -80,14 +75,13 @@ function Comments() {
 
         {/* <Hidden sm> */}
         <Row component={ULWrapper}>
-          {commentArr.map(() => (
-            <Col component={LIItem} lg={4} md={6} sx={6} sm={12}>
+          {ReviewsMap.map((elem, index) => (
+            <Col key={index} component={LIItem} lg={4} md={6} sx={6} sm={12}>
               <Item>
                 <About>
                   <Name>
-                    <img src={maksim} alt="" />
-                    <h3>{t("Comments.1")}</h3>
-                    <p>26.09.2022</p>
+                    <img src={elem.avatar_image} alt="" />
+                    <h3>{elem.r_name}</h3>
                   </Name>
                 </About>
                 <Star>
@@ -97,7 +91,7 @@ function Comments() {
                   <i class="bx bxs-star"></i>
                   <i class="bx bxs-star"></i>
                 </Star>
-                <p>{t("Comments.2")}</p>
+                {ValLang() === "uz" ? (<><p>{elem.description_uz}</p></>) : ValLang() === "ru" ? (<><p>{elem.description_ru}</p></>) : ValLang() === "en" ? (<><p>{elem.description_en}</p></>) : null}
               </Item>
             </Col>
           ))}
@@ -106,120 +100,26 @@ function Comments() {
         {/* <Hidden component={HiddenDiv} xxxl xl lg md sx> */}
         <None>
           <Slider {...settings}>
-            <SliderItem>
-              <Item>
-                <About>
-                  <Name>
-                    <img src={maksim} alt="" />
-                    <h3>{t("Comments.1")}</h3>
-                    <p>26.09.2022</p>
-                  </Name>
-                </About>
-                <Star>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                </Star>
-                <p>{t("Comments.2")}</p>
-              </Item>
-            </SliderItem>
-            <SliderItem>
-              <Item>
-                <About>
-                  <Name>
-                    <img src={maksim} alt="" />
-                    <h3>{t("Comments.1")}</h3>
-                    <p>26.09.2022</p>
-                  </Name>
-                </About>
-                <Star>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                </Star>
-                <p>{t("Comments.2")}</p>
-              </Item>
-            </SliderItem>
-            <SliderItem>
-              <Item>
-                <About>
-                  <Name>
-                    <img src={maksim} alt="" />
-                    <h3>{t("Comments.1")}</h3>
-                    <p>26.09.2022</p>
-                  </Name>
-                </About>
-                <Star>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                </Star>
-                <p>{t("Comments.2")}</p>
-              </Item>
-            </SliderItem>
-            <SliderItem>
-              <Item>
-                <About>
-                  <Name>
-                    <img src={maksim} alt="" />
-                    <h3>{t("Comments.1")}</h3>
-                    <p>26.09.2022</p>
-                  </Name>
-                </About>
-                <Star>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                </Star>
-                <p>{t("Comments.2")}</p>
-              </Item>
-            </SliderItem>
-            <SliderItem>
-              <Item>
-                <About>
-                  <Name>
-                    <img src={maksim} alt="" />
-                    <h3>{t("Comments.1")}</h3>
-                    <p>26.09.2022</p>
-                  </Name>
-                </About>
-                <Star>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                </Star>
-                <p>{t("Comments.2")}</p>
-              </Item>
-            </SliderItem>
-            <SliderItem>
-              <Item>
-                <About>
-                  <Name>
-                    <img src={maksim} alt="" />
-                    <h3>{t("Comments.1")}</h3>
-                    <p>26.09.2022</p>
-                  </Name>
-                </About>
-                <Star>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                </Star>
-                <p>{t("Comments.2")}</p>
-              </Item>
-            </SliderItem>
+            {ReviewsMap.map((elem, index) =>
+              <SliderItem key={index}>
+                <Item>
+                  <About>
+                    <Name>
+                      <img src={elem.avatar_image} alt="image" />
+                      <h3>{elem.r_name}</h3>
+                    </Name>
+                  </About>
+                  <Star>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                  </Star>
+                  {ValLang() === "uz" ? (<><p>{elem.description_uz}</p></>) : ValLang() === "ru" ? (<><p>{elem.description_ru}</p></>) : ValLang() === "en" ? (<><p>{elem.description_en}</p></>) : null} 
+                </Item>
+              </SliderItem>
+            )}
           </Slider>
         </None>
         {/* </Hidden> */}

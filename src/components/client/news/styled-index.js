@@ -25,7 +25,6 @@ export const SliderItem = styled.div`
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
-      line-height: 120%;
       letter-spacing: 0.01em;
       color: #ffffff;
       /* background: #1b1b1c;

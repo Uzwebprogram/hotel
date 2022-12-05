@@ -91,6 +91,7 @@ export const InputGroup = styled.div`
     outline: none;
     border: 1px solid transparent;
     width: 90%;
+    font-size: 17px;
 
     :focus {
       background: #1b1b1c;
@@ -103,7 +104,7 @@ export const InputGroup = styled.div`
   }
 `;
 
-export const Button = styled.button`
+export const Butto = styled.button`
   background: #1b1b1c;
   border: 1px solid #cccccc;
   border-radius: 7px;

@@ -12,7 +12,7 @@ export const Nav = styled.div`
   justify-content: space-between;
   padding: 0;
   img {
-    width: 130px;
+    width: 100px;
     height: 70px;
   }
   ul {
@@ -40,6 +40,22 @@ export const Nav = styled.div`
     li:nth-child(6) {
       display: flex;
       flex-direction: column;
+      a{
+      border-radius: 50px;
+      padding: 5px 15px;
+      margin-top: 5px;
+      box-shadow: 0px 0px  5px 0px white;
+      -webkit-animation: mymove 3s infinite;
+    animation: mymove 3s infinite;
+      }
+      @keyframes mymove {
+        50%{
+        box-shadow: 0px 0px 20px 0px white;
+        }
+        50%{
+        box-shadow: 0px 0px 20px 0px white;
+        }
+      }
     }
   }
   button {
@@ -71,16 +87,43 @@ export const Menu = styled.div`
 
 export const Number = styled.div`
   display: none;
-  padding: 0 10px;
+  
   @media screen and (max-width: 950px) {
     display: block;
     display: flex;
     flex-direction: column;
-
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 98%;
+    padding-top: 15%;
     a{
         color: white;
         text-decoration: none;
         text-align: end;
+        margin-top: 5px;
+        border-radius: 50px;
+        padding: 5px 15px;
+        width: 135px;
+        box-shadow: 0px 0px  5px 0px white;
+      -webkit-animation: mymove 3s infinite;
+    animation: mymove 3s infinite;
+      @keyframes mymove {
+        50%{
+        box-shadow: 0px 0px 20px 0px white;
+        }
+        50%{
+        box-shadow: 0px 0px 20px 0px white;
+        }
+      }
     }
   }
-`;
+  @media screen and (max-width: 667px){
+    padding-top: 20%;
+  }
+  @media screen and (max-width: 475px){
+    padding-top: 25%;
+  }
+  @media screen and (max-width: 362px){
+    padding-top: 30%;
+  }
+`

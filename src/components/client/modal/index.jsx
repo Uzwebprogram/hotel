@@ -27,10 +27,6 @@ function Modal({ HendelChange, ValLang, set, modal }) {
                     <a onClick={HendelClose} href="#contacts">{t("Navbar.4")}</a>
                 </li>
                 <li>
-                    <a href="#">+998 99 999 99 99</a>
-                    <a href="#">+998 99 999 99 99</a>
-                </li>
-                <li>
                     <select onChange={HendelChange}>
                         {ValLang() === "uz" ? (
                             <>

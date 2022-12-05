@@ -57,6 +57,8 @@ justify-content: space-between;
 @media screen and (max-width: 400px){
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 h5 {
     font-size: 20px;
