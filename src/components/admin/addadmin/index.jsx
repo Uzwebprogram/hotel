@@ -44,8 +44,8 @@ function Add() {
     return (
         <>
             <Wrapper>
-                <h2>AddAdmin</h2>
-                <button onClick={handleOpen}>Add+</button>
+                <h2>Добавить Админ</h2>
+                <button onClick={handleOpen}>Добавить+</button>
             </Wrapper>
             <Modal
                 open={open}
