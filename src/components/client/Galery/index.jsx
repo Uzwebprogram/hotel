@@ -52,7 +52,7 @@ function Gallery() {
       <h2>{t("Galery.0")}</h2>
       <Slider {...settings}>
         {GaleryMap.map((elem, index) =>
-          <SliderItem key={elem.galery_id}>
+          <SliderItem key={index}>
             <img src={elem.image_galery} alt="image" />
           </SliderItem>
         )}
