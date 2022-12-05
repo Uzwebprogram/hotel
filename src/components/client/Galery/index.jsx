@@ -7,45 +7,48 @@ import { GaleryContext } from "../../../context/galery/index";
 
 
 
-const settings = {
-  // dots: true,
-  infinite: false,
-  speed: 500,
-  slidesToShow: 2,
-  slidesToScroll: 2,
-  initialSlide: 0,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        infinite: true,
-        // dots: true,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-};
+
 
 function Gallery() {
   const carousel = useRef();
   const { t, i18n } = useTranslation();
   const { GaleryMap } = useContext(GaleryContext);
+
+  const settings = {
+    // dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          // dots: true,
+        },
+      },
+      {
+        breakpoint: 600,  
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <GalWrapper id="Galery">
