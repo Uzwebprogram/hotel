@@ -58,6 +58,9 @@ function Contacts() {
       const respose = await axios.post("https://api.reverhotel.uz/form", body)
       if (respose) {
         setOpen(true)
+        name.current.value = null
+        number.current.value = null
+
       }
     } catch (error) {
       console.log(error);
@@ -167,7 +170,7 @@ function Contacts() {
           <Box sx={{ ...style, width: 200 }}>
             <Succsess>
               <i class='bx bx-check-circle' ></i>
-              <h3>Text...</h3>
+              <h3>{t("Reserv.9")}</h3>
               <button onClick={handleClose}>Ok</button>
             </Succsess>
           </Box>

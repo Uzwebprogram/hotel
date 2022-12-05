@@ -43,4 +43,4 @@ export const UL = styled.ul`
 li {
    text-align: center;  
 }
-`
+`   
