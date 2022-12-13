@@ -14,8 +14,11 @@ height: 100%;
 
 display: flex;
 ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
     width: 100%;
+    margin-left: 15px;
 }
 `
 export const DashboardWrapper = styled.div`
@@ -40,6 +43,8 @@ li{
 `
 
 export const UL = styled.ul`
+margin: 0;
+padding: 0;
 li {
    text-align: center;  
 }
