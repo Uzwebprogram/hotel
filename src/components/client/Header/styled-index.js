@@ -12,8 +12,12 @@ export const Nav = styled.div`
   justify-content: space-between;
   padding: 0;
   img {
-    width: 100px;
+    width: 125px;
+    height: 110px;
+    @media screen and (max-width: 800px) {
+      width: 100px;
     height: 70px;
+    }
   }
   ul {
     @media screen and (max-width: 950px) {
