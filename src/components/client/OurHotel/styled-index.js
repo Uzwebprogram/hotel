@@ -31,8 +31,13 @@ export const Ul1 = styled.div`
   li {
     padding-bottom: 50px;
     img {
-      width: 100%;
+      width: 350px;
       height: 380px;
+
+      @media screen and (max-width: 360px){
+        width: 100%;
+        height: 380px;
+      }
     }
     p {
       padding-bottom: 20px;
@@ -64,10 +69,5 @@ export const Ul = styled.ul`
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center;
-  }
-
-  img {
-    /* width: 350px !important;
-    height: 500px !important; */
   }
 `;

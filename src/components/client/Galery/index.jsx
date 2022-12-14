@@ -5,10 +5,6 @@ import Slider from "react-slick";
 import "./slider.css";
 import { GaleryContext } from "../../../context/galery/index";
 
-
-
-
-
 function Gallery() {
   const carousel = useRef();
   const { t, i18n } = useTranslation();

@@ -63,7 +63,7 @@ function Footer() {
                     <a href="tel:+998 95 169 69 69"><button>{t("Footer.13")}</button></a>
                   </li>
                   <li>
-                    <a href="mailto:Reverhoteluz@gmail.com">Reverhoteluz@gmail.com</a>
+                    <a href="mailto:Info@reverhotel.uz">Info@reverhotel.uz</a>
                   </li>
                   <li>
                     <a href="#">

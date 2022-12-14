@@ -15,7 +15,7 @@ function OurHotel() {
         <Ul1>
           <Ul>
             {HotelOurMap.map((elem, index) =>
-              <li>
+              <li key={index}>
                 <img src={elem.image_room} alt="image" />
                 <h3>{elem.title_room}</h3>
                 <p>{t("OurHotel.1")} {elem.area_room} kv.m</p>

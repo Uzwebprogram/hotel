@@ -87,7 +87,6 @@ export const Menu = styled.div`
 
 export const Number = styled.div`
   display: none;
-  
   @media screen and (max-width: 950px) {
     display: block;
     display: flex;
@@ -117,6 +116,7 @@ export const Number = styled.div`
       }
     }
   }
+
   @media screen and (max-width: 667px){
     padding-top: 20%;
   }
@@ -125,5 +125,10 @@ export const Number = styled.div`
   }
   @media screen and (max-width: 362px){
     padding-top: 30%;
-  }
+    font-size: 15px;
+    width: 97%;
+    a{
+    width: 126px;
+    }
+}
 `

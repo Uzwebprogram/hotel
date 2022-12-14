@@ -1,8 +1,7 @@
-
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
-import Button from '@mui/material/Button';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import Button from "@mui/material/Button";
 import { Container, Row, Col, Hidden } from "react-grid-system";
 import {
   Wrapper,
@@ -24,24 +23,24 @@ import {
 import { useTranslation } from "react-i18next";
 import { useRef } from "react";
 import axios from "axios";
-import { Succsess } from '../reserv/styled-index';
+import { Succsess } from "../reserv/styled-index";
 
 function Contacts() {
   const { t, i18n } = useTranslation();
-  const name = useRef()
-  const number = useRef()
+  const name = useRef();
+  const number = useRef();
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
   };
   const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
     width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
+    bgcolor: "background.paper",
+    border: "2px solid #000",
     boxShadow: 24,
     pt: 2,
     px: 4,
@@ -49,23 +48,22 @@ function Contacts() {
   };
 
   const HendelContact = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     try {
       const body = {
         email: name.current.value,
-        phone_number: number.current.value
-      }
-      const respose = await axios.post("https://api.reverhotel.uz/form", body)
+        phone_number: number.current.value,
+      };
+      const respose = await axios.post("https://api.reverhotel.uz/form", body);
       if (respose) {
-        setOpen(true)
-        name.current.value = null
-        number.current.value = null
-
+        setOpen(true);
+        name.current.value = null;
+        number.current.value = null;
       }
     } catch (error) {
       console.log(error);
     }
-  }
+  };
   return (
     <>
       {/* <WrapperContainer> */}
@@ -87,9 +85,17 @@ function Contacts() {
                 </InputGroup>
                 <InputGroup>
                   <label htmlFor="phone">{t("Contacts.3")}</label>
-                  <input ref={number} type="number" id="phone" placeholder="+998 (__) ___ __ __" required />
+                  <input
+                    ref={number}
+                    type="number"
+                    id="phone"
+                    placeholder="+998 (__) ___ __ __"
+                    required
+                  />
                 </InputGroup>
-                <Butto onClick={HendelContact} type="sumbit">{t("Contacts.4")}</Butto>
+                <Butto onClick={HendelContact} type="sumbit">
+                  {t("Contacts.4")}
+                </Butto>
               </Form>
               <Row style={{ padding: "10px 15px", margin: "0" }}>
                 <Hidden component={HiddenText} xs sm>
@@ -127,7 +133,7 @@ function Contacts() {
                   sm={6}
                 >
                   <h3>{t("Contacts.8")}</h3>
-                  <a href="mailto:Reverhoteluz@gmail.com">Reverhoteluz@gmail.com</a>
+                  <a href="mailto:Info@reverhotel.uz">Info@reverhotel.uz</a>
                 </Col>
                 <Col style={{ padding: "0" }} component={ColDiv} lg={6} md={6}>
                   <Hidden xs sm>
@@ -169,7 +175,7 @@ function Contacts() {
         >
           <Box sx={{ ...style, width: 200 }}>
             <Succsess>
-              <i class='bx bx-check-circle' ></i>
+              <i class="bx bx-check-circle"></i>
               <h3>{t("Reserv.9")}</h3>
               <button onClick={handleClose}>Ok</button>
             </Succsess>
