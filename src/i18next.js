@@ -20,7 +20,7 @@ i18next
     }
   },
   lng: window.localStorage.getItem('i18nextLng'),
-  fallbackLng: 'uz',
+  fallbackLng: 'ru',
   detection:{
     order:['htmlTag' , 'cookie', 'localStorage', 'path', 'subdomain'],
     caches:['cookie' , 'localStorage']

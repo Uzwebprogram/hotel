@@ -97,13 +97,15 @@ export const Count = styled.div`
 export const Countdiv = styled.div`
   div {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    width: 75px;
     button {
       border: 1px solid #1f1f1f;
       background-color: #1f1f1f;
       color: white;
       border-radius: 50%;
+      height: 23px !important;
     }
   }
   p {
@@ -146,6 +148,7 @@ export const CaRd = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
     @media screen and (max-width: 320px) and (max-width: 375px){
     width: 100%;
   }

@@ -25,7 +25,7 @@ function Header() {
       <Wrapper>
         <WrapperContainer>
           <Nav>
-            <img src={Logo} alt="logo" />
+            <img src={Logo} alt="logo" width={140} height={60} />
             <ul>
               <li>
                 <a href="#Galery">{t("Navbar.0")}</a>
