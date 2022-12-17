@@ -75,7 +75,7 @@ function Comments() {
   return (
     <>
       {/* <WrapperContainer> */}
-      <Wrapper>
+      <Wrapper id="comments">
         <h1>{t("Comments.0")}</h1>
 
         {/* <Hidden sm> */}

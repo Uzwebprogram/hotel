@@ -1,26 +1,42 @@
 import styled from "styled-components";
 import bgcolors from "../../../../assets/client/home/bgcolors.png";
 export const Container = styled.div`
+  width: 100% !important;
+  margin: 0 auto !important;
   display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   background-image: url(${bgcolors});
   background-position-y: bottom;
   background-size: 100%;
   background-repeat: no-repeat;
+  padding-top: 6%;
   @media screen and (max-width: 823px) {
     display: flex;
     flex-direction: column;
+    padding-top: 15%;
+  }
+  @media screen  and (max-width: 578px){
+    padding-top: 20%;
+  }
+  @media screen  and (max-width: 431px){
+    padding-top: 30%;
   }
 `;
 export const LeftDiv = styled.div`
-  padding-left: 10px;
+  padding-left: 5%;
   padding-right: 10px;
+  width: 45%;
+
+  @media screen  and (max-width: 825px){
+    width: 100% ;
+  }
   h1 {
     padding-top: 7%;
-
     font-style: normal;
     font-weight: 600;
-    font-size: 55px;
+    font-size: 45px;
     @media screen and (max-width: 1088px) {
       padding-top: 0%;
     }
@@ -29,7 +45,7 @@ export const LeftDiv = styled.div`
     }
   }
   p {
-    width: 80%;
+    width: 90%;
     @media screen and (max-width: 823px) {
       width: 100%;
       font-size: 15px;
@@ -51,7 +67,11 @@ export const LeftDiv = styled.div`
   }
 `;
 export const RightDiv = styled.div`
-  img {
+width: 45%;
+@media screen  and (max-width: 825px){
+    width: 100% ;
+  }
+ img {
     width: 100%;
     @media screen and (max-width: 823px) {
       margin-top: 5%;
@@ -63,6 +83,7 @@ export const Bigdiv = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-top: 10%;
+  width: 95%;
   @media screen and (max-width: 823px) {
     display: none;
   }

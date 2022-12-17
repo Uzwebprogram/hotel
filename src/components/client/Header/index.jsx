@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { WrapperContainer } from "../../../App-styled";
 import Logo from "../../../assets/client/header/Logo.svg";
-import { Wrapper, Nav, Menu , Number } from "./styled-index";
+import { Wrapper, Nav, Menu, Number } from "./styled-index";
 import Modal from "../modal";
 
 function Header() {
@@ -27,23 +27,23 @@ function Header() {
           <img src={Logo} alt="logo" />
           <ul>
             <li>
-              <a href="#">{t("Navbar.0")}</a>
+              <a href="#Galery">{t("Navbar.0")}</a>
             </li>
             <li>
-              <a href="#">{t("Navbar.1")}</a>
+              <a href="#About">{t("Navbar.1")}</a>
             </li>
             <li>
-              <a href="#">{t("Navbar.2")}</a>
+              <a href="#numbers">{t("Navbar.2")}</a>
             </li>
             <li>
-              <a href="#">{t("Navbar.3")}</a>
+              <a href="#comments">{t("Navbar.3")}</a>
             </li>
             <li>
-              <a href="#">{t("Navbar.4")}</a>
+              <a href="#contacts">{t("Navbar.4")}</a>
             </li>
             <li>
-              <a href="#">+998 99 999 99 99</a>
-              <a href="#">+998 99 999 99 99</a>
+              <a href="tel:+998 99 999 99 99">+998 99 999 99 99</a>
+              <a href="tel:+998 99 999 99 99">+998 99 999 99 99</a>
             </li>
             <li>
               <select onChange={HendelChange}>
@@ -82,17 +82,17 @@ function Header() {
           </Menu>
         </Nav>
         <Number>
-          <a href="#">+998 99 999 99 99</a>
-          <a href="#">+998 99 999 99 99</a>
+          <a href="tel:+998 99 999 99 99">+998 99 999 99 99</a>
+          <a href="tel:+998 99 999 99 99">+998 99 999 99 99</a>
         </Number>
-          <>
-            <Modal
+        <>
+          <Modal
             modal={modal}
-              HendelChange={HendelChange}
-              ValLang={ValLang}
-              set={setModal}
-            />
-          </>
+            HendelChange={HendelChange}
+            ValLang={ValLang}
+            set={setModal}
+          />
+        </>
       </WrapperContainer>
     </Wrapper>
   );

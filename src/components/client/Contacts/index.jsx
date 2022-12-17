@@ -24,7 +24,7 @@ function Contacts() {
   return (
     <>
       {/* <WrapperContainer> */}
-      <BigWrapper>
+      <BigWrapper id="contacts">
         <h1>{t("Contacts.0")}</h1>
         <Row component={Rows}>
           <Col lg={6} md={6} sm={12}>
@@ -41,7 +41,7 @@ function Contacts() {
                 </InputGroup>
                 <InputGroup>
                   <label htmlFor="phone">{t("Contacts.3")}</label>
-                  <input type="tel" id="phone" required />
+                  <input type="number" id="phone" required />
                 </InputGroup>
                 <Button type="sumbit">{t("Contacts.4")}</Button>
               </Form>

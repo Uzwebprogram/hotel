@@ -2,12 +2,19 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   background: #0f0f11;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 `;
 export const Nav = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0;
+  img {
+    width: 130px;
+    height: 70px;
+  }
   ul {
     @media screen and (max-width: 950px) {
       display: none;
@@ -49,6 +56,7 @@ export const Menu = styled.div`
   display: none;
   .bx {
     color: white;
+    font-size: 35px;
   }
   a {
     color: white;

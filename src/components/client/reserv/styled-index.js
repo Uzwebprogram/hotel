@@ -74,10 +74,11 @@ export const Card = styled.div`
     margin-top: 15%;
     background-color: #1b1b1c;
     border: 1px solid #1b1b1c;
-    padding: 7px 0px;
-    color: gray;
+    padding: 7px 0px 7px 5px ;
+    color-scheme: dark;
     border-radius: 5px;
     color: white;
+    outline: none;
     width: 100%;
   }
 `;
@@ -102,6 +103,8 @@ export const Countdiv = styled.div`
   }
   p {
     padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     text-align: center;
   }
 `;
@@ -183,6 +186,7 @@ export const CaRD = styled.div`
     border-radius: 5px;
     color: white;
   }
+
 `;
 
 export const Button = styled.button`

@@ -10,8 +10,7 @@ function AboutHotel() {
   const { t, i18n } = useTranslation();
   return (
     <>
-      <Wrapper>
-        {/* <WrapperContainer> */}
+      <Wrapper id="About">
           <h3>{t("AboutHotel.0")}</h3>
           <Bigdiv>
             <First>
@@ -40,7 +39,6 @@ function AboutHotel() {
               </ul>
             </Ul>
           </Small>
-        {/* </WrapperContainer> */}
       </Wrapper>
     </>
   );

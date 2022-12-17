@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Modals } from "./styled-index"
 
 
-function Modal({HendelChange , ValLang , set , modal}) {
+function Modal({ HendelChange, ValLang, set, modal }) {
     const { t, i18n } = useTranslation()
     const HendelClose = () => {
         set(false)
@@ -12,19 +12,19 @@ function Modal({HendelChange , ValLang , set , modal}) {
             <p onClick={HendelClose}>X</p>
             <ul>
                 <li>
-                    <a href="#">{t("Navbar.0")}</a>
+                    <a onClick={HendelClose} href="#Galery">{t("Navbar.0")}</a>
                 </li>
                 <li>
-                    <a href="#">{t("Navbar.1")}</a>
+                    <a onClick={HendelClose} href="#About">{t("Navbar.1")}</a>
                 </li>
                 <li>
-                    <a href="#">{t("Navbar.2")}</a>
+                    <a onClick={HendelClose} href="#numbers">{t("Navbar.2")}</a>
                 </li>
                 <li>
-                    <a href="#">{t("Navbar.3")}</a>
+                    <a onClick={HendelClose} href="#comments">{t("Navbar.3")}</a>
                 </li>
                 <li>
-                    <a href="#">{t("Navbar.4")}</a>
+                    <a onClick={HendelClose} href="#contacts">{t("Navbar.4")}</a>
                 </li>
                 <li>
                     <a href="#">+998 99 999 99 99</a>

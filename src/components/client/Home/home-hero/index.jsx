@@ -14,7 +14,6 @@ function HomeHero() {
   const { t, i18n } = useTranslation();
   return (
     <>
-      {/* <WrapperContainer> */}
         <Container>
           <LeftDiv>
             <h1>{t("Homehero.0")}</h1>
@@ -34,7 +33,6 @@ function HomeHero() {
             <img src={studio} alt="studio" />
           </RightDiv>
         </Container>
-      {/* </WrapperContainer> */}
     </>
   );
 }

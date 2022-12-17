@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     }
     @media screen and (max-width: 375px) {
       font-size: 20px;
-      padding-left: 10px;
+      /* padding-left: 10px; */
     }
   }
   color: white;
@@ -66,5 +66,10 @@ export const Ul = styled.ul`
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center;
+  }
+
+  img {
+    width: 350px !important;
+    height: 500px !important;
   }
 `;

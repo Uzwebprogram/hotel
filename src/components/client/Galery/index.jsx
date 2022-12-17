@@ -4,13 +4,17 @@ import { Caroulse, GalWrapper, SliderItem, Buttons } from "./styled-index";
 import Slider from "react-slick";
 import "./slider.css";
 import { GaleryContext } from "../../../context/galery/index";
+import Img1 from "../../../assets/client/galery/1.png"
+import Img2 from "../../../assets/client/galery/2.png"
+import Img3 from "../../../assets/client/galery/2.png"
+
 
 const settings = {
   // dots: true,
   infinite: false,
   speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToShow: 2,
+  slidesToScroll: 2,
   initialSlide: 0,
   responsive: [
     {
@@ -44,7 +48,6 @@ function Gallery() {
   const carousel = useRef();
   const { t, i18n } = useTranslation();
   const { GaleryMap } = useContext(GaleryContext);
-  console.log(GaleryMap);
 
   const HendelLeft = (e) => {
     e.preventDefault();
@@ -56,14 +59,27 @@ function Gallery() {
   };
 
   return (
-    <GalWrapper>
+    <GalWrapper id="Galery">
       <h2>{t("Galery.0")}</h2>
       <Slider {...settings}>
-        {GaleryMap.map((elem) => (
-          <SliderItem key={elem.id}>
-            <img src={elem.image_galery} alt="image" />
-          </SliderItem>
-        ))}
+        <SliderItem>
+          <img src={Img2} alt="image" />
+        </SliderItem>
+        <SliderItem>
+          <img src={Img1} alt="" />
+        </SliderItem>
+        <SliderItem>
+          <img src={Img3} alt="" />
+        </SliderItem>
+        <SliderItem>
+          <img src={Img1} alt="" />
+        </SliderItem>
+        <SliderItem>
+          <img src={Img2} alt="" />
+        </SliderItem>
+        <SliderItem>
+          <img src={Img3} alt="" />
+        </SliderItem>
       </Slider>
     </GalWrapper>
   );

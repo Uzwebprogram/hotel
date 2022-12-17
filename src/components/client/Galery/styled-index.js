@@ -22,9 +22,11 @@ export const SliderItem = styled.div`
  display: flex;
  align-items: center;
  justify-content: center;
+ margin-right: 5%;
  img{
-    width: 95%;
-    height: 100%;
+    width: 550px !important;
+    height: 450px;
+    padding-right: 50px;
     border-radius: 3px;
     margin: 0 auto;
  }
