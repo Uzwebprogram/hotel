@@ -42,7 +42,7 @@ function Login() {
                         <input ref={email} type="email" placeholder="email..." />
 
                         <label>Password</label>
-                        <input ref={password} type="password..." placeholder="password..." />
+                        <input ref={password} type="password" placeholder="password..." />
 
                         <button onClick={HendelLogin}>Enter</button>
                     </form>
