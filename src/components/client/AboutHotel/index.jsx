@@ -36,6 +36,18 @@ function AboutHotel() {
                   <img src={location} alt="location" />
                   <p>{t("AboutHotel.5")}</p>
                 </li>
+                <li>
+                  <img src={location} alt="location" />
+                  <p>{t("AboutHotel.6")}</p>
+                </li>
+                <li>
+                  <img src={location} alt="location" />
+                  <p>{t("AboutHotel.7")}</p>
+                </li>
+                <li>
+                  <img src={location} alt="location" /> 
+                  <p>{t("AboutHotel.8")}</p>
+                </li>
               </ul>
             </Ul>
           </Small>

@@ -46,9 +46,53 @@ export const WrapperLeft = styled.div`
   }
 `;
 export const WrapperRight = styled.div`
+  background-color: #1b1b1c;
+  padding: 20px;
+  border-radius: 20px;
   iframe {
-    height: 500px;
+    height: 150px;
     width: 100%;
+  }
+  .iframe {
+    width: 50%;
+    @media screen and (max-width: 440px){
+      width: 100%;
+    }
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 440px){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .text {
+      width: 50%;
+      text-align: center;
+      @media screen and (max-width: 440px){
+      width: 100%;
+    }
+      /* height: 100%; */
+      h2 {
+        margin: 0 auto;
+        @media screen and (max-width: 1135px){
+          font-size: 17px;
+        }
+      }
+      a {
+        border: 1px solid;
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+      }
+      .a {
+        margin-top: 85px;
+      }
+    }
+  }
+  .card:nth-child(2) {
+    margin: 20px 0;
   }
 `;
 export const Div = styled.div`
@@ -63,7 +107,7 @@ export const Div = styled.div`
   h2 {
     font-size: 20px;
   }
-  `
+`;
 export const Form = styled.form``;
 
 export const InputGroup = styled.div`

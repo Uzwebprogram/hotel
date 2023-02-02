@@ -27,7 +27,7 @@
     "1": "Sizni sharqona mehmondo'stligi bilan mashhur va Toshkentning qoq markazida joylashgan 'Rever' mehmonxonasida kutib olishdan mamnunmiz!",
     "2": "Raqamlarni ko'rish",
     "3": "pastga aylantiring",
-    "4": "Toshkent, Chilonzor tumani, Bunyodkor ko‘chasi, 57-uy"
+    "4": "160 Bog'ishamol ko'chasi"
   },
   "Reserv": {
     "0": "Xonani band qilish",
@@ -36,11 +36,12 @@
     "3": "Mehmonlar",
     "4": "Raqamni tanlang",
     "5": "Telefon raqamingiz",
-    "6": "Raqamni toping",
+    "6": "Kitob",
     "7": "Kattalar",
     "8": "Bolalar",
     "9": "Sizning arizangiz qabul qilindi",
-    "10": "dd/mm/yyyy"
+    "10": "dd/mm/yyyy",
+    "11": "Elektron pochta"
   },
   "Galery": {
     "0": "Galereya"
@@ -51,7 +52,10 @@
     "2": "Nima uchun biz?",
     "3": "Tozalik va xavfsizlik",
     "4": "Hamyonbop narxlar",
-    "5": "Qulay joylashuv"
+    "5": "Qulay joylashuv",
+    "6": "Mazali nonushtalar",
+    "7": "Tez internet WiFi",
+    "8": "Transfer xizmati"
   },
   "Terms": {
     "0": "Yashash shartlari",
@@ -88,7 +92,11 @@
     "7": "160 Bog'ishamol ko'chasi",
     "8": "Bizga yozing",
     "9": "Bizga qo'ng'iroq qiling",
-    "10": "Biz ijtimoiy tarmoqlardamiz"
+    "10": "Biz ijtimoiy tarmoqlardamiz",
+    "11": "Biz Googledamiz .",
+    "12": "Biz Yandexdamiz .",
+    "13": "Biz 2Gisdamiz .",
+    "14": "Ochish"
   },
   "News": {
     "0": "Yangiliklar",

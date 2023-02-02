@@ -154,15 +154,71 @@ function Contacts() {
           </Col>
           <Col lg={6} md={6} sm={12}>
             <WrapperRight>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.5213256996535!2d69.29783388087688!3d41.341021084491196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5c95e633d07%3A0x2ab8ade14a1876f!2sRever%20Hotel!5e0!3m2!1sru!2s!4v1671088243234!5m2!1sru!2s"
-                class="gmap_iframe"
-                width="100%"
-                frameborder="0"
-                scrolling="no"
-                marginheight="0"
-                marginwidth="0"
-              ></iframe>
+              <div className="cards">
+                <div className="card">
+                  <div className="iframe">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.5213256996535!2d69.29783388087688!3d41.341021084491196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5c95e633d07%3A0x2ab8ade14a1876f!2sRever%20Hotel!5e0!3m2!1sru!2s!4v1671088243234!5m2!1sru!2s"
+                      class="gmap_iframe"
+                      width="100%"
+                      frameborder="0"
+                      scrolling="no"
+                      marginheight="0"
+                      marginwidth="0"
+                    ></iframe>
+                  </div>
+                  <div className="text">
+                    <h2>{t("Contacts.11")}</h2>
+                    <div className="a">
+                      <a href="https://goo.gl/maps/sC8Nkaczqj5U99CBA">
+                        {t("Contacts.14")}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="iframe">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.5213256996535!2d69.29783388087688!3d41.341021084491196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5c95e633d07%3A0x2ab8ade14a1876f!2sRever%20Hotel!5e0!3m2!1sru!2s!4v1671088243234!5m2!1sru!2s"
+                      class="gmap_iframe"
+                      width="100%"
+                      frameborder="0"
+                      scrolling="no"
+                      marginheight="0"
+                      marginwidth="0"
+                    ></iframe>
+                  </div>
+                  <div className="text">
+                    <h2>{t("Contacts.12")}</h2>
+                    <div className="a">
+                      <a href="https://yandex.uz/maps/10335/tashkent/?ll=69.298934%2C41.338597&mode=whatshere&whatshere%5Bpoint%5D=69.301076%2C41.341334&whatshere%5Bzoom%5D=17&z=18.69">
+                        {t("Contacts.14")}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="iframe">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.5213256996535!2d69.29783388087688!3d41.341021084491196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5c95e633d07%3A0x2ab8ade14a1876f!2sRever%20Hotel!5e0!3m2!1sru!2s!4v1671088243234!5m2!1sru!2s"
+                      class="gmap_iframe"
+                      width="100%"
+                      frameborder="0"
+                      scrolling="no"
+                      marginheight="0"
+                      marginwidth="0"
+                    ></iframe>
+                  </div>
+                  <div className="text">
+                    <h2>{t("Contacts.13")}</h2>
+                    <div className="a">
+                      <a href="https://go.2gis.com/qgn5s">
+                        {t("Contacts.14")}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </WrapperRight>
           </Col>
         </Row>

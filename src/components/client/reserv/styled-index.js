@@ -105,7 +105,10 @@ export const Countdiv = styled.div`
       background-color: #1f1f1f;
       color: white;
       border-radius: 50%;
-      height: 23px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 25px !important;
     }
   }
   p {

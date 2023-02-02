@@ -35,7 +35,7 @@ function Footer() {
                   </li>
                 </ul>
 
-                <ul>
+                {/* <ul>
                   <li>
                     <a href="#">{t("Footer.6")}</a>
                   </li>
@@ -76,7 +76,7 @@ function Footer() {
                       <i class="bx bxl-facebook-square"></i>
                     </a>
                   </li>
-                </ul>
+                </ul> */}
                 <UPWrapper>
                   <Up>
                     <a href="#">

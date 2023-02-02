@@ -117,7 +117,7 @@ export const Heading = styled.div`
   }
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   @media only screen and (max-width: 940px) {
     display: flex;

@@ -60,13 +60,13 @@ export const Small = styled.div`
 `;
 export const Ul = styled.div`
   ul {
-    padding-top: 20px;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    width: 50%;
+    width: 100%;
+    padding: 10px 0 0 0;
     @media screen and (max-width: 1105px) {
       width: 70%;
     }
