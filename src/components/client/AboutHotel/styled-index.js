@@ -36,13 +36,18 @@ export const First = styled.div`
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 25px;
+    margin-bottom: 10px;
+    /* line-height: 25px; */
     @media screen and (max-width: 780px) {
       font-size: 15px;
     }
   }
 `;
 export const Second = styled.div`
+img{
+width: 600px;
+height: 490px;
+}
   @media screen and (max-width: 1105px) {
     img {
       width: 100%;
@@ -67,6 +72,10 @@ export const Ul = styled.div`
     text-align: center;
     width: 100%;
     padding: 10px 0 0 0;
+    img{
+      width: 70px;
+      height: 80px;
+    }
     @media screen and (max-width: 1105px) {
       width: 70%;
     }

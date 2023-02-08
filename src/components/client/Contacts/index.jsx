@@ -68,10 +68,12 @@ function Contacts() {
     <>
       {/* <WrapperContainer> */}
       <BigWrapper id="contacts">
-        <h1>{t("Contacts.0")}</h1>
+        {/* <h1>{t("Contacts.0")}</h1> */}
         <Row component={Rows}>
           <Col lg={6} md={6} sm={12}>
             <WrapperLeft>
+        <h1>{t("Contacts.0")}</h1>
+
               <Form>
                 <InputGroup>
                   <label htmlFor="email">{t("Contacts.1")}</label>
@@ -101,7 +103,7 @@ function Contacts() {
                 <Hidden component={HiddenText} xs sm>
                   <p>{t("Contacts.5")}</p>
                 </Hidden>
-                <Col
+                {/* <Col
                   style={{ padding: "0" }}
                   component={ColDiv}
                   lg={6}
@@ -123,8 +125,8 @@ function Contacts() {
                   <a href="tel:+998951696969">+998 95 169 69 69</a>
                   <br />
                   <a href="tel:+998990697980">+998 99 069 79 80</a>
-                </Col>
-                <Col
+                </Col> */}
+                {/* <Col
                   style={{ padding: "0" }}
                   component={ColDiv}
                   lg={6}
@@ -148,7 +150,7 @@ function Contacts() {
                       <i class="bx bxl-facebook-square"></i>
                     </a>
                   </Hidden>
-                </Col>
+                </Col> */}
               </Row>
             </WrapperLeft>
           </Col>
@@ -179,7 +181,7 @@ function Contacts() {
                 <div className="card">
                   <div className="iframe">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.5213256996535!2d69.29783388087688!3d41.341021084491196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5c95e633d07%3A0x2ab8ade14a1876f!2sRever%20Hotel!5e0!3m2!1sru!2s!4v1671088243234!5m2!1sru!2s"
+                      src="https://yandex.uz/maps/-/CCU772xp8A"
                       class="gmap_iframe"
                       width="100%"
                       frameborder="0"
@@ -191,7 +193,7 @@ function Contacts() {
                   <div className="text">
                     <h2>{t("Contacts.12")}</h2>
                     <div className="a">
-                      <a href="https://yandex.uz/maps/10335/tashkent/?ll=69.298934%2C41.338597&mode=whatshere&whatshere%5Bpoint%5D=69.301076%2C41.341334&whatshere%5Bzoom%5D=17&z=18.69">
+                      <a href="https://yandex.uz/maps/-/CCU772xp8A">
                         {t("Contacts.14")}
                       </a>
                     </div>
@@ -200,7 +202,7 @@ function Contacts() {
                 <div className="card">
                   <div className="iframe">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.5213256996535!2d69.29783388087688!3d41.341021084491196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5c95e633d07%3A0x2ab8ade14a1876f!2sRever%20Hotel!5e0!3m2!1sru!2s!4v1671088243234!5m2!1sru!2s"
+                      src="https://go.2gis.com/jp64zi"
                       class="gmap_iframe"
                       width="100%"
                       frameborder="0"

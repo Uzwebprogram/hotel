@@ -48,14 +48,20 @@
   },
   "AboutHotel": {
     "0": "Mehmonxona haqida",
-    "1": "Sizni sharqona mehmondo'stligi bilan mashhur va Toshkentning qoq markazida joylashgan 'O'zbekiston' mehmonxonasida kutib olishdan mamnunmiz! U sport zali, sauna va qulay yashash uchun tekis ekranli televizorlar bilan jihozlangan shinam konditsionerli xonalarni taklif etadi.Hotel Uzbekistan klassik tarzda jihozlangan xonalar va minibar bilan jihozlangan suitlarni taklif etadi. Ichki makonlar quyuq yog'och mebellar va oqlangan matolar bilan bezatilgan. Oqlangan pianino restoranida Yevropa va mahalliy taomlar taqdim etiladi. 'Vena' kafe-bari issiq va sovuq ichimliklarning keng tanlovini taklif etadi. Saytda snack bar ham mavjud. Mehmonxona yaqinida ko'plab attraksionlar, do'konlar va kafelar mavjud. Amir Temur metro bekati piyoda 5 daqiqa. 24 soat xizmat ko'rsatadigan resepsiyon xodimlari 10 km uzoqlikdagi Toshkent aeroportiga transport xizmatini tashkil qilishlari mumkin. 'O'zbekiston' mehmonxonasiga xush kelibsiz!",
+    "1": "Toshkentdagi Rever mehmonxonasi Shosh mehmonxonalar tarmog‘ining eng yaxshi filiallaridan biri bo‘lib, ko‘plab foydali xizmatlar shahar mehmonlarining qolishlarini juda yoqimli va qulay qiladi.",
     "2": "Nima uchun biz?",
     "3": "Tozalik va xavfsizlik",
     "4": "Hamyonbop narxlar",
     "5": "Qulay joylashuv",
     "6": "Mazali nonushtalar",
     "7": "Tez internet WiFi",
-    "8": "Transfer xizmati"
+    "8": "Transfer xizmati",
+    "9":  "Bodomzor masjidi, Toshkent teleminorasi, Yapon bog'i, Toshkent botanika bog'i kabi diqqatga sazovor joylarga yaqinligi Rever mehmonxonasini Toshkentga tashrif buyurish uchun ajoyib joy qiladi.",
+    "10" : "Rever mehmonxonasidagi narxlar Toshkent shahridagi bir qator mehmonxonalar bilan solishtirganda ancha past, ammo mehmonxonamiz tomonidan ko‘rsatilayotgan xizmatlar eng yuqori darajada.",
+    "11" :"Mehmon xonalarida shaxsiy hammom va televizorlar mavjud va Rever mehmonxonasi internetga ulanishni osonlashtiradi, chunki bepul yuqori tezlikdagi Wi-Fi mavjud.",
+    "12":  "Shuningdek, siz mehmonxona tomonidan taqdim etilgan ba'zi qulayliklardan, jumladan, xona xizmatidan foydalanishingiz mumkin. Bundan tashqari, mehmonlar bepul nonushta qilishlari mumkin. Mehmonlar uchun qo'shimcha qulaylik - bu bepul to'xtash joyi va mehmonlarni o'tkazish.",
+    "13" : "Shaharni yaxshiroq kashf qilishni xohlaysizmi? Buning uchun uzoqqa borish shart emas. Oʻzbekiston Davlat amaliy sanʼat muzeyi va Oʻzbekiston tarixi davlat muzeyi Toshkentning mashhur diqqatga sazovor joylari boʻlib, ular mehmonxonadan piyoda masofada joylashgan.",
+    "14" : "Toshkentda dam olishingizni tilab qolamiz!"
   },
   "Terms": {
     "0": "Yashash shartlari",
@@ -82,7 +88,7 @@
     "2": "Mehmonxona qoidalari umumiydir va tanlangan turar joy turiga qarab farq qilishi mumkin. Mehmonxona qoidalari umumiydir va tanlangan turar joy turiga qarab farq qilishi mumkin"
   },
   "Contacts": {
-    "0": "Kontaktlar",
+    "0": "Band qilish",
     "1": "Ismingiz",
     "2": "Ismingiz",
     "3": "Telefon raqamingiz",

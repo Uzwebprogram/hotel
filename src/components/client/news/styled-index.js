@@ -18,7 +18,11 @@ export const CarouselDiv = styled.div`
 
 export const SliderItem = styled.div`
   width: 550px;
-  height: 380px;
+  height: 390px;
+  overflow-y: scroll;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
   div {
     button {

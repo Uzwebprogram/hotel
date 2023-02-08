@@ -7,7 +7,6 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   h1 {
     border-bottom: 1px solid #7c7c7c;
-    padding-bottom: 20px;
   }
 `;
 export const BigWrapper = styled.div`
@@ -19,6 +18,7 @@ export const BigWrapper = styled.div`
   h1 {
     border-bottom: 1px solid #7c7c7c;
     padding-bottom: 20px;
+    margin-bottom: 52.5px;
 
     @media screen and (max-width: 320px) and (max-width: 375px) {
       font-size: 20px;
@@ -33,8 +33,8 @@ export const Rows = styled.div`
 `;
 export const WrapperLeft = styled.div`
   background-color: #1b1b1c;
-  border-radius: 10px;
-  padding: 40px;
+  border-radius: 20px;
+  padding: 5px 30px 30px;
 
   @media only screen and (max-width: 732px) {
     margin-bottom: 20px;

@@ -8,7 +8,7 @@ import {
   Smalldiv,
 } from "./styled-index";
 import mouse from "../../../../assets/client/home/mouse.png";
-import studio from "../../../../assets/client/home/studio.png";
+import studio from "../../../../assets/client/header/home.JPG";
 import { useTranslation } from "react-i18next";
 function HomeHero() {
   const { t, i18n } = useTranslation();
