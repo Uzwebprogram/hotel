@@ -77,6 +77,10 @@ function Header() {
               </li>
             </ul>
             <Menu>
+              <Number>
+                <a href="tel:+998 95 169 69 69">{t("Footer.13")}</a>
+                {/* <a href="tel:+998 99 069 79 80">+998 99 069 79 80</a> */}
+              </Number>
               <button onClick={HendelClick}>
                 <i class="bx bx-menu"></i>
               </button>
@@ -92,10 +96,6 @@ function Header() {
           </>
         </WrapperContainer>
       </Wrapper>
-      <Number>
-        <a href="tel:+998 95 169 69 69">+998 95 169 69 69</a>
-        <a href="tel:+998 99 069 79 80">+998 99 069 79 80</a>
-      </Number>
     </>
   );
 }

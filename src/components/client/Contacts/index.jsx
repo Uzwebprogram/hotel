@@ -24,6 +24,7 @@ import { useTranslation } from "react-i18next";
 import { useRef } from "react";
 import axios from "axios";
 import { Succsess } from "../reserv/styled-index";
+import img from "../../../assets/client/contacts/img.jpg";
 
 function Contacts() {
   const { t, i18n } = useTranslation();
@@ -72,7 +73,7 @@ function Contacts() {
         <Row component={Rows}>
           <Col lg={6} md={6} sm={12}>
             <WrapperLeft>
-        <h1>{t("Contacts.0")}</h1>
+              <h1>{t("Contacts.0")}</h1>
 
               <Form>
                 <InputGroup>
@@ -180,15 +181,27 @@ function Contacts() {
                 </div>
                 <div className="card">
                   <div className="iframe">
-                    <iframe
-                      src="https://yandex.uz/maps/-/CCU772xp8A"
-                      class="gmap_iframe"
-                      width="100%"
-                      frameborder="0"
-                      scrolling="no"
-                      marginheight="0"
-                      marginwidth="0"
-                    ></iframe>
+                    <div>
+                      {/* <a
+                        href="https://yandex.uz/maps/org/rever_hotel/139582367957/?utm_medium=mapframe&utm_source=maps"
+                        style={{color:#eee;font-size:12px;position:absolute;top:0px}
+                      >
+                        Rever Hotel
+                      </a>
+                      <a
+                        href="https://yandex.uz/maps/10335/tashkent/category/hotel/184106414/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:14px;"
+                      >
+                        Гостиница в Ташкенте
+                      </a> */}
+                      <iframe
+                        src="https://yandex.uz/map-widget/v1/?ll=69.299140%2C41.340601&mode=search&oid=139582367957&ol=biz&z=16.59"
+                        width="560"
+                        height="400"
+                        frameborder="1"
+                        allowfullscreen="true"
+                      ></iframe>
+                    </div>
                   </div>
                   <div className="text">
                     <h2>{t("Contacts.12")}</h2>
@@ -201,22 +214,14 @@ function Contacts() {
                 </div>
                 <div className="card">
                   <div className="iframe">
-                    <iframe
-                      src="https://go.2gis.com/jp64zi"
-                      class="gmap_iframe"
-                      width="100%"
-                      frameborder="0"
-                      scrolling="no"
-                      marginheight="0"
-                      marginwidth="0"
-                    ></iframe>
+                    <a href="https://go.2gis.com/qgn5s">
+                      <img src={img} alt="photo" />
+                    </a>
                   </div>
                   <div className="text">
                     <h2>{t("Contacts.13")}</h2>
                     <div className="a">
-                      <a href="https://go.2gis.com/qgn5s">
-                        {t("Contacts.14")}
-                      </a>
+                      <a href="https://go.2gis.com/qgn5s">{t("Contacts.14")}</a>
                     </div>
                   </div>
                 </div>

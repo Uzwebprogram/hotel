@@ -281,4 +281,11 @@ border-radius: 10px;
 cursor: pointer;
 margin-top: 5%;
 }
+h3{
+  margin: 10px 0 5px;
+}
+p{
+  padding: 0;
+  margin: 0;
+}
 `

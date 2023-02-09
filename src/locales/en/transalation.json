@@ -39,9 +39,10 @@
     "6": "Book",
     "7": "Adults",
     "8": "Children",
-    "9": "Your application is accepted",
+    "9": "Thanks for the application",
     "10": "dd/mm/yyyy",
-    "11": "Email"
+    "11": "Email",
+    "12" : "Our administrator will contact you"
   },
   "Galery": {
     "0": "Gallery"

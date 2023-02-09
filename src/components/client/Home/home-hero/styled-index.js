@@ -39,12 +39,6 @@ export const LeftDiv = styled.div`
     font-style: normal;
     font-weight: 600;
     font-size: 45px;
-    @media screen and (max-width: 1088px) {
-      padding-top: 0%;
-    }
-    @media screen and (max-width: 935px) {
-      font-size: 30px;
-    }
   }
   p {
     width: 90%;

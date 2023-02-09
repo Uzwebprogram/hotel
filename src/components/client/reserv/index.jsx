@@ -29,6 +29,7 @@ function ReservHome() {
   const checkin = useRef();
   const checkout = useRef();
   const number = useRef();
+  const email = useRef();
   const { t, i18n } = useTranslation();
   const HendelChange = (e) => {
     const selectVal = e.target.value;
@@ -64,6 +65,7 @@ function ReservHome() {
       );
       if (response.data) {
         setOpen(true);
+        console.log(response.data)
       }
     } catch (error) {
       console.log(error);
@@ -176,7 +178,7 @@ function ReservHome() {
             <input
               type="email"
               placeholder={t("Reserv.11")}
-              ref={number}
+              ref={email}
             />
           </CaRD>
         </DivCard>
@@ -194,6 +196,7 @@ function ReservHome() {
               <Succsess>
                 <i class="bx bx-check-circle"></i>
                 <h3>{t("Reserv.9")}</h3>
+                <p>{t("Reserv.12")}</p>
                 <button onClick={handleClose}>Ok</button>
               </Succsess>
             </Typography>

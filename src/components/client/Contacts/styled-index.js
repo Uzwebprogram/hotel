@@ -53,6 +53,10 @@ export const WrapperRight = styled.div`
     height: 150px;
     width: 100%;
   }
+  img{
+  height: 100%;
+  width: 100%;
+  }
   .iframe {
     width: 50%;
     @media screen and (max-width: 440px){
