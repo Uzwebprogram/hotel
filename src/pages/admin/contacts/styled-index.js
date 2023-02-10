@@ -9,7 +9,7 @@ thead{
     
     tr{
     th{
-        border: 50px solid transparent;
+        border: 40px solid transparent;
     }
     }
 }

@@ -56,6 +56,7 @@ function ReservHome() {
         departure: checkout.current.value,
         kids: countBaby,
         adults: count,
+        email: email.current.value,
         phone_number: number.current.value,
         room: window.localStorage.getItem("roomVal"),
       };
