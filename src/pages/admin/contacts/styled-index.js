@@ -1,17 +1,16 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-color: white;
+  color: white;
 
-table{
+  table {
     text-align: center;
-thead{
-    
-    tr{
-    th{
-        border: 40px solid transparent;
+    thead {
+      tr {
+        th {
+          border: 40px solid transparent;
+        }
+      }
     }
-    }
-}
-}
-`
+  }
+`;

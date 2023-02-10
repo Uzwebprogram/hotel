@@ -2,14 +2,14 @@
   "Navbar": {
     "0": "Galereya",
     "1": "Mehmonxona haqida",
-    "2": "Raqamlar",
+    "2": "Xonalar",
     "3": "Sharhlar",
     "4": "Kontaktlar"
   },
   "Footer": {
     "0": "Galereya",
     "1": "Mehmonxona haqida",
-    "2": "Raqamlar",
+    "2": "Xonalar",
     "3": "Sharhlar",
     "4": "Shartlar va shartlar",
     "5": "Kontaktlar",
@@ -34,7 +34,7 @@
     "1": "Ro'yxatdan o'tish",
     "2": "Ketish",
     "3": "Mehmonlar",
-    "4": "Raqamni tanlang",
+    "4": "Xonani tanlang",
     "5": "Telefon raqamingiz",
     "6": "Band Qilish",
     "7": "Kattalar",
