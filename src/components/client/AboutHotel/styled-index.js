@@ -47,11 +47,19 @@ export const Second = styled.div`
 img{
 width: 600px;
 height: 490px;
+
 }
   @media screen and (max-width: 1105px) {
     img {
       width: 100%;
       margin-top: 5%;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    img {
+      width: 100%;
+      margin-top: 5%;
+      height: 350px;
     }
   }
 `;
@@ -91,7 +99,7 @@ export const Ul = styled.div`
     }
     @media screen and (max-width: 350px) {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       justify-content: center;
     }
   }
