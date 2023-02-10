@@ -25,7 +25,7 @@ function ModalPut({handleClose , open , PutBlog , Title , Element}) {
     const HandleSubmit = async (e , id ) =>{
         e.preventDefault()
         try {
-           await fetch(`http://62.217.179.24:5000/galery/${id}`, {
+           await fetch(`https://api.reverhotel.uz/galery/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'

@@ -6,24 +6,22 @@ export const Wrapper = styled.div`
   h1 {
     padding-top: 60px;
     @media screen and (max-width: 425px) {
-      /* font-size: 20px; */
       padding-left: 10px;
     }
     @media screen and (max-width: 375px) {
       font-size: 20px;
-      /* padding-left: 10px; */
     }
   }
   color: white;
   background-image: url(${blue});
   background-repeat: no-repeat;
-  background-position-x: 1000px;
+  background-position-x: right;
   background-position-y: 40px;
 `;
 export const Ul1 = styled.div`
   background-image: url(${redcolor});
   background-repeat: no-repeat;
-  background-position-x: 1000px;
+  background-position-x: right  ;
   background-position-y: 1250px;
   padding-top: 20px;
   ul {
@@ -33,8 +31,13 @@ export const Ul1 = styled.div`
   li {
     padding-bottom: 50px;
     img {
-      width: 100%;
+      width: 350px;
       height: 380px;
+
+      @media screen and (max-width: 360px){
+        width: 100%;
+        height: 380px;
+      }
     }
     p {
       padding-bottom: 20px;
@@ -66,10 +69,5 @@ export const Ul = styled.ul`
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center;
-  }
-
-  img {
-    width: 350px !important;
-    height: 500px !important;
   }
 `;

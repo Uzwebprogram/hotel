@@ -7,7 +7,6 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   h1 {
     border-bottom: 1px solid #7c7c7c;
-    padding-bottom: 20px;
   }
 `;
 export const BigWrapper = styled.div`
@@ -19,6 +18,7 @@ export const BigWrapper = styled.div`
   h1 {
     border-bottom: 1px solid #7c7c7c;
     padding-bottom: 20px;
+    margin-bottom: 52.5px;
 
     @media screen and (max-width: 320px) and (max-width: 375px) {
       font-size: 20px;
@@ -33,8 +33,8 @@ export const Rows = styled.div`
 `;
 export const WrapperLeft = styled.div`
   background-color: #1b1b1c;
-  border-radius: 10px;
-  padding: 40px;
+  border-radius: 20px;
+  padding: 5px 30px 30px;
 
   @media only screen and (max-width: 732px) {
     margin-bottom: 20px;
@@ -46,9 +46,57 @@ export const WrapperLeft = styled.div`
   }
 `;
 export const WrapperRight = styled.div`
+  background-color: #1b1b1c;
+  padding: 20px;
+  border-radius: 20px;
   iframe {
-    height: 500px;
+    height: 150px;
     width: 100%;
+  }
+  img{
+  height: 100%;
+  width: 100%;
+  }
+  .iframe {
+    width: 50%;
+    @media screen and (max-width: 440px){
+      width: 100%;
+    }
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 440px){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .text {
+      width: 50%;
+      text-align: center;
+      @media screen and (max-width: 440px){
+      width: 100%;
+    }
+      /* height: 100%; */
+      h2 {
+        margin: 0 auto;
+        @media screen and (max-width: 1135px){
+          font-size: 17px;
+        }
+      }
+      a {
+        border: 1px solid;
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+      }
+      .a {
+        margin-top: 85px;
+      }
+    }
+  }
+  .card:nth-child(2) {
+    margin: 20px 0;
   }
 `;
 export const Div = styled.div`
@@ -63,7 +111,7 @@ export const Div = styled.div`
   h2 {
     font-size: 20px;
   }
-  `
+`;
 export const Form = styled.form``;
 
 export const InputGroup = styled.div`
@@ -91,6 +139,7 @@ export const InputGroup = styled.div`
     outline: none;
     border: 1px solid transparent;
     width: 90%;
+    font-size: 17px;
 
     :focus {
       background: #1b1b1c;
@@ -103,7 +152,7 @@ export const InputGroup = styled.div`
   }
 `;
 
-export const Button = styled.button`
+export const Butto = styled.button`
   background: #1b1b1c;
   border: 1px solid #cccccc;
   border-radius: 7px;

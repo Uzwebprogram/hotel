@@ -18,14 +18,17 @@ export const CarouselDiv = styled.div`
 
 export const SliderItem = styled.div`
   width: 550px;
-  height: 380px;
+  height: 390px;
+  overflow-y: scroll;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
   div {
     button {
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
-      line-height: 120%;
       letter-spacing: 0.01em;
       color: #ffffff;
       /* background: #1b1b1c;

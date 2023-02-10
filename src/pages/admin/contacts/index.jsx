@@ -27,6 +27,9 @@ const Contacts = () => {
             <th>
               Children
             </th>
+            <th>
+              Emails
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -38,6 +41,7 @@ const Contacts = () => {
               <td>{elem.phone_number}</td>
               <td>{elem.adults}</td>
               <td>{elem.kids}</td>
+              <td>{elem.email}</td>
             </tr>
           )}
         </tbody>

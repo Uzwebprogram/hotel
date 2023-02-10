@@ -18,6 +18,10 @@ export const WrapperList = styled.ul`
         margin-left: 20px;
         transition: 0.5s;
     }
+    ul{
+        margin: 0;
+    padding: 0;
+    }
 `
 export const WrapperItem = styled.div`
 

@@ -1,5 +1,5 @@
-echo "Switching to branch abdulloh"
-git checkout abdulloh
+echo "Switching to branch main"
+git checkout main
 
 echo "Building app..."
 npm run build

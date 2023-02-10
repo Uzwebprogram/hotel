@@ -73,8 +73,10 @@ export const Heading = styled.div`
   img {
     width: 200px;
     margin-bottom: 30px;
-    @media only screen and (max-width: 622px) {
+    @media only screen and (max-width:622px) {
+      width: 120px;
       margin-right: 236px;
+      margin-bottom: 0px;
     }
   }
   ul {
@@ -86,11 +88,36 @@ export const Heading = styled.div`
       font-size: 25px;
       margin: 0 7px 0 0;
     }
-
+    button {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 400;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px  5px 0px white;
+      -webkit-animation: mymove 3s infinite;
+    animation: mymove 3s infinite;
+      @keyframes mymove {
+        50%{
+        box-shadow: 0px 0px 25px 0px white;
+        }
+        50%{
+        box-shadow: 0px 0px 25px 0px white;
+        }
+      }
+    }
   }
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   @media only screen and (max-width: 940px) {
     display: flex;

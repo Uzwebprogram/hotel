@@ -79,8 +79,13 @@ export const Card = styled.div`
     border-radius: 5px;
     color: white;
     outline: none;
+    font-size: 15px;
     width: 100%;
   }
+
+  input:nth-child(2):focus input:nth-child(3){
+  display: none;
+  } 
 `;
 
 export const Count = styled.div`
@@ -92,13 +97,18 @@ export const Count = styled.div`
 export const Countdiv = styled.div`
   div {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    width: 75px;
     button {
       border: 1px solid #1f1f1f;
       background-color: #1f1f1f;
       color: white;
       border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 25px !important;
     }
   }
   p {
@@ -106,6 +116,9 @@ export const Countdiv = styled.div`
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
+  }
+  p:nth-child(2) {
+    font-size: 18px;
   }
 `;
 
@@ -138,6 +151,7 @@ export const CaRd = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
     @media screen and (max-width: 320px) and (max-width: 375px){
     width: 100%;
   }
@@ -153,6 +167,7 @@ export const CaRd = styled.div`
     padding: 7px 10px;
     color: white;
     outline: none;
+    font-size: 15px;
     border-radius: 5px;
   }
   @media screen and (max-width: 656px){
@@ -184,12 +199,14 @@ export const CaRD = styled.div`
     padding: 7px 0px;
     width: 100%;
     border-radius: 5px;
+    font-size: 15px;
+    padding-left: 5px;
     color: white;
   }
 
 `;
 
-export const Button = styled.button`
+export const Butto = styled.button`
   width: 15%;
   border: 1px solid white;
   color: white;
@@ -241,3 +258,34 @@ export const TimeDiv = styled.div`
     font-size: 25px;
   }
 `;
+
+
+export const Succsess = styled.div`
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+.bx {
+color: green;
+font-size: 50px;
+}
+button {
+padding: 7px 20px;
+font-size: 20px;
+font-weight: 700;
+background-color: green;
+color: white;
+border: 1px solid green;
+border-radius: 10px;
+cursor: pointer;
+margin-top: 5%;
+}
+h3{
+  margin: 10px 0 5px;
+}
+p{
+  padding: 0;
+  margin: 0;
+}
+`

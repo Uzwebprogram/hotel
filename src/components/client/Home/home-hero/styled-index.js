@@ -11,17 +11,13 @@ export const Container = styled.div`
   background-position-y: bottom;
   background-size: 100%;
   background-repeat: no-repeat;
-  padding-top: 6%;
+  padding-top: 5%;
+ 
   @media screen and (max-width: 823px) {
     display: flex;
     flex-direction: column;
-    padding-top: 15%;
-  }
-  @media screen  and (max-width: 578px){
-    padding-top: 20%;
-  }
-  @media screen  and (max-width: 431px){
-    padding-top: 30%;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 `;
 export const LeftDiv = styled.div`
@@ -29,20 +25,20 @@ export const LeftDiv = styled.div`
   padding-right: 10px;
   width: 45%;
 
-  @media screen  and (max-width: 825px){
-    width: 100% ;
+  @media screen and (max-width: 825px){
+    padding-left: 0;
+    padding-right: 0;
+    width: 90%;
+    margin-left: 3%;
+  }
+  @media screen and (max-width: 655px){
+    margin-left: 5%;
   }
   h1 {
     padding-top: 7%;
     font-style: normal;
     font-weight: 600;
     font-size: 45px;
-    @media screen and (max-width: 1088px) {
-      padding-top: 0%;
-    }
-    @media screen and (max-width: 935px) {
-      font-size: 30px;
-    }
   }
   p {
     width: 90%;

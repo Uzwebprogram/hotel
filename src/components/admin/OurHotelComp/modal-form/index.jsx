@@ -50,7 +50,7 @@ const HandleSubmit = async (e) =>{
         number_guests :number_guests.current.value,
         cost_night : cost_night.current.value
     }
-    const res = await axios.post("http://62.217.179.24:5000/rooms"  , body)
+    const res = await axios.post("https://api.reverhotel.uz/rooms"  , body)
     if (res) {
         handleClose()
     }

@@ -8,7 +8,7 @@ export const HotelOurContext = createContext({
 export const HotelOurProvider = ({children})=>{
     const [HotelOurMap , setHotelOurMap] = useState([])
     useEffect(() => {
-        fetch("http://62.217.179.24:5000/rooms")
+        fetch("https://api.reverhotel.uz/rooms")
         .then(res => res.json())
         .then(result => setHotelOurMap(result))
     }, [HotelOurMap])

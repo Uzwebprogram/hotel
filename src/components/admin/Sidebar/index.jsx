@@ -20,7 +20,7 @@ const Sidebar = () => {
           <li>
             <UL>
               <li>
-                <img src={Logo} alt="logo" />
+                <img src={Logo} width={125} height={110} alt="logo" />
               </li>
             </UL>
           </li>

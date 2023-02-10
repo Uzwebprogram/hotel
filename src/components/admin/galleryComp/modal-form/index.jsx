@@ -42,7 +42,7 @@ const HandleSubmit = async (e) =>{
     const body = {
         image_galery : SelectedImages
     }
-    const res = await axios.post("http://62.217.179.24:5000/galery"  , body)
+    const res = await axios.post("https://api.reverhotel.uz/galery"  , body)
     console.log(res);
 }
   return (
