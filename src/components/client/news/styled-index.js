@@ -116,7 +116,8 @@ export const Buttons = styled.div`
 `;
 
 export const H2 = styled.div`
-  font-size: 30px;
+  font-size: 50px;
+  font-weight: bold;
   color: white;
   margin-top: 10%;
   margin-bottom: 5%;

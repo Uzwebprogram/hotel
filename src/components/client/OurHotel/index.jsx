@@ -11,7 +11,7 @@ function OurHotel() {
   return (
     <>
       <Wrapper id="numbers">
-        <h1>{t("OurHotel.0")}</h1>
+        <h2>{t("OurHotel.0")}</h2>
         <Ul1>
           <Ul>
             {HotelOurMap.map((elem, index) =>

@@ -10,9 +10,9 @@ export const Wrapper = styled.div`
     margin: 0;
     padding: 0;
   }
-  h3 {
+  h2{
     border-bottom: 1px solid #5a5a5a;
-    font-size: 35px;
+    font-size: 50px;
     padding-bottom: 3%;
     @media screen and (max-width: 375px) {
       font-size: 20px;

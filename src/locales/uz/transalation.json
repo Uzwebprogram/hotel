@@ -24,7 +24,7 @@
   },
   "Homehero": {
     "0": "REVER HOTEL",
-    "1": "Sizni sharqona mehmondo'stligi bilan mashhur va Toshkentning qoq markazida joylashgan 'Rever' mehmonxonasida kutib olishdan mamnunmiz!",
+    "1": "Sizni sharqona mehmondo'stligi bilan mashhur,Toshkentning qoq markazida joylashgan 'Rever' mehmonxonasida kutib olishdan mamnunmiz!",
     "2": "Raqamlarni ko'rish",
     "3": "pastga aylantiring",
     "4": "160 Bog'ishamol ko'chasi"
@@ -49,7 +49,7 @@
   },
   "AboutHotel": {
     "0": "Mehmonxona haqida",
-    "1": "Toshkentdagi Rever mehmonxonasi Shosh mehmonxonalar tarmog‘ining eng yaxshi filiallaridan biri bo‘lib, ko‘plab foydali xizmatlar shahar mehmonlarining qolishlarini juda yoqimli va qulay qiladi.",
+    "1": "Toshkentdagi Rever mehmonxonasi Shosh mehmonxonalar tarmog‘ining eng yaxshi filiallaridan biri bo‘lib, ko‘plab foydali xizmatlari bilan Toshkent mehmonlari uchun ajoyib tanlovdir.",
     "2": "Nima uchun biz?",
     "3": "Tozalik va xavfsizlik",
     "4": "Hamyonbop narxlar",
@@ -57,18 +57,18 @@
     "6": "Mazali nonushtalar",
     "7": "Tez internet WiFi",
     "8": "Transfer xizmati",
-    "9":  "Bodomzor masjidi, Toshkent teleminorasi, Yapon bog'i, Toshkent botanika bog'i kabi diqqatga sazovor joylarga yaqinligi Rever mehmonxonasini Toshkentga tashrif buyurish uchun ajoyib joy qiladi.",
+    "9":  "Bodomzor masjidi, Toshkent teleminorasi, Yapon bog'i, Toshkent botanika bog'i kabi diqqatga sazovor joylarga yaqinligi Rever mehmonxonasini Toshkentga tashrif buyuruvchilari uchun ajoyib maskan bolaoladi.",
     "10" : "Rever mehmonxonasidagi narxlar Toshkent shahridagi bir qator mehmonxonalar bilan solishtirganda ancha past, ammo mehmonxonamiz tomonidan ko‘rsatilayotgan xizmatlar eng yuqori darajada.",
-    "11" :"Mehmon xonalarida shaxsiy hammom va televizorlar mavjud va Rever mehmonxonasi internetga ulanishni osonlashtiradi, chunki bepul yuqori tezlikdagi Wi-Fi mavjud.",
-    "12":  "Shuningdek, siz mehmonxona tomonidan taqdim etilgan ba'zi qulayliklardan, jumladan, xona xizmatidan foydalanishingiz mumkin. Bundan tashqari, mehmonlar bepul nonushta qilishlari mumkin. Mehmonlar uchun qo'shimcha qulaylik - bu bepul to'xtash joyi va mehmonlarni o'tkazish.",
+    "11" :"Mehmon xonalarida shaxsiy hammom, televizor mavjud va bepul yuqori tezlikdagi Wi-Fi bilan jihozlangan.",
+    "12":  "Shuningdek, siz mehmonxona tomonidan taqdim etilgan koplab qulayliklaridan foydalanishingiz munkun boladi, jumladan; xona tozalash xizmati, bepul nonushta, mehmonlarimizni airaport va vokzalardan kutib olish va kuzatib qoyish xizmati va bepul mashina turar joyi bilan tamillanadi.",
     "13" : "Shaharni yaxshiroq kashf qilishni xohlaysizmi? Buning uchun uzoqqa borish shart emas. Oʻzbekiston Davlat amaliy sanʼat muzeyi va Oʻzbekiston tarixi davlat muzeyi Toshkentning mashhur diqqatga sazovor joylari boʻlib, ular mehmonxonadan piyoda masofada joylashgan.",
-    "14" : "Toshkentda dam olishingizni tilab qolamiz!"
+    "14" : "Toshkentda vaqtingiz maroqli otishini tilaymiz!"
   },
   "Terms": {
     "0": "Yashash shartlari",
     "1": "Mehmonxona qoidalari umumiydir va ular tanlangan turar joy turiga qarab farq qilishi mumkin. Barcha yoshdagi bolalarga ruxsat beriladi. 12 va undan katta yoshdagi bolalar kattalar hisoblanadi. Uy hayvonlariga ruxsat beriladi. Toʻlov olinishi mumkin.",
     "2": "Bekor qilish siyosati",
-    "3": "Bekor qilish va oldindan to'lov siyosati tanlangan tarif rejasiga bog'liq. Iltimos, turar joy sanalarini kiriting va bandlov shartlarini ko'rib chiqing. Asosiy tarif rejasi: bandlovni 24 soat oldin bepul bekor qilishingiz mumkin. Qaytarib bo'lmaydigan tarif rejasi: Siz bron qilingan kuni turar joyning to'liq narxi miqdorida oldindan to'lovni to'laysiz. Bekor qilingan taqdirda oldindan to'lov qaytarilmaydi.",
+    "3": "Bekor qilish va oldindan to'lov siyosati, tanlangan tarif rejasiga bog'liq. Iltimos, kirish va chiqish sanalarini kiriting va bandlov shartlarini ko'rib chiqing. Asosiy tarif rejasi: bandlovni 24 soat ichida bepul bekor qilishingiz mumkin. Qaytarib bo'lmaydigan tarif rejasi: Siz bron qilingan kuni turar joyning to'liq narxi miqdorida oldindan to'lovni to'laysiz. Bekor qilingan taqdirda oldindan qilingan to'lov qaytarilmaydi.",
     "4": "Ro'yxatdan o'tish",
     "5": "Chiqish",
     "6": "Shartlar va shartlar",

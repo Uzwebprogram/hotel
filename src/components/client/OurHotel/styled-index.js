@@ -3,8 +3,9 @@ import blue from "../../../assets/client/OurHotel/blue2.png";
 import redcolor from "../../../assets/client/OurHotel/redcolor.png";
 
 export const Wrapper = styled.div`
-  h1 {
+  h2 {
     padding-top: 60px;
+    font-size: 50px;
     @media screen and (max-width: 425px) {
       padding-left: 10px;
     }

@@ -5,10 +5,10 @@ export const Wrapper = styled.div`
   /* padding: 10px 10px 0 10px; */
   background-color: #0f0f11;
   color: white;
-  h3 {
+  h2 {
     border-bottom: 1px solid #5a5a5a;
-    padding-bottom: 3%;
-    font-size: 35px;
+    /* padding-bottom: 3%; */
+    font-size: 50px;
     @media screen and (max-width: 375px) {
       font-size: 20px;
     }
@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
 `;
 export const Bigdiv = styled.div`
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
 
   @media screen and (max-width: 815px) {
@@ -26,6 +26,7 @@ export const Bigdiv = styled.div`
 `;
 
 export const First = styled.div`
+width: 50%;
   p {
     width: 95%;
     font-style: normal;
@@ -33,11 +34,13 @@ export const First = styled.div`
     font-size: 16px;
   }
 `;
-export const Second = styled.div``;
+export const Second = styled.div`
+width: 50%;
+`;
 export const Smaller = styled.div`
   h5 {
     padding: 0;
-    margin: 0;
+    margin: 15px 0 0 0;
   }
   h6{
   font-size: 20px;
@@ -47,7 +50,7 @@ export const Smaller = styled.div`
 export const Smallest = styled.div`
   h5 {
     padding: 0;
-    margin: 0;
+    margin: 15px 0 0 0;
   }
   h6{
   font-size: 20px;

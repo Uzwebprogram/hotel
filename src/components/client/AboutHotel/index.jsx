@@ -15,7 +15,7 @@ function AboutHotel() {
   return (
     <>
       <Wrapper id="About">
-        <h3>{t("AboutHotel.0")}</h3>
+        <h2>{t("AboutHotel.0")}</h2>
         <Bigdiv>
           <First>
             <p className="p_sub">{t("AboutHotel.1")}</p>

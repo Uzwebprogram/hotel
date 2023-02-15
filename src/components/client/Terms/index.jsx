@@ -17,7 +17,7 @@ function Terms() {
     <>
       <Wrapper>
         {/* <WrapperContainer> */}
-          <h3>{t("Terms.0")}</h3>
+          <h2>{t("Terms.0")}</h2>
           <Bigdiv>
             <First>
               <p>{t("Terms.1")}</p>
@@ -36,8 +36,8 @@ function Terms() {
                 </Smallest>
               </DfDiv>
               <Text>
-                <h5>{t("Terms.6")}</h5>
-                <p>{t("Terms.7")}</p>
+                <h5></h5>
+                <p></p>
               </Text>
             </Second>
           </Bigdiv>

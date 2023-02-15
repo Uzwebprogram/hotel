@@ -71,7 +71,7 @@ function Comments() {
     <>
       {/* <WrapperContainer> */}
       <Wrapper id="comments">
-        <h1>{t("Comments.0")}</h1>
+        <h2>{t("Comments.0")}</h2>
 
         {/* <Hidden sm> */}
         <Row component={ULWrapper}>

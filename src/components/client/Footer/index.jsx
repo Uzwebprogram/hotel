@@ -36,9 +36,9 @@ function Footer() {
                   <li>
                     <a href="#comments">{t("Footer.3")}</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#">{t("Footer.4")}</a>
-                  </li>
+                  </li> */}
                   <li>
                     <a href="#contacts">{t("Footer.5")}</a>
                   </li>
